@@ -1,4 +1,18 @@
-#!/bin/sh
-pdftk Parts/*Piano.pdf cat output concert.pdf verbose
-pdftk Parts/*Trumpet.pdf cat output bb.pdf verbose
-pdftk Parts/*Alto*.pdf cat output eb.pdf verbose
+#!/bin/bash
+if [ -d tmp ]; then
+    rm -rf tmp
+fi
+mkdir -p tmp
+
+for f in $(ls MuseScore); do
+    cp "MuseScore/$f" tmp
+    pushd tmp
+    ../export_parts.py "$f"
+    popd
+done
+
+pdftk tmp/*Piano.pdf cat output concert.pdf verbose
+pdftk tmp/*Trumpet.pdf cat output bb.pdf verbose
+pdftk tmp/*Alto*.pdf cat output eb.pdf verbose
+
+rm -rf tmp
