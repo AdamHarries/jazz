@@ -662,10 +662,10 @@
     <staffFrameRound>25</staffFrameRound>
     <staffFrameFgColor r="0" g="0" b="0" a="255"/>
     <staffFrameBgColor r="255" g="255" b="255" a="0"/>
-    <rehearsalMarkFontFace>FreeSerif</rehearsalMarkFontFace>
+    <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
     <rehearsalMarkFontSize>14</rehearsalMarkFontSize>
     <rehearsalMarkFontSpatiumDependent>1</rehearsalMarkFontSpatiumDependent>
-    <rehearsalMarkFontStyle>1</rehearsalMarkFontStyle>
+    <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
     <rehearsalMarkColor r="0" g="0" b="0" a="255"/>
     <rehearsalMarkFrameType>1</rehearsalMarkFrameType>
     <rehearsalMarkFramePadding>0.5</rehearsalMarkFramePadding>
