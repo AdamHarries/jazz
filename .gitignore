@@ -1,4 +1,6 @@
 .*
 tmp
 tmp/*
+pdf
+pdf/*
 MuseScore/.*

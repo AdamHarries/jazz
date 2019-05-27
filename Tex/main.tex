@@ -1,0 +1,30 @@
+\documentclass{report}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+
+\newcommand{\chart}[1]{%
+  \par\refstepcounter{section}% Increase section counter
+  \sectionmark{#1}% Add section mark (header)
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+  % Add more content here, if needed.
+}
+
+
+
+
+\begin{document}
+
+\tableofcontents
+
+\clearpage
+
+\chart{All of me}
+
+\includepdf[pages=-]{"../tmp/All_Of_Me-Alto Sax"}
+
+\chart{Alright Okay You Win}
+
+\includepdf[pages=-]{"../tmp/Alright_Okay_You_Win-Alto Sax"}
+
+\end{document}
