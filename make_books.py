@@ -22,6 +22,7 @@ bb_key_name = "bb"
 c_key_name = "c"
 
 
+# Given a string describing an instrument, get the key that it's in
 def get_key(instrument):
     if instrument == "B♭ Trumpet":
         return bb_key_name
@@ -50,7 +51,9 @@ def should_createf(sourcef, *targetfs):
     return False
 
 
-def generate(path, tmpd, outd, bookd, logf):
+# Generate PDF files for a score, and return information for the rest of the
+# pipeline to use when creating the books.
+def generate_pdfs(path, tmpd, outd, bookd, logf):
     track_info = {}
     track_info['pdfs'] = {}
     with open(logf, 'w+') as logfo:
@@ -68,6 +71,7 @@ def generate(path, tmpd, outd, bookd, logf):
             print("Unknown file extention: " + fileExtention)
             exit
 
+        # If we have a compressed file, generate an XML variant which we can process
         if fileExtention == ".mscz":
             if should_createf(path, mscx):
                 proc = subprocess.Popen([mscore, "-o", mscx, "-P", path],
@@ -75,19 +79,17 @@ def generate(path, tmpd, outd, bookd, logf):
                                         stderr=logfo)
                 proc.wait()
 
+        # If not, just use that, and don't regenerate an XML variant
         if fileExtention == ".mscx":
             mscx = path
 
         tree = et.parse(mscx)
+        scoreList = list(tree.iter('Score'))
 
-        scoreList = []
-
-        for score in tree.iter('Score'):
-            scoreList.append(score)
-
-        data = []
+        job_data = []
         partList = []
 
+        # Find the name of the piece from the first part/score
         for textElem in scoreList[0].iter("Text"):
             style = textElem.find("style")
             subtext = textElem.find("text")
@@ -96,6 +98,7 @@ def generate(path, tmpd, outd, bookd, logf):
                 print("Found title: " + track_info['title'])
                 break
 
+        # Iterate over each part, and generate job info for musescore
         for i in range(len(scoreList) - 1):
             name = ""
             key = ""
@@ -118,46 +121,50 @@ def generate(path, tmpd, outd, bookd, logf):
             entry = {}
             entry['in'] = partFile
             entry['out'] = pdfFile
-            data.append(entry)
+            job_data.append(entry)
             tree.write(partFile)
 
         print("Generating pdfs...")
-        print("Generated: ")
         pprint(track_info)
-
+        # Call musescore to generate the PDFs
         if should_createf(mscx, *track_info['pdfs'].values()):
             jsonfile = tmpf + '.json'
             with open(jsonfile, 'w') as outfile:
-                json.dump(data, outfile)
+                json.dump(job_data, outfile)
 
-            proc = subprocess.Popen([mscore, "-j", jsonfile],
-                                    stdout=logfo,
-                                    stderr=logfo)
+            proc = subprocess.Popen(
+                [mscore, "-j", jsonfile, "-S", "general_style.mss"],
+                stdout=logfo,
+                stderr=logfo)
             proc.wait()
+
+        print("Generated: ")
 
         print("")
 
+        # Return info for the rest of the stages of the pipeline
         return track_info
 
 
+# Header and footer for the tex file that will become our books
 tex_header = """
 %!TEX encoding = UTF-8 Unicode
-\\documentclass{report}
-\\usepackage{pdfpages}
-\\usepackage{hyperref}
-\\usepackage{fontspec}
-\\setmainfont[Ligatures={Common,TeX}, Mapping=tex-ansi]{MuseJazzText}
+\\documentclass{{report}}
+\\usepackage{{pdfpages}}
+\\usepackage{{hyperref}}
+\\usepackage{{fontspec}}
+\\setmainfont[Ligatures={{Common,TeX}}, Mapping=tex-ansi]{{MuseJazzText}}
 
-\\renewcommand{\\contentsname}{Stompin' At Summerhall}
+\\renewcommand{{\\contentsname}}{{Stompin' At Summerhall - {} }}
 
-\\newcommand{\\chart}[1]{%
-  \\par\\refstepcounter{section}% Increase section counter
-  \\sectionmark{#1}% Add section mark (header)
-  \\addcontentsline{toc}{section}{\\protect\\numberline{\\thesection}#1}% Add section to ToC
-  % Add more content here, if needed.
-}
+\\newcommand{{\\chart}}[1]{{%
+\\par\\refstepcounter{{section}}% Increase section counter
+\\sectionmark{{#1}}% Add section mark (header)
+\\addcontentsline{{toc}}{{section}}{{\\protect\\numberline{{\\thesection}}#1}}% Add section to ToC
+% Add more content here, if needed.
+}}
 
-\\begin{document}
+\\begin{{document}}
 
 \\tableofcontents
 
@@ -169,10 +176,20 @@ tex_footer = """
 """
 
 
-def generate_tex(tp_pairs):
+def generate_tex(key, tp_pairs):
+    # Print a key with a nice flat sign
+    def pretty_print(k):
+        if k == eb_key_name:
+            return "E♭ Edition"
+        elif k == bb_key_name:
+            return "B♭ Edition"
+        elif k == c_key_name:
+            return "C Edition"
+
     tex = ""
     # Explicit copy
-    tex += tex_header
+    tex += tex_header.format(pretty_print(key))
+
     for title, pdf in tp_pairs.items():
         tex += """
 % {}
@@ -183,8 +200,9 @@ def generate_tex(tp_pairs):
     return tex
 
 
+# Main program entrypoint
 def main():
-    sourced = "MuseScore"
+    sourced = "src"
     buildd = "build"
     tmpd = os.path.join(buildd, "tmp")
     pdfd = os.path.join(buildd, "pdf")
@@ -192,12 +210,14 @@ def main():
     bookd = "books"
     logf = os.path.join(buildd, "log.txt")
 
+    # Get command line arguments for the folder we want to use.
     if len(sys.argv) < 2:
-        print("Usage: getPartNames.py <sourced>")
-        print("Defaulting to folder 'MuseScore'\n")
+        print("Usage: getPartNames.py <source_directory>")
+        print("Defaulting to folder 'src'\n")
     else:
         sourced = sys.argv[1]
 
+    # Make directories if they don't exist
     for d in [buildd, tmpd, pdfd, texd, bookd]:
         if not os.path.exists(d):
             os.makedirs(d)
@@ -210,7 +230,7 @@ def main():
     msfiles = glob.glob(sourced + "/*.msc[zx]")
 
     # Generate PDFs, and get a list of charts from a glob.
-    charts = [generate(f, tmpd, pdfd, bookd, logf) for f in msfiles]
+    charts = [generate_pdfs(f, tmpd, pdfd, bookd, logf) for f in msfiles]
     charts = sorted(charts, key=itemgetter('title'))
 
     # Generate list of title/PDF pairs for LaTeX
@@ -227,7 +247,7 @@ def main():
     for k in pairs:
         print("Key : " + k)
         print("\tGenerating tex links and imports")
-        tex = generate_tex(pairs[k])
+        tex = generate_tex(k, pairs[k])
         texfile = os.path.join(texd, "{}.tex".format(k))
         with open(texfile, 'w') as f:
             f.write(tex)
