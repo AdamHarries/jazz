@@ -3,7 +3,10 @@
 # Obtained from https://github.com/klutt/klutt-musescore-tools
 # Adapted/cleaned up further from there.
 
+# Define the name of the 'musescore' program that we'll be calling at the command line.
 mscore = "musescore-portable"
+
+# Imports
 import sys
 import os
 import glob
@@ -13,6 +16,7 @@ from operator import itemgetter
 from pprint import pprint
 import xml.etree.ElementTree as et
 
+# What are we naming our various keys?
 eb_key_name = "eb"
 bb_key_name = "bb"
 c_key_name = "c"
@@ -60,16 +64,19 @@ def generate(path, tmpd, outd, bookd, logf):
 
         mscx = tmpf + ".mscx"
 
-        if should_createf(path, mscx):
-            if fileExtention not in [".mscx", ".mscz"]:
-                print("Unknown file extention: " + fileExtention)
-                exit
+        if fileExtention not in [".mscx", ".mscz"]:
+            print("Unknown file extention: " + fileExtention)
+            exit
 
-            if fileExtention == ".mscz":
+        if fileExtention == ".mscz":
+            if should_createf(path, mscx):
                 proc = subprocess.Popen([mscore, "-o", mscx, "-P", path],
                                         stdout=logfo,
                                         stderr=logfo)
                 proc.wait()
+
+        if fileExtention == ".mscx":
+            mscx = path
 
         tree = et.parse(mscx)
 
@@ -200,7 +207,7 @@ def main():
         logfo.writelines("")
 
     # get a list of musescore files
-    msfiles = glob.glob(sourced + "/*.mscz")
+    msfiles = glob.glob(sourced + "/*.msc[zx]")
 
     # Generate PDFs, and get a list of charts from a glob.
     charts = [generate(f, tmpd, pdfd, bookd, logf) for f in msfiles]
