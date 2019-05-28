@@ -13,16 +13,20 @@ from operator import itemgetter
 from pprint import pprint
 import xml.etree.ElementTree as et
 
+eb_key_name = "Eb"
+bb_key_name = "Bb"
+c_key_name = "C"
+
 
 def get_key(instrument):
     if instrument == "B♭ Trumpet":
-        return "Bb"
+        return bb_key_name
     elif instrument == "Alto Sax":
-        return "Eb"
+        return eb_key_name
     elif instrument == "Alto Saxophone":
-        return "Eb"
+        return eb_key_name
     elif instrument == "Piano":
-        return "C"
+        return c_key_name
     print("Didn't recognise instrument: " + instrument)
     exit
 
@@ -130,10 +134,14 @@ def generate(path, tmpd, outd, bookd, logf):
 
 
 tex_header = """
+%!TEX encoding = UTF-8 Unicode
 \\documentclass{report}
 \\usepackage{pdfpages}
 \\usepackage{hyperref}
+\\usepackage{fontspec}
+\\setmainfont[Ligatures={Common,TeX}, Mapping=tex-ansi]{MuseJazzText}
 
+\\renewcommand{\\contentsname}{Stompin' At Summerhall}
 
 \\newcommand{\\chart}[1]{%
   \\par\\refstepcounter{section}% Increase section counter
@@ -200,9 +208,9 @@ def main():
 
     # Generate list of title/PDF pairs for LaTeX
     pairs = {}
-    pairs['Eb'] = {}
-    pairs['Bb'] = {}
-    pairs['C'] = {}
+    pairs[eb_key_name] = {}
+    pairs[bb_key_name] = {}
+    pairs[c_key_name] = {}
 
     for c in charts:
         title = c['title']
@@ -211,27 +219,29 @@ def main():
 
     for k in pairs:
         print("Key : " + k)
+        print("\tGenerating tex links and imports")
         tex = generate_tex(pairs[k])
         texfile = os.path.join(texd, "{}.tex".format(k))
         with open(texfile, 'w') as f:
             f.write(tex)
 
-        for i in range(2):
-            proc = subprocess.Popen(
-                ["pdflatex", "-output-directory", texd, texfile])
-            proc.wait()
+        print("\tRunning xelatex")
+        with open(logf, 'w+') as logfo:
+            for i in range(2):
+                proc = subprocess.Popen(
+                    ["xelatex", "-output-directory", texd, texfile],
+                    stdout=logfo,
+                    stderr=logfo)
+                proc.wait()
 
+        print("\tCopying")
         subprocess.Popen([
             "cp",
             os.path.join(texd, "{}.pdf".format(k)),
             os.path.join(bookd, "{}.pdf".format(k))
         ]).wait()
 
-        # stdout=logf,
-        # stderr=logf)
-
-        # for name in pairs[k]:
-        #     print("\t" + name + " - " + pairs[k][name])
+    print("Done.")
 
 
 if __name__ == "__main__":
