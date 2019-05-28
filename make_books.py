@@ -13,9 +13,9 @@ from operator import itemgetter
 from pprint import pprint
 import xml.etree.ElementTree as et
 
-eb_key_name = "Eb"
-bb_key_name = "Bb"
-c_key_name = "C"
+eb_key_name = "eb"
+bb_key_name = "bb"
+c_key_name = "c"
 
 
 def get_key(instrument):
