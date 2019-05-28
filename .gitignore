@@ -1,6 +1,3 @@
 .*
-tmp
-tmp/*
-pdf
-pdf/*
+build/*
 MuseScore/.*

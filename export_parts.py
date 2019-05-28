@@ -42,10 +42,10 @@ def should_createf(sourcef, *targetfs):
     return False
 
 
-def generate(path, tmpd, outd, bookd):
+def generate(path, tmpd, outd, bookd, logf):
     track_info = {}
     track_info['pdfs'] = {}
-    with open(os.path.join(tmpd, 'log.txt'), 'w+') as logf:
+    with open(logf, 'w+') as logfo:
         basename, fileExtention = os.path.splitext(os.path.basename(path))
 
         print("Basename %s" % basename)
@@ -63,8 +63,8 @@ def generate(path, tmpd, outd, bookd):
 
             if fileExtention == ".mscz":
                 proc = subprocess.Popen([mscore, "-o", mscx, "-P", path],
-                                        stdout=logf,
-                                        stderr=logf)
+                                        stdout=logfo,
+                                        stderr=logfo)
                 proc.wait()
 
         tree = et.parse(mscx)
@@ -120,8 +120,8 @@ def generate(path, tmpd, outd, bookd):
                 json.dump(data, outfile)
 
             proc = subprocess.Popen([mscore, "-j", jsonfile],
-                                    stdout=logf,
-                                    stderr=logf)
+                                    stdout=logfo,
+                                    stderr=logfo)
             proc.wait()
 
         print("")
@@ -129,34 +129,73 @@ def generate(path, tmpd, outd, bookd):
         return track_info
 
 
-def main():
+tex_header = """
+\\documentclass{report}
+\\usepackage{pdfpages}
+\\usepackage{hyperref}
 
-    score_folder = "MuseScore"
+
+\\newcommand{\\chart}[1]{%
+  \\par\\refstepcounter{section}% Increase section counter
+  \\sectionmark{#1}% Add section mark (header)
+  \\addcontentsline{toc}{section}{\\protect\\numberline{\\thesection}#1}% Add section to ToC
+  % Add more content here, if needed.
+}
+
+\\begin{document}
+
+\\tableofcontents
+
+\\clearpage
+"""
+
+tex_footer = """
+\\end{document}
+"""
+
+
+def generate_tex(tp_pairs):
+    tex = ""
+    # Explicit copy
+    tex += tex_header
+    for title, pdf in tp_pairs.items():
+        tex += """
+% {}
+    \\chart{{{}}}
+    \\includepdf[pages=-]{{{}}}
+    """.format(title, title, pdf)
+    tex += tex_footer
+    return tex
+
+
+def main():
+    sourced = "MuseScore"
+    buildd = "build"
+    tmpd = os.path.join(buildd, "tmp")
+    pdfd = os.path.join(buildd, "pdf")
+    texd = os.path.join(buildd, "tex")
+    bookd = "books"
+    logf = os.path.join(buildd, "log.txt")
 
     if len(sys.argv) < 2:
-        print("Usage: getPartNames.py <score_folder>")
+        print("Usage: getPartNames.py <sourced>")
         print("Defaulting to folder 'MuseScore'\n")
     else:
-        score_folder = sys.argv[1]
+        sourced = sys.argv[1]
 
-    if not os.path.exists("tmp"):
-        os.makedirs("tmp")
+    for d in [buildd, tmpd, pdfd, texd, bookd]:
+        if not os.path.exists(d):
+            os.makedirs(d)
 
     # Clear the log file, if there is one.
-    with open(os.path.join("tmp", 'log.txt'), 'w') as logf:
-        logf.writelines("")
-
-    if not os.path.exists("pdf"):
-        os.makedirs("pdf")
-
-    if not os.path.exists("books"):
-        os.makedirs("books")
+    with open(logf, 'w') as logfo:
+        logfo.writelines("")
 
     # get a list of musescore files
-    msfiles = glob.glob(score_folder + "/*.mscz")
+    msfiles = glob.glob(sourced + "/*.mscz")
 
     # Generate PDFs, and get a list of charts from a glob.
-    charts = [generate(f, "tmp", "pdf", "books") for f in msfiles]
+    charts = [generate(f, tmpd, pdfd, bookd, logf) for f in msfiles]
     charts = sorted(charts, key=itemgetter('title'))
 
     # Generate list of title/PDF pairs for LaTeX
@@ -167,16 +206,32 @@ def main():
 
     for c in charts:
         title = c['title']
-        print("Chart: " + title)
         for k in c['pdfs']:
             pairs[k][title] = c['pdfs'][k]
 
-    print(json.dumps(pairs))
-
     for k in pairs:
         print("Key : " + k)
-        for name in pairs[k]:
-            print("\t" + name + " - " + pairs[k][name])
+        tex = generate_tex(pairs[k])
+        texfile = os.path.join(texd, "{}.tex".format(k))
+        with open(texfile, 'w') as f:
+            f.write(tex)
+
+        for i in range(2):
+            proc = subprocess.Popen(
+                ["pdflatex", "-output-directory", texd, texfile])
+            proc.wait()
+
+        subprocess.Popen([
+            "cp",
+            os.path.join(texd, "{}.pdf".format(k)),
+            os.path.join(bookd, "{}.pdf".format(k))
+        ]).wait()
+
+        # stdout=logf,
+        # stderr=logf)
+
+        # for name in pairs[k]:
+        #     print("\t" + name + " - " + pairs[k][name])
 
 
 if __name__ == "__main__":
