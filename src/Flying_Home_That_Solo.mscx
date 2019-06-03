@@ -219,18 +219,13 @@
             <root>14</root>
             <linkedMain/>
             </Harmony>
-          <Spanner type="Ottava">
-            <Ottava>
-              <subtype>8vb</subtype>
-              <linkedMain/>
-              </Ottava>
-            <next>
-              <location>
-                <measures>3</measures>
-                <fractions>1/2</fractions>
-                </location>
-              </next>
-            </Spanner>
+          <Tempo>
+            <tempo>3.33333</tempo>
+            <followText>1</followText>
+            <linkedMain/>
+            <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 200
+</text>
+            </Tempo>
           <Chord>
             <linkedMain/>
             <durationType>half</durationType>
@@ -494,10 +489,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -527,14 +518,6 @@
             <name>7</name>
             <linkedMain/>
             </Harmony>
-          <Spanner type="Ottava">
-            <prev>
-              <location>
-                <measures>-3</measures>
-                <fractions>-1/2</fractions>
-                </location>
-              </prev>
-            </Spanner>
           <Rest>
             <linkedMain/>
             <durationType>quarter</durationType>
@@ -921,10 +904,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1198,10 +1177,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -1293,9 +1268,9 @@
               </Articulation>
             <Note>
               <linkedMain/>
-              <pitch>70</pitch>
-              <tpc>12</tpc>
-              <tpc2>15</tpc2>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              <tpc2>13</tpc2>
               </Note>
             </Chord>
           <Chord>
@@ -1303,9 +1278,9 @@
             <durationType>eighth</durationType>
             <Note>
               <linkedMain/>
-              <pitch>70</pitch>
-              <tpc>12</tpc>
-              <tpc2>15</tpc2>
+              <pitch>72</pitch>
+              <tpc>14</tpc>
+              <tpc2>17</tpc2>
               </Note>
             </Chord>
           <Chord>
@@ -1735,10 +1710,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -2000,10 +1971,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>13</root>
@@ -2463,10 +2430,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -3031,10 +2994,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -3556,10 +3515,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -3931,10 +3886,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -4358,10 +4309,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -4770,10 +4717,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -5216,10 +5159,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -5423,16 +5362,6 @@
             <Note>
               <linkedMain/>
               <Spanner type="Tie">
-                <Tie>
-                  <linkedMain/>
-                  </Tie>
-                <next>
-                  <location>
-                    <fractions>1/8</fractions>
-                    </location>
-                  </next>
-                </Spanner>
-              <Spanner type="Tie">
                 <prev>
                   <location>
                     <measures>-1</measures>
@@ -5445,46 +5374,9 @@
               <tpc2>14</tpc2>
               </Note>
             </Chord>
-          <Tuplet>
-            <linkedMain/>
-            <normalNotes>2</normalNotes>
-            <actualNotes>3</actualNotes>
-            <baseNote>16th</baseNote>
-            <Number>
-              <style>Tuplet</style>
-              <text>3</text>
-              </Number>
-            </Tuplet>
           <Chord>
             <linkedMain/>
-            <durationType>16th</durationType>
-            <Spanner type="Slur">
-              <Slur>
-                <linkedMain/>
-                </Slur>
-              <next>
-                <location>
-                  <fractions>1/8</fractions>
-                  </location>
-                </next>
-              </Spanner>
-            <Note>
-              <linkedMain/>
-              <Spanner type="Tie">
-                <prev>
-                  <location>
-                    <fractions>-1/8</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
-              <pitch>63</pitch>
-              <tpc>11</tpc>
-              <tpc2>14</tpc2>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <durationType>16th</durationType>
+            <durationType>eighth</durationType>
             <Note>
               <linkedMain/>
               <pitch>65</pitch>
@@ -5494,25 +5386,7 @@
             </Chord>
           <Chord>
             <linkedMain/>
-            <durationType>16th</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>63</pitch>
-              <tpc>11</tpc>
-              <tpc2>14</tpc2>
-              </Note>
-            </Chord>
-          <endTuplet/>
-          <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
-            <Spanner type="Slur">
-              <prev>
-                <location>
-                  <fractions>-1/8</fractions>
-                  </location>
-                </prev>
-              </Spanner>
             <Note>
               <linkedMain/>
               <pitch>60</pitch>
@@ -5702,10 +5576,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>13</root>
@@ -6111,10 +5981,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -6568,10 +6434,6 @@
         </Measure>
       <Measure>
         <stretch>0.9</stretch>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -7343,19 +7205,14 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Ottava">
-              <Ottava>
-                <subtype>8vb</subtype>
-                <linked>
-                  </linked>
-                </Ottava>
-              <next>
-                <location>
-                  <measures>3</measures>
-                  <fractions>1/2</fractions>
-                  </location>
-                </next>
-              </Spanner>
+            <Tempo>
+              <tempo>3.33333</tempo>
+              <followText>1</followText>
+              <linked>
+                </linked>
+              <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 200
+</text>
+              </Tempo>
             <Chord>
               <linked>
                 </linked>
@@ -7653,11 +7510,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -7691,14 +7543,6 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Ottava">
-              <prev>
-                <location>
-                  <measures>-3</measures>
-                  <fractions>-1/2</fractions>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -8137,11 +7981,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -8455,11 +8294,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -8566,9 +8400,9 @@
               <Note>
                 <linked>
                   </linked>
-                <pitch>70</pitch>
-                <tpc>12</tpc>
-                <tpc2>15</tpc2>
+                <pitch>68</pitch>
+                <tpc>10</tpc>
+                <tpc2>13</tpc2>
                 </Note>
               </Chord>
             <Chord>
@@ -8578,9 +8412,9 @@
               <Note>
                 <linked>
                   </linked>
-                <pitch>70</pitch>
-                <tpc>12</tpc>
-                <tpc2>15</tpc2>
+                <pitch>72</pitch>
+                <tpc>14</tpc>
+                <tpc2>17</tpc2>
                 </Note>
               </Chord>
             <Chord>
@@ -9065,11 +8899,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -9363,11 +9192,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -9887,11 +9711,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -10528,11 +10347,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -11123,11 +10937,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -11542,11 +11351,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -12019,11 +11823,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -12479,11 +12278,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -12980,11 +12774,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -13215,17 +13004,6 @@
                 <linked>
                   </linked>
                 <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <Spanner type="Tie">
                   <prev>
                     <location>
                       <measures>-1</measures>
@@ -13238,51 +13016,10 @@
                 <tpc2>14</tpc2>
                 </Note>
               </Chord>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>16th</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
             <Chord>
               <linked>
                 </linked>
-              <durationType>16th</durationType>
-              <Spanner type="Slur">
-                <Slur>
-                  <linked>
-                    </linked>
-                  </Slur>
-                <next>
-                  <location>
-                    <fractions>1/8</fractions>
-                    </location>
-                  </next>
-                </Spanner>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>63</pitch>
-                <tpc>11</tpc>
-                <tpc2>14</tpc2>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>16th</durationType>
+              <durationType>eighth</durationType>
               <Note>
                 <linked>
                   </linked>
@@ -13294,27 +13031,7 @@
             <Chord>
               <linked>
                 </linked>
-              <durationType>16th</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>63</pitch>
-                <tpc>11</tpc>
-                <tpc2>14</tpc2>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            <Chord>
-              <linked>
-                </linked>
               <durationType>eighth</durationType>
-              <Spanner type="Slur">
-                <prev>
-                  <location>
-                    <fractions>-1/8</fractions>
-                    </location>
-                  </prev>
-                </Spanner>
               <Note>
                 <linked>
                   </linked>
@@ -13529,11 +13246,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -13995,11 +13707,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -14510,11 +14217,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
