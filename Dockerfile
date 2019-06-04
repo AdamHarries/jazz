@@ -13,7 +13,6 @@ RUN	apt-get update
 
 # Just install enough to download MuseScore - this is the slowest step, so this should cache it properly.
 RUN yes | apt-get install \
-    wget \
     jq \
     python3 \
     fuse \
@@ -44,7 +43,7 @@ ENV LANGUAGE en_GB.UTF-8
 
 WORKDIR /home/root
 
-RUN wget https://github.com/musescore/MuseScore/releases/download/v3.1/MuseScore-3.1.0-x86_64.AppImage
+RUN curl -O https://github.com/musescore/MuseScore/releases/download/v3.1/MuseScore-3.1.0-x86_64.AppImage
 
 ADD make_books.py make_books.py
 ADD src src
