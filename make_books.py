@@ -74,9 +74,9 @@ def generate_pdfs(path, tmpd, outd, bookd, logf):
         # If we have a compressed file, generate an XML variant which we can process
         if fileExtention == ".mscz":
             if should_createf(path, mscx):
-                proc = subprocess.Popen([mscore, "-o", mscx, "-P", path],
-                                        stdout=logfo,
-                                        stderr=logfo)
+                proc = subprocess.Popen([mscore, "-o", mscx, "-P", path])
+                # stdout=logfo,
+                # stderr=logfo)
                 proc.wait()
 
         # If not, just use that, and don't regenerate an XML variant
@@ -133,9 +133,9 @@ def generate_pdfs(path, tmpd, outd, bookd, logf):
                 json.dump(job_data, outfile)
 
             proc = subprocess.Popen(
-                [mscore, "-j", jsonfile, "-S", "general_style.mss"],
-                stdout=logfo,
-                stderr=logfo)
+                [mscore, "-j", jsonfile, "-S", "general_style.mss"])
+            # stdout=logfo,
+            # stderr=logfo)
             proc.wait()
 
         print("Generated.")
@@ -256,9 +256,9 @@ def main():
         with open(logf, 'w+') as logfo:
             for i in range(2):
                 proc = subprocess.Popen(
-                    ["xelatex", "-output-directory", texd, texfile],
-                    stdout=logfo,
-                    stderr=logfo)
+                    ["xelatex", "-output-directory", texd, texfile])
+                # stdout=logfo,
+                # stderr=logfo)
                 proc.wait()
 
         print("\tCopying")
