@@ -35,7 +35,8 @@ RUN yes | apt-get install \
     curl \
     jq \
     xvfb \
-    libgl1-mesa-dri
+    libgl1-mesa-dri \
+    wget
 
 ENV LC_ALL en_GB.UTF-8
 ENV LANG en_GB.UTF-8
@@ -43,7 +44,7 @@ ENV LANGUAGE en_GB.UTF-8
 
 WORKDIR /home/root
 
-RUN curl -s -O https://github.com/musescore/MuseScore/releases/download/v3.1/MuseScore-3.1.0-x86_64.AppImage
+RUN wget -q https://github.com/musescore/MuseScore/releases/download/v3.1/MuseScore-3.1.0-x86_64.AppImage
 
 ADD make_books.py make_books.py
 ADD src src
