@@ -34,7 +34,9 @@ RUN yes | apt-get install \
     bash \
     ca-certificates \
     curl \
-    jq
+    jq \
+    xvfb \
+    libgl1-mesa-dri
 
 ENV LC_ALL en_GB.UTF-8
 ENV LANG en_GB.UTF-8
@@ -48,8 +50,6 @@ ADD make_books.py make_books.py
 ADD src src
 ADD MuseJazzText.otf MuseJazzText.otf
 ADD general_style.mss general_style.mss
-
-RUN yes | apt-get install xvfb libgl1-mesa-dri
 
 RUN chmod 644 MuseJazzText.otf && cp MuseJazzText.otf /usr/local/share/fonts && fc-cache -v
 

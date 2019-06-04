@@ -1,7 +1,6 @@
 #!/bin/sh -l
 
 set -e
-set -o pipefail
 
 # Install musescore to start off with.
 chmod a+x MuseScore-3.1.0-x86_64.AppImage
