@@ -16,7 +16,7 @@ Xvfb :99 -screen 0 1024x768x24 +extension GLX +render -noreset >> xsession.log 2
 export DISPLAY=:99
 
 # Generate the pdfs.
-# python3 make_books.py
+python3 make_books.py
 
 
 # The deployment aspects of this script are heavily borrowed from JasonEtco's
