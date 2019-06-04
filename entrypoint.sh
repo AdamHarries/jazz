@@ -3,8 +3,6 @@
 set -e
 set -o pipefail
 
-sh -c "echo $*"
-
 # Install musescore to start off with.
 chmod a+x MuseScore-3.1.0-x86_64.AppImage
 ./MuseScore-3.1.0-x86_64.AppImage install
@@ -26,33 +24,33 @@ export DISPLAY=:99
 # upload-to-release script
 
 # Ensure that the GITHUB_TOKEN secret is included
-if [[ -z "$GITHUB_TOKEN" ]]; then
-    echo "Set the GITHUB_TOKEN env variable."
-    exit 1
-fi
+# if [[ -z "$GITHUB_TOKEN" ]]; then
+#     echo "Set the GITHUB_TOKEN env variable."
+#     exit 1
+# fi
 
-for f in $(ls books)
-do
-    path=books/$f
-    
-    # Prepare the headers
-    AUTH_HEADER="Authorization: token ${GITHUB_TOKEN}"
-    CONTENT_LENGTH_HEADER="Content-Length: $(stat -c%s "$path")"
-    CONTENT_TYPE_HEADER="Content-Type: application/pdf"
-    
-    # Build the Upload URL from the various pieces
-    RELEASE_ID="latest"
-    FILENAME=$f
-    UPLOAD_URL="https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets?name=${FILENAME}"
-    echo "$UPLOAD_URL"
-    
-    # Upload the file
-    curl \
-    -sSL \
-    -XPOST \
-    -H "${AUTH_HEADER}" \
-    -H "${CONTENT_LENGTH_HEADER}" \
-    -H "${CONTENT_TYPE_HEADER}" \
-    --upload-file "$path" \
-    "${UPLOAD_URL}"
-done
+# for f in $(ls books)
+# do
+#     path=books/$f
+
+#     # Prepare the headers
+#     AUTH_HEADER="Authorization: token ${GITHUB_TOKEN}"
+#     CONTENT_LENGTH_HEADER="Content-Length: $(stat -c%s "$path")"
+#     CONTENT_TYPE_HEADER="Content-Type: application/pdf"
+
+#     # Build the Upload URL from the various pieces
+#     RELEASE_ID="latest"
+#     FILENAME=$f
+#     UPLOAD_URL="https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets?name=${FILENAME}"
+#     echo "$UPLOAD_URL"
+
+#     # Upload the file
+#     curl \
+#     -sSL \
+#     -XPOST \
+#     -H "${AUTH_HEADER}" \
+#     -H "${CONTENT_LENGTH_HEADER}" \
+#     -H "${CONTENT_TYPE_HEADER}" \
+#     --upload-file "$path" \
+#     "${UPLOAD_URL}"
+# done
