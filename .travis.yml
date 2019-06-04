@@ -6,8 +6,6 @@ os:
 services:
 - docker
 
-env:
-  - TRAVIS_TAG=release
 before_install:
 - docker build -t createbooks .
 script:
@@ -17,7 +15,6 @@ before_deploy:
 - docker cp $(docker ps -alq):/home/root/books ./books
 - ls -lthra
 - ls books
-- export TRAVIS_TAG="Head"
 
 deploy:
   provider: releases
@@ -28,4 +25,5 @@ deploy:
     - "books/*.pdf"
   skip_cleanup: true
   on:
+    tags: true
     repo: AdamHarries/jazz
