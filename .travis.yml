@@ -5,6 +5,9 @@ os:
 - linux
 services:
 - docker
+
+env:
+  - TRAVIS_TAG=release
 before_install:
 - docker build -t createbooks .
 script:
@@ -24,4 +27,5 @@ deploy:
     - "books/*.pdf"
   skip_cleanup: true
   on:
+    tags: false
     repo: AdamHarries/jazz
