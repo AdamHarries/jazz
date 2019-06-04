@@ -138,7 +138,7 @@ def generate_pdfs(path, tmpd, outd, bookd, logf):
                 stderr=logfo)
             proc.wait()
 
-        print("Generated: ")
+        print("Generated.")
 
         print("")
 
@@ -190,7 +190,7 @@ def generate_tex(key, tp_pairs):
     # Explicit copy
     tex += tex_header.format(pretty_print(key))
 
-    for title, pdf in tp_pairs.items():
+    for (title, pdf) in sorted(tp_pairs.items(), key=lambda kv: kv[0]):
         tex += """
 % {}
     \\chart{{{}}}
