@@ -2,25 +2,21 @@ language: minimal
 sudo: required
 dist: trusty
 os:
-  - linux
-
+- linux
 services:
-  - docker
-
+- docker
 before_install:
-  - docker build -t createbooks .
-
+- docker build -t createbooks .
 script:
-  - docker run -it --cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfined createbooks
-
+- docker run -it --cap-add SYS_ADMIN --device /dev/fuse --security-opt apparmor:unconfined
+  createbooks
 before_deploy:
-  - docker cp $(docker ps -alq):/home/root/books ./books
+- docker cp $(docker ps -alq):/home/root/books ./books
 
 deploy:
   provider: releases
   api_key:
-    secure: y6y3uPQUai5Ko89sJmwWH2dRMhNgMtvvqGfxAwNyHX46b9YKgL49+DEU2IlGcXYR2YaMcR/Za+OuJ6UDs3zGS5w8PEQfrfUEBdfBTvnHRvKbmBnkfn6AQgk7v8lU/BiYNyKdTY678l0Gjk1hmdb8q1Ve2w95VBVR+zHZjftEUu1iRyOl0FITHqDtgm3rCD18E6Py7tnCiJAc7zJ0/Fvi9aufrJLnEq8lmoPDPB1WsxjC962kwD5+n7GXH3gj9uPV9aLrWw2Qsvya672a6rDMOz37BfTRzHsbXs1lecAQ54SkMy2+vXNzl366lLWlS7Mrf2ZjH7BWt7MOcK4Wj8YiNQ7zXvXLo9hDxV19CfrrWoQz56NevRPOhQ2C1e/AXo+Oim7GysRJnK0Pj2pET6MtCnISU3UyklpJ+CjVE4sbyq5gNsbBt23KOb6da17aaXzH9ydPURaWKtML5Y9aSQAkj2gbkssAPFfXIhbAoPW12R4fjDq8AtZ2ek+ulfxpNxH87nK4hSY1vknrY8lkyjDe18D8yAXg6XEqDoOmpHPPJ7/s2djJSEVg/LWHvXOXgnJovBTtllxvaAh40CMXh6jvpKrSWj/9DvvNJ90cKtoBgPuNvycH/XK3PKwpTcWrIMcMtGmrJNjXaXd/ufKK3vh66AHKsk8vSNfZBLsPjyMVit4=
-  file_glob: true
-  file:
-    - "books/*"
-  skip_cleanup: true
+    secure: WcDVy1vWTICgQPk3sCGckyD0lO/8LPXNXiwBodv/Lse5rFhIa9QNhN1kAz6SlCh/mVDehma92SgSbj4atotDQNBuEubz4vRzz2zdds8FlqiD2Nsf/mCNaSV9Zi2GiJ1kkxJdFXl2MnqkaIHIArzUyNpReLRA9r7ISLR+aOm8u9MA8BfvMF0un/37aeshimy5Y2fBiTxM922fzRNuvcCWDuOJR9UK+VKaloBB4CUNF7lPXXzTwIcLDLban3YoRiutMXvr1/eqWB31QqK+ijNy49pUlOmD5Vtc4MjWDCYqvd+viV7eKjTVzFSiVVJJfsBSwtesdXX34AL4lutqa19q4BBWlIHKSY/XoFdmI8EpNGrwjuZ2HIkaM/QgS91TBEYNgyHzY+LEMkBu1Nbro3hVnncmP6rdhO4xrLnuVYp4lXTspkoxcR+bgkQDN7ymsCRXKhENrVXQ9f0wyA2BMpY7wxSSMnURTvOWDsLMZXIGDBz0fmdyq9VVvXdFWLDrxVTGCWr055b5i3+zZ4qhgGQSjHOqzWZHpm5EUBB/2DcZBadgAZIbeGVDM7ZpccIinD8Vx5KauAsxNvTH6JHNmkkSN4uwjyARo5SDbDJ/WwSwijOhBF+OGJbdGRQkz+nF0gNZb58ZjNFfbLbAHeJMLn2O7hbL95uoUSG7zGGwDqr8UOY=
+  file: books/*
+  on:
+    repo: AdamHarries/jazz
