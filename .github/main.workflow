@@ -1,4 +1,4 @@
 workflow "Deploy books" {
-  resolves = ["Upload to Release"]
+  resolves = []
   on = "push"
 }
