@@ -1,10 +1,5 @@
 FROM debian:stretch
 
-LABEL "com.github.actions.name"="Typeset and Release"
-LABEL "com.github.actions.description"="Typeset the scores into books, and push them to the releases page"
-LABEL "com.github.actions.icon"="music"
-LABEL "com.github.actions.color"="purple"
-
 LABEL "repository"="http://github.com/AdamHarries/jazz"
 LABEL "homepage"="http://github.com/AdamHarries/jazz"
 LABEL "maintainer"="Adam Harries <harries.adam@gmail.com>"
