@@ -149,13 +149,17 @@ def generate_pdfs(path, tmpd, outd, bookd, logf):
 # Header and footer for the tex file that will become our books
 tex_header = """
 %!TEX encoding = UTF-8 Unicode
-\\documentclass{{report}}
+\\documentclass{{book}}
 \\usepackage{{pdfpages}}
 \\usepackage{{hyperref}}
 \\usepackage{{fontspec}}
+\\usepackage{{tocloft}}    % tocloft for table of contents style
+\\usepackage[compact]{{titlesec}}  % titlesec for title section layout
+ \\usepackage{{multicol}}
+
 \\setmainfont[Ligatures={{Common,TeX}}, Mapping=tex-ansi]{{MuseJazzText}}
 
-\\renewcommand{{\\contentsname}}{{Stompin' At Summerhall - {} }}
+\\renewcommand{{\\contentsname}}{{Stompin' At Summerhall - {} \\ {{\\small Untagged prerelease.}} }}
 
 \\newcommand{{\\chart}}[1]{{%
 \\par\\refstepcounter{{section}}% Increase section counter
@@ -164,9 +168,23 @@ tex_header = """
 % Add more content here, if needed.
 }}
 
+\\setlength{{\\cftbeforetoctitleskip}}{{-10em}}
+
 \\begin{{document}}
 
-\\tableofcontents
+
+% Uncomment the below, and comment the \\tableofcontents command if the ToC ever overspills to the next page.
+
+% \\makeatletter
+% \\chapter*{{\\contentsname
+%  \\@mkboth{{%
+%    \\MakeUppercase\\contentsname}}{{\\MakeUppercase\\contentsname}}}}
+% \\begin{{multicols*}}{{2}}
+%  \\@starttoc{{toc}}
+% \\end{{multicols*}}
+% \\makeatother
+
+ \\tableofcontents
 
 \\clearpage
 """
@@ -196,6 +214,7 @@ def generate_tex(key, tp_pairs):
     \\chart{{{}}}
     \\includepdf[pages=-]{{{}}}
     """.format(title, title, pdf)
+    
     tex += tex_footer
     return tex
 
