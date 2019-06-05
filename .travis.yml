@@ -13,8 +13,6 @@ script:
   createbooks
 before_deploy:
 - docker cp $(docker ps -alq):/home/root/books ./books
-- ls -lthra
-- ls books
 
 deploy:
   provider: releases
