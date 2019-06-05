@@ -1,4 +1,7 @@
-# jazz
+[![Build Status](https://travis-ci.org/AdamHarries/jazz.svg?branch=master)](https://travis-ci.org/AdamHarries/jazz)
+
+# Jazz
+
 Scores &amp;cetera for Stompin' At Summerhall.
 
 The latest releases of our "books" can be found here: 
