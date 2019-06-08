@@ -160,7 +160,7 @@ tex_header = """
 
 \\setmainfont[Ligatures={{Common,TeX}}, Mapping=tex-ansi]{{MuseJazzText}}
 
-\\renewcommand{{\\contentsname}}{{Stompin' At Summerhall - {} \\ {{\\small Untagged prerelease.}} }}
+\\renewcommand{{\\contentsname}}{{Stompin' At Summerhall - {} \\ {{\\small Release "{}".}} }}
 
 \\newcommand{{\\chart}}[1]{{%
 \\par\\refstepcounter{{section}}% Increase section counter
@@ -195,7 +195,7 @@ tex_footer = """
 """
 
 
-def generate_tex(key, tp_pairs):
+def generate_tex(key, tp_pairs, release_name):
     # Print a key with a nice flat sign
     def pretty_print(k):
         if k == eb_key_name:
@@ -207,7 +207,7 @@ def generate_tex(key, tp_pairs):
 
     tex = ""
     # Explicit copy
-    tex += tex_header.format(pretty_print(key))
+    tex += tex_header.format(pretty_print(key), release_name)
 
     for (title, pdf) in sorted(tp_pairs.items(), key=lambda kv: kv[0]):
         tex += """
@@ -221,7 +221,7 @@ def generate_tex(key, tp_pairs):
 
 
 # Main program entrypoint
-def main(source_d, book_d, build_d):
+def main(source_d, book_d, build_d, release_name):
 
     # Make the name of other directories based on the build directory.
     tmpd = os.path.join(build_d, "tmp")
@@ -259,7 +259,7 @@ def main(source_d, book_d, build_d):
     for k in pairs:
         print("Key : " + k)
         print("\tGenerating tex links and imports")
-        tex = generate_tex(k, pairs[k])
+        tex = generate_tex(k, pairs[k], release_name)
         texfile = os.path.join(texd, "{}.tex".format(k))
         with open(texfile, 'w') as f:
             f.write(tex)
@@ -303,6 +303,19 @@ if __name__ == "__main__":
         help='The name of a temporary directory to store intermediate files in'
     )
 
+    parser.add_argument(
+        '--release_name', 
+        dest='release_name', 
+        default='Custom', 
+        help='For automated releases, the specific tag that was used to build the books'
+    )
+
     args = parser.parse_args()
 
-    main(args.source_d, args.book_d, args.build_d)
+    print("Source directory: " + args.source_d)
+    print("Book directory: " + args.book_d)
+    print("Build directory: " + args.build_d)
+    print("Release name: " + args.release_name)
+    
+
+    main(args.source_d, args.book_d, args.build_d, args.release_name)

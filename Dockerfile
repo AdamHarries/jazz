@@ -43,6 +43,7 @@ RUN wget -q https://github.com/musescore/MuseScore/releases/download/v3.1/MuseSc
 
 ADD make_books.py make_books.py
 ADD src src
+ADD drafts drafts
 ADD MuseJazzText.otf MuseJazzText.otf
 ADD general_style.mss general_style.mss
 
