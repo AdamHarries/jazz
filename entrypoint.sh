@@ -23,3 +23,5 @@ python3 make_books.py --source_d drafts --book_d draft_books
 for f in $(ls draft_books); do
     mv draft_books/$f draft_books/draft_$f
 done
+
+echo "Generated all books!"
