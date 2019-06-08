@@ -12,6 +12,7 @@ import os
 import glob
 import json
 import subprocess
+import argparse
 from operator import itemgetter
 from pprint import pprint
 import xml.etree.ElementTree as et
@@ -53,7 +54,7 @@ def should_createf(sourcef, *targetfs):
 
 # Generate PDF files for a score, and return information for the rest of the
 # pipeline to use when creating the books.
-def generate_pdfs(path, tmpd, outd, bookd, logf):
+def generate_pdfs(path, tmpd, outd, book_d, logf):
     track_info = {}
     track_info['pdfs'] = {}
     with open(logf, 'w+') as logfo:
@@ -214,30 +215,22 @@ def generate_tex(key, tp_pairs):
     \\chart{{{}}}
     \\includepdf[pages=-]{{{}}}
     """.format(title, title, pdf)
-    
+
     tex += tex_footer
     return tex
 
 
 # Main program entrypoint
-def main():
-    sourced = "src"
-    buildd = "build"
-    tmpd = os.path.join(buildd, "tmp")
-    pdfd = os.path.join(buildd, "pdf")
-    texd = os.path.join(buildd, "tex")
-    bookd = "books"
-    logf = os.path.join(buildd, "log.txt")
+def main(source_d, book_d, build_d):
 
-    # Get command line arguments for the folder we want to use.
-    if len(sys.argv) < 2:
-        print("Usage: getPartNames.py <source_directory>")
-        print("Defaulting to folder 'src'\n")
-    else:
-        sourced = sys.argv[1]
+    # Make the name of other directories based on the build directory.
+    tmpd = os.path.join(build_d, "tmp")
+    pdfd = os.path.join(build_d, "pdf")
+    texd = os.path.join(build_d, "tex")
+    logf = os.path.join(build_d, "log.txt")
 
     # Make directories if they don't exist
-    for d in [buildd, tmpd, pdfd, texd, bookd]:
+    for d in [build_d, tmpd, pdfd, texd, book_d]:
         if not os.path.exists(d):
             os.makedirs(d)
 
@@ -246,10 +239,10 @@ def main():
         logfo.writelines("")
 
     # get a list of musescore files
-    msfiles = glob.glob(sourced + "/*.msc[zx]")
+    msfiles = glob.glob(source_d + "/*.msc[zx]")
 
     # Generate PDFs, and get a list of charts from a glob.
-    charts = [generate_pdfs(f, tmpd, pdfd, bookd, logf) for f in msfiles]
+    charts = [generate_pdfs(f, tmpd, pdfd, book_d, logf) for f in msfiles]
     charts = sorted(charts, key=itemgetter('title'))
 
     # Generate list of title/PDF pairs for LaTeX
@@ -284,11 +277,32 @@ def main():
         subprocess.Popen([
             "cp",
             os.path.join(texd, "{}.pdf".format(k)),
-            os.path.join(bookd, "{}.pdf".format(k))
+            os.path.join(book_d, "{}.pdf".format(k))
         ]).wait()
 
     print("Done.")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        description=
+        "Given a directory of musescore files containing parts, build pdf files for each part"
+    )
+    parser.add_argument('--source_d',
+                        dest='source_d',
+                        default='src',
+                        help='The source directory containing musescore files')
+    parser.add_argument('--book_d',
+                        dest='book_d',
+                        default='books',
+                        help='The directory to store the created books')
+    parser.add_argument(
+        '--build_d',
+        dest='build_d',
+        default='build',
+        help='The name of a temporary directory to store intermediate files in'
+    )
+
+    args = parser.parse_args()
+
+    main(args.source_d, args.book_d, args.build_d)
