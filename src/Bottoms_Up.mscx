@@ -321,7 +321,7 @@
             <tempo>3</tempo>
             <followText>1</followText>
             <linkedMain/>
-            <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 180</text>
+            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
             </Tempo>
           <Chord>
             <linkedMain/>
@@ -2169,7 +2169,6 @@
           </voice>
         </Measure>
       <Measure>
-        <endRepeat>2</endRepeat>
         <voice>
           <Harmony>
             <root>14</root>
@@ -11308,7 +11307,7 @@
                   </location>
                 <indexDiff>5</indexDiff>
                 </linked>
-              <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 180</text>
+              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
               </Tempo>
             <Harmony>
               <root>10</root>
@@ -13117,7 +13116,6 @@
             </voice>
           </Measure>
         <Measure>
-          <endRepeat>2</endRepeat>
           <voice>
             <Harmony>
               <root>11</root>
@@ -15424,7 +15422,7 @@
               <followText>1</followText>
               <linked>
                 </linked>
-              <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 180</text>
+              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
               </Tempo>
             <Chord>
               <linked>
@@ -17320,9 +17318,6 @@
           <LayoutBreak>
             <subtype>line</subtype>
             </LayoutBreak>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -17563,7 +17558,6 @@
             </voice>
           </Measure>
         <Measure>
-          <endRepeat>2</endRepeat>
           <voice>
             <Harmony>
               <root>14</root>
@@ -20179,7 +20173,7 @@
                   </location>
                 <indexDiff>5</indexDiff>
                 </linked>
-              <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 180</text>
+              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
               </Tempo>
             <Harmony>
               <root>12</root>
@@ -22353,7 +22347,6 @@
             </voice>
           </Measure>
         <Measure>
-          <endRepeat>2</endRepeat>
           <voice>
             <Harmony>
               <root>13</root>

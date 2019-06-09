@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -323,6 +323,11 @@
             <root>14</root>
             <linkedMain/>
             </Harmony>
+          <RehearsalMark>
+            <linkedMain/>
+            <text>Intro/Riff over solos
+</text>
+            </RehearsalMark>
           <Chord>
             <linkedMain/>
             <durationType>quarter</durationType>
@@ -610,6 +615,10 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
+        <LayoutBreak>
+          <linkedMain/>
+          <subtype>section</subtype>
+          </LayoutBreak>
         <voice>
           <Harmony>
             <root>17</root>
@@ -685,6 +694,10 @@
             <root>14</root>
             <linkedMain/>
             </Harmony>
+          <RehearsalMark>
+            <linkedMain/>
+            <text>Head</text>
+            </RehearsalMark>
           <Chord>
             <linkedMain/>
             <durationType>eighth</durationType>
@@ -9473,12 +9486,24 @@
               <linked>
                 </linked>
               </Harmony>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-2</staves>
+                  </location>
+                <indexDiff>5</indexDiff>
+                </linked>
+              <text>Intro/Riff over solos
+</text>
+              </RehearsalMark>
             <Chord>
               <linked>
+                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>quarter</durationType>
               <Note>
                 <linked>
+                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>63</pitch>
                 <tpc>11</tpc>
@@ -9787,6 +9812,14 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -9870,12 +9903,23 @@
               <linked>
                 </linked>
               </Harmony>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-2</staves>
+                  </location>
+                <indexDiff>1</indexDiff>
+                </linked>
+              <text>Head</text>
+              </RehearsalMark>
             <Chord>
               <linked>
+                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               <Note>
                 <linked>
+                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>67</pitch>
                 <tpc>15</tpc>
@@ -13023,6 +13067,12 @@
               <linked>
                 </linked>
               </Harmony>
+            <RehearsalMark>
+              <linked>
+                </linked>
+              <text>Intro/Riff over solos
+</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -13354,6 +13404,11 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <linked>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -13440,6 +13495,11 @@
               <linked>
                 </linked>
               </Harmony>
+            <RehearsalMark>
+              <linked>
+                </linked>
+              <text>Head</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -16807,14 +16867,24 @@
                 <indexDiff>1</indexDiff>
                 </linked>
               </Harmony>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-1</staves>
+                  </location>
+                <indexDiff>5</indexDiff>
+                </linked>
+              <text>Intro/Riff over solos
+</text>
+              </RehearsalMark>
             <Chord>
               <linked>
-                <indexDiff>1</indexDiff>
+                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>quarter</durationType>
               <Note>
                 <linked>
-                  <indexDiff>1</indexDiff>
+                  <indexDiff>2</indexDiff>
                   </linked>
                 <pitch>63</pitch>
                 <tpc>11</tpc>
@@ -17140,6 +17210,14 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -17226,12 +17304,23 @@
               <linked>
                 </linked>
               </Harmony>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-1</staves>
+                  </location>
+                <indexDiff>1</indexDiff>
+                </linked>
+              <text>Head</text>
+              </RehearsalMark>
             <Chord>
               <linked>
+                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               <Note>
                 <linked>
+                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>67</pitch>
                 <tpc>15</tpc>
