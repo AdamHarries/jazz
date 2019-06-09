@@ -300,6 +300,11 @@
           <text>Bottom's Up
 </text>
           </Text>
+        <Text>
+          <linkedMain/>
+          <style>Composer</style>
+          <text>Illinois Jacquet</text>
+          </Text>
         </VBox>
       <Measure>
         <startRepeat/>
@@ -317,12 +322,6 @@
             <root>13</root>
             <linkedMain/>
             </Harmony>
-          <Tempo>
-            <tempo>3</tempo>
-            <followText>1</followText>
-            <linkedMain/>
-            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
-            </Tempo>
           <Chord>
             <linkedMain/>
             <durationType>quarter</durationType>
@@ -8493,11 +8492,11 @@
         </Measure>
       <Measure>
         <voice>
-          <Rest>
+          <RepeatMeasure>
             <linkedMain/>
             <durationType>measure</durationType>
             <duration>4/4</duration>
-            </Rest>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
@@ -8507,75 +8506,20 @@
             <name>6</name>
             <linkedMain/>
             </Harmony>
-          <Chord>
+          <RepeatMeasure>
             <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
+          <RepeatMeasure>
             <linkedMain/>
             <durationType>measure</durationType>
             <duration>4/4</duration>
-            </Rest>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
@@ -8585,75 +8529,20 @@
             <name>7</name>
             <linkedMain/>
             </Harmony>
-          <Chord>
+          <RepeatMeasure>
             <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
+          <RepeatMeasure>
             <linkedMain/>
             <durationType>measure</durationType>
             <duration>4/4</duration>
-            </Rest>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
@@ -8663,75 +8552,20 @@
             <name>7</name>
             <linkedMain/>
             </Harmony>
-          <Chord>
+          <RepeatMeasure>
             <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
-          <Chord>
-            <linkedMain/>
-            <BeamMode>no</BeamMode>
-            <durationType>quarter</durationType>
-            <noStem>1</noStem>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <head>slash</head>
-              <play>0</play>
-              <fixed>1</fixed>
-              <fixedLine>4</fixedLine>
-              </Note>
-            </Chord>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
         <voice>
-          <Rest>
+          <RepeatMeasure>
             <linkedMain/>
             <durationType>measure</durationType>
             <duration>4/4</duration>
-            </Rest>
+            </RepeatMeasure>
           </voice>
         </Measure>
       <Measure>
@@ -11280,8 +11114,13 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Illinois Jacquet</text>
             </Text>
           </VBox>
         <Measure>
@@ -11298,31 +11137,17 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>3</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>5</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
-              </Tempo>
             <Harmony>
               <root>10</root>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               </Harmony>
             <Chord>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>quarter</durationType>
               <Note>
                 <linked>
-                  <indexDiff>2</indexDiff>
                   </linked>
                 <pitch>72</pitch>
                 <tpc>14</tpc>
@@ -12108,12 +11933,12 @@
         <Measure>
           <stretch>0</stretch>
           <voice>
-            <Rest>
+            <RepeatMeasure>
               <linked>
                 </linked>
               <durationType>measure</durationType>
               <duration>4/4</duration>
-              </Rest>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
@@ -12125,85 +11950,23 @@
               <linked>
                 </linked>
               </Harmony>
-            <Chord>
+            <RepeatMeasure>
               <linked>
                 </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
+              <durationType>measure</durationType>
+              <duration>4/4</duration>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
           <stretch>0</stretch>
           <voice>
-            <Rest>
+            <RepeatMeasure>
               <linked>
                 </linked>
               <durationType>measure</durationType>
               <duration>4/4</duration>
-              </Rest>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
@@ -12215,85 +11978,23 @@
               <linked>
                 </linked>
               </Harmony>
-            <Chord>
+            <RepeatMeasure>
               <linked>
                 </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
+              <durationType>measure</durationType>
+              <duration>4/4</duration>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
           <stretch>0</stretch>
           <voice>
-            <Rest>
+            <RepeatMeasure>
               <linked>
                 </linked>
               <durationType>measure</durationType>
               <duration>4/4</duration>
-              </Rest>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
@@ -12305,74 +12006,12 @@
               <linked>
                 </linked>
               </Harmony>
-            <Chord>
+            <RepeatMeasure>
               <linked>
                 </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <BeamMode>no</BeamMode>
-              <durationType>quarter</durationType>
-              <noStem>1</noStem>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <head>slash</head>
-                <play>0</play>
-                <fixed>1</fixed>
-                <fixedLine>4</fixedLine>
-                </Note>
-              </Chord>
+              <durationType>measure</durationType>
+              <duration>4/4</duration>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
@@ -12381,12 +12020,12 @@
             <subtype>line</subtype>
             </LayoutBreak>
           <voice>
-            <Rest>
+            <RepeatMeasure>
               <linked>
                 </linked>
               <durationType>measure</durationType>
               <duration>4/4</duration>
-              </Rest>
+              </RepeatMeasure>
             </voice>
           </Measure>
         <Measure>
@@ -15394,8 +15033,10 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
+            <linked>
+              </linked>
+            <style>Composer</style>
+            <text>Illinois Jacquet</text>
             </Text>
           </VBox>
         <Measure>
@@ -15417,13 +15058,6 @@
               <linked>
                 </linked>
               </Harmony>
-            <Tempo>
-              <tempo>3</tempo>
-              <followText>1</followText>
-              <linked>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
-              </Tempo>
             <Chord>
               <linked>
                 </linked>
@@ -20146,8 +19780,13 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Illinois Jacquet</text>
             </Text>
           </VBox>
         <Measure>
@@ -20164,31 +19803,17 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>3</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>5</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 180</text>
-              </Tempo>
             <Harmony>
               <root>12</root>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               </Harmony>
             <Chord>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>quarter</durationType>
               <Note>
                 <linked>
-                  <indexDiff>2</indexDiff>
                   </linked>
                 <pitch>72</pitch>
                 <tpc>14</tpc>

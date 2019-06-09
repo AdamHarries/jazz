@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -299,6 +299,11 @@
           <style>Title</style>
           <text>Sandu</text>
           </Text>
+        <Text>
+          <linkedMain/>
+          <style>Composer</style>
+          <text>Clifford Brown</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
@@ -307,12 +312,6 @@
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Tempo>
-            <tempo>2</tempo>
-            <followText>1</followText>
-            <linkedMain/>
-            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-            </Tempo>
           <Rest>
             <linkedMain/>
             <dots>1</dots>
@@ -613,10 +612,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -1004,10 +999,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -1336,10 +1327,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -4553,8 +4540,10 @@
             <text>Sandu</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
+            <linked>
+              </linked>
+            <style>Composer</style>
+            <text>Clifford Brown</text>
             </Text>
           </VBox>
         <Measure>
@@ -4565,13 +4554,6 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Rest>
               <linked>
                 </linked>
@@ -4918,9 +4900,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -5370,9 +5350,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -5755,9 +5733,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -6421,8 +6397,13 @@
             <text>Sandu</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Clifford Brown</text>
             </Text>
           </VBox>
         <Measure>
@@ -6438,20 +6419,8 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>3</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Rest>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <dots>1</dots>
               <durationType>quarter</durationType>
@@ -6796,12 +6765,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -7251,12 +7215,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -7639,12 +7598,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -8311,8 +8265,13 @@
             <text>Sandu</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Clifford Brown</text>
             </Text>
           </VBox>
         <Measure>
@@ -8328,20 +8287,8 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>3</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Rest>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <dots>1</dots>
               <durationType>quarter</durationType>
@@ -8670,12 +8617,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -9101,12 +9043,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -9464,12 +9401,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>

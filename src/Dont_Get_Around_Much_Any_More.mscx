@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -299,6 +299,18 @@
           <style>Title</style>
           <text>Don't Get Around Much Any More</text>
           </Text>
+        <Text>
+          <linkedMain/>
+          <style>Composer</style>
+          <text>Duke Ellington (1940)
+</text>
+          </Text>
+        <Text>
+          <linkedMain/>
+          <style>Lyricist</style>
+          <text>Bob Russell (1942)
+</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
@@ -311,12 +323,6 @@
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Tempo>
-            <tempo>2</tempo>
-            <followText>1</followText>
-            <linkedMain/>
-            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-            </Tempo>
           <Rest>
             <linkedMain/>
             <durationType>eighth</durationType>
@@ -574,10 +580,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>20</root>
@@ -875,10 +877,6 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>18</root>
@@ -1103,10 +1101,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>16</root>
@@ -1339,10 +1333,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>23</root>
@@ -1749,10 +1739,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>20</root>
@@ -5543,8 +5529,18 @@
             <text>Don't Get Around Much Any More</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
+            <linked>
+              </linked>
+            <style>Composer</style>
+            <text>Duke Ellington (1940)
+</text>
+            </Text>
+          <Text>
+            <linked>
+              </linked>
+            <style>Lyricist</style>
+            <text>Bob Russell (1942)
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -5560,13 +5556,6 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Rest>
               <linked>
                 </linked>
@@ -5868,9 +5857,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -6216,9 +6203,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -6479,9 +6464,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -6751,9 +6734,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -7228,9 +7209,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -7571,6 +7550,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <name>II</name>
@@ -7826,8 +7808,24 @@
             <text>Don't Get Around Much Any More</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Duke Ellington (1940)
+</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Lyricist</style>
+            <text>Bob Russell (1942)
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -7843,20 +7841,8 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>4</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Rest>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
@@ -8156,12 +8142,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -8513,12 +8494,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -8786,12 +8762,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -9061,12 +9032,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -9541,12 +9507,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -10122,8 +10083,24 @@
             <text>Don't Get Around Much Any More</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Duke Ellington (1940)
+</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Lyricist</style>
+            <text>Bob Russell (1942)
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -10134,20 +10111,8 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>4</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Rest>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
@@ -10430,12 +10395,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -10769,12 +10729,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11030,12 +10985,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11292,12 +11242,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11747,12 +11692,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>

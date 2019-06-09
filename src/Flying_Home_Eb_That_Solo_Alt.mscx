@@ -199,7 +199,7 @@
         <Text>
           <linkedMain/>
           <style>Title</style>
-          <text>Flying Home (That Solo - Alt)
+          <text>Flying Home (Eb) (That Solo - Alt)
 </text>
           </Text>
         <Text>
@@ -6806,7 +6806,7 @@
             <linked>
               </linked>
             <style>Title</style>
-            <text>Flying Home (That Solo - Alt)
+            <text>Flying Home (Eb) (That Solo - Alt)
 </text>
             </Text>
           <Text>
@@ -6815,12 +6815,9 @@
             <style>Composer</style>
             <text>Illinois Jacquet</text>
             </Text>
-          <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Saxophone</text>
-            </Text>
           </VBox>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <TimeSig>
               <sigN>4</sigN>
@@ -6869,6 +6866,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -6953,6 +6951,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -7038,6 +7037,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -7122,6 +7122,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -7216,6 +7217,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -7294,6 +7296,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -7426,6 +7429,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -7552,6 +7556,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -7592,6 +7597,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -7671,6 +7677,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -7797,6 +7804,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -7871,6 +7879,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -7997,6 +8006,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -8113,6 +8123,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -8227,6 +8238,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -8416,6 +8428,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -8485,6 +8498,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -8574,6 +8588,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -8674,6 +8689,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>13</root>
@@ -8706,6 +8722,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>13</root>
@@ -8815,6 +8832,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>16</root>
@@ -8887,6 +8905,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>16</root>
@@ -9067,6 +9086,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -9203,6 +9223,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -9369,6 +9390,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -9471,6 +9493,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -9666,6 +9689,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -9820,6 +9844,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -9988,6 +10013,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -10074,6 +10100,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -10209,6 +10236,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -10353,6 +10381,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -10417,6 +10446,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.5</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -10532,6 +10562,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.5</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -10648,6 +10679,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.5</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -10753,6 +10785,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.5</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -10869,6 +10902,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.5</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -10980,6 +11014,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.5</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -11092,6 +11127,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -11230,6 +11266,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -11332,6 +11369,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -11447,6 +11485,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -11563,6 +11602,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -11668,6 +11708,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -11784,6 +11825,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -11895,6 +11937,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.4</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -12007,6 +12050,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -12163,6 +12207,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -12198,6 +12243,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -12347,6 +12393,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -12458,6 +12505,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>13</root>
@@ -12604,6 +12652,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>13</root>
@@ -12687,6 +12736,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>16</root>
@@ -12838,6 +12888,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>16</root>
@@ -12919,6 +12970,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -13029,6 +13081,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -13149,6 +13202,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -13236,6 +13290,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -13401,6 +13456,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -13484,6 +13540,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -13649,6 +13706,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -13779,6 +13837,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>17</root>
@@ -13894,6 +13953,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>14</root>
@@ -14017,6 +14077,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Harmony>
               <root>15</root>
@@ -14065,6 +14126,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>0.9</stretch>
           <voice>
             <Rest>
               <linked>

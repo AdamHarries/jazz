@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -305,6 +305,13 @@
           <style>Composer</style>
           <text>Lester Young</text>
           </Text>
+        <Text>
+          <linkedMain/>
+          <style>Lyricist</style>
+          <text>King Pleasure
+Named for Sid Torin - One of the earliest white DJs to play black artists.  
+</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
@@ -550,10 +557,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -866,10 +869,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Chord>
             <linkedMain/>
@@ -3249,10 +3248,6 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
-            </Text>
-          <Text>
             <linked>
               <location>
                 <staves>-2</staves>
@@ -3260,6 +3255,17 @@
               </linked>
             <style>Composer</style>
             <text>Lester Young</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Lyricist</style>
+            <text>King Pleasure
+Named for Sid Torin - One of the earliest white DJs to play black artists.  
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -3533,12 +3539,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -3884,12 +3885,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -4234,6 +4230,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -4457,14 +4456,18 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
-            </Text>
-          <Text>
             <linked>
               </linked>
             <style>Composer</style>
             <text>Lester Young</text>
+            </Text>
+          <Text>
+            <linked>
+              </linked>
+            <style>Lyricist</style>
+            <text>King Pleasure
+Named for Sid Torin - One of the earliest white DJs to play black artists.  
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -4755,9 +4758,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -5125,9 +5126,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -5494,6 +5493,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -5779,10 +5781,6 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
-            </Text>
-          <Text>
             <linked>
               <location>
                 <staves>-1</staves>
@@ -5790,6 +5788,17 @@
               </linked>
             <style>Composer</style>
             <text>Lester Young</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Lyricist</style>
+            <text>King Pleasure
+Named for Sid Torin - One of the earliest white DJs to play black artists.  
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -6075,12 +6084,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -6448,12 +6452,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -6820,6 +6819,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>

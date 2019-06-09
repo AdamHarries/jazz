@@ -102,6 +102,9 @@
       <staffFramePadding>0.5</staffFramePadding>
       <staffFrameWidth>0.2</staffFrameWidth>
       <staffFrameRound>25</staffFrameRound>
+      <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
+      <rehearsalMarkFontSize>12</rehearsalMarkFontSize>
+      <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
       <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
       <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
       <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -303,7 +306,7 @@
         <Text>
           <linkedMain/>
           <style>Composer</style>
-          <text>Lionel Hampton</text>
+          <text>Lionel Hampton/Benny Goodman</text>
           </Text>
         </VBox>
       <Measure>
@@ -313,12 +316,6 @@
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Tempo>
-            <tempo>3.33333</tempo>
-            <followText>1</followText>
-            <linkedMain/>
-            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 200</text>
-            </Tempo>
           <Harmony>
             <root>14</root>
             <linkedMain/>
@@ -9260,6 +9257,8 @@
         <pagePrintableWidth>7.4826</pagePrintableWidth>
         <lyricsDashForce>0</lyricsDashForce>
         <lyricsLineThickness>0.3</lyricsLineThickness>
+        <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
+        <lyricsEvenFontFace>MuseJazz Text</lyricsEvenFontFace>
         <barWidth>0.3</barWidth>
         <doubleBarWidth>0.3</doubleBarWidth>
         <endBarWidth>0.6</endBarWidth>
@@ -9319,6 +9318,9 @@
         <rhGuitarFingeringFramePadding>0.5</rhGuitarFingeringFramePadding>
         <rhGuitarFingeringFrameWidth>0.2</rhGuitarFingeringFrameWidth>
         <rhGuitarFingeringFrameRound>25</rhGuitarFingeringFrameRound>
+        <longInstrumentFontFace>MuseJazz Text</longInstrumentFontFace>
+        <shortInstrumentFontFace>MuseJazz Text</shortInstrumentFontFace>
+        <partInstrumentFontFace>MuseJazz Text</partInstrumentFontFace>
         <partInstrumentFramePadding>0.5</partInstrumentFramePadding>
         <partInstrumentFrameWidth>0.2</partInstrumentFrameWidth>
         <partInstrumentFrameRound>25</partInstrumentFrameRound>
@@ -9334,15 +9336,20 @@
         <measureNumberFontFace>MuseJazz Text</measureNumberFontFace>
         <measureNumberAlign>center,bottom</measureNumberAlign>
         <translatorAlign>center,top</translatorAlign>
+        <systemFontFace>MuseJazz Text</systemFontFace>
         <systemAlign>left,top</systemAlign>
         <systemFramePadding>0.5</systemFramePadding>
         <systemFrameWidth>0.2</systemFrameWidth>
         <systemFrameRound>25</systemFrameRound>
+        <staffFontFace>MuseJazz Text</staffFontFace>
         <staffAlign>left,top</staffAlign>
         <staffPosAbove x="0" y="-4"/>
         <staffFramePadding>0.5</staffFramePadding>
         <staffFrameWidth>0.2</staffFrameWidth>
         <staffFrameRound>25</staffFrameRound>
+        <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
+        <rehearsalMarkFontSize>12</rehearsalMarkFontSize>
+        <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
         <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
         <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
         <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -9449,20 +9456,17 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
-            </Text>
-          <Text>
             <linked>
               <location>
                 <staves>-2</staves>
                 </location>
               </linked>
             <style>Composer</style>
-            <text>Lionel Hampton</text>
+            <text>Lionel Hampton/Benny Goodman</text>
             </Text>
           </VBox>
         <Measure>
+          <startRepeat/>
           <voice>
             <KeySig>
               <accidental>-3</accidental>
@@ -9471,16 +9475,6 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>3.33333</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 200</text>
-              </Tempo>
             <Harmony>
               <root>11</root>
               <linked>
@@ -9491,7 +9485,7 @@
                 <location>
                   <staves>-2</staves>
                   </location>
-                <indexDiff>5</indexDiff>
+                <indexDiff>4</indexDiff>
                 </linked>
               <text>Intro/Riff over solos
 </text>
@@ -9812,6 +9806,7 @@
             </voice>
           </Measure>
         <Measure>
+          <endRepeat>2</endRepeat>
           <LayoutBreak>
             <linked>
               <location>
@@ -10206,6 +10201,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -10701,6 +10699,9 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -11241,6 +11242,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>10</root>
@@ -11769,6 +11773,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -12151,6 +12158,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -12635,6 +12645,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -12902,6 +12915,8 @@
         <pagePrintableWidth>7.4826</pagePrintableWidth>
         <lyricsDashForce>0</lyricsDashForce>
         <lyricsLineThickness>0.3</lyricsLineThickness>
+        <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
+        <lyricsEvenFontFace>MuseJazz Text</lyricsEvenFontFace>
         <barWidth>0.3</barWidth>
         <doubleBarWidth>0.3</doubleBarWidth>
         <endBarWidth>0.6</endBarWidth>
@@ -12961,6 +12976,9 @@
         <rhGuitarFingeringFramePadding>0.5</rhGuitarFingeringFramePadding>
         <rhGuitarFingeringFrameWidth>0.2</rhGuitarFingeringFrameWidth>
         <rhGuitarFingeringFrameRound>25</rhGuitarFingeringFrameRound>
+        <longInstrumentFontFace>MuseJazz Text</longInstrumentFontFace>
+        <shortInstrumentFontFace>MuseJazz Text</shortInstrumentFontFace>
+        <partInstrumentFontFace>MuseJazz Text</partInstrumentFontFace>
         <partInstrumentFramePadding>0.5</partInstrumentFramePadding>
         <partInstrumentFrameWidth>0.2</partInstrumentFrameWidth>
         <partInstrumentFrameRound>25</partInstrumentFrameRound>
@@ -12976,15 +12994,20 @@
         <measureNumberFontFace>MuseJazz Text</measureNumberFontFace>
         <measureNumberAlign>center,bottom</measureNumberAlign>
         <translatorAlign>center,top</translatorAlign>
+        <systemFontFace>MuseJazz Text</systemFontFace>
         <systemAlign>left,top</systemAlign>
         <systemFramePadding>0.5</systemFramePadding>
         <systemFrameWidth>0.2</systemFrameWidth>
         <systemFrameRound>25</systemFrameRound>
+        <staffFontFace>MuseJazz Text</staffFontFace>
         <staffAlign>left,top</staffAlign>
         <staffPosAbove x="0" y="-4"/>
         <staffFramePadding>0.5</staffFramePadding>
         <staffFrameWidth>0.2</staffFrameWidth>
         <staffFrameRound>25</staffFrameRound>
+        <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
+        <rehearsalMarkFontSize>12</rehearsalMarkFontSize>
+        <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
         <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
         <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
         <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -13039,29 +13062,19 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
-            </Text>
-          <Text>
             <linked>
               </linked>
             <style>Composer</style>
-            <text>Lionel Hampton</text>
+            <text>Lionel Hampton/Benny Goodman</text>
             </Text>
           </VBox>
         <Measure>
+          <startRepeat/>
           <voice>
             <TimeSig>
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>3.33333</tempo>
-              <followText>1</followText>
-              <linked>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 200</text>
-              </Tempo>
             <Harmony>
               <root>14</root>
               <linked>
@@ -13404,6 +13417,7 @@
             </voice>
           </Measure>
         <Measure>
+          <endRepeat>2</endRepeat>
           <LayoutBreak>
             <linked>
               </linked>
@@ -13809,6 +13823,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -14326,6 +14343,9 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -14890,6 +14910,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -15448,6 +15471,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -15853,6 +15879,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -16362,6 +16391,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -16632,6 +16664,8 @@
         <pagePrintableWidth>7.4826</pagePrintableWidth>
         <lyricsDashForce>0</lyricsDashForce>
         <lyricsLineThickness>0.3</lyricsLineThickness>
+        <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
+        <lyricsEvenFontFace>MuseJazz Text</lyricsEvenFontFace>
         <barWidth>0.3</barWidth>
         <doubleBarWidth>0.3</doubleBarWidth>
         <endBarWidth>0.6</endBarWidth>
@@ -16691,6 +16725,9 @@
         <rhGuitarFingeringFramePadding>0.5</rhGuitarFingeringFramePadding>
         <rhGuitarFingeringFrameWidth>0.2</rhGuitarFingeringFrameWidth>
         <rhGuitarFingeringFrameRound>25</rhGuitarFingeringFrameRound>
+        <longInstrumentFontFace>MuseJazz Text</longInstrumentFontFace>
+        <shortInstrumentFontFace>MuseJazz Text</shortInstrumentFontFace>
+        <partInstrumentFontFace>MuseJazz Text</partInstrumentFontFace>
         <partInstrumentFramePadding>0.5</partInstrumentFramePadding>
         <partInstrumentFrameWidth>0.2</partInstrumentFrameWidth>
         <partInstrumentFrameRound>25</partInstrumentFrameRound>
@@ -16706,15 +16743,20 @@
         <measureNumberFontFace>MuseJazz Text</measureNumberFontFace>
         <measureNumberAlign>center,bottom</measureNumberAlign>
         <translatorAlign>center,top</translatorAlign>
+        <systemFontFace>MuseJazz Text</systemFontFace>
         <systemAlign>left,top</systemAlign>
         <systemFramePadding>0.5</systemFramePadding>
         <systemFrameWidth>0.2</systemFrameWidth>
         <systemFrameRound>25</systemFrameRound>
+        <staffFontFace>MuseJazz Text</staffFontFace>
         <staffAlign>left,top</staffAlign>
         <staffPosAbove x="0" y="-4"/>
         <staffFramePadding>0.5</staffFramePadding>
         <staffFrameWidth>0.2</staffFrameWidth>
         <staffFrameRound>25</staffFrameRound>
+        <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
+        <rehearsalMarkFontSize>12</rehearsalMarkFontSize>
+        <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
         <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
         <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
         <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -16826,20 +16868,17 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
-            </Text>
-          <Text>
             <linked>
               <location>
                 <staves>-1</staves>
                 </location>
               </linked>
             <style>Composer</style>
-            <text>Lionel Hampton</text>
+            <text>Lionel Hampton/Benny Goodman</text>
             </Text>
           </VBox>
         <Measure>
+          <startRepeat/>
           <voice>
             <KeySig>
               <linked>
@@ -16850,21 +16889,9 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>3.33333</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>3</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 200</text>
-              </Tempo>
             <Harmony>
               <root>13</root>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               </Harmony>
             <RehearsalMark>
@@ -16872,7 +16899,7 @@
                 <location>
                   <staves>-1</staves>
                   </location>
-                <indexDiff>5</indexDiff>
+                <indexDiff>4</indexDiff>
                 </linked>
               <text>Intro/Riff over solos
 </text>
@@ -17210,6 +17237,7 @@
             </voice>
           </Measure>
         <Measure>
+          <endRepeat>2</endRepeat>
           <LayoutBreak>
             <linked>
               <location>
@@ -17624,6 +17652,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -18147,6 +18178,9 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -18717,6 +18751,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -19275,6 +19312,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -19680,6 +19720,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -20192,6 +20235,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>

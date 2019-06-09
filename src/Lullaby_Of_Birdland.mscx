@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -300,6 +300,16 @@
           <text>Lullaby Of Birdland
 </text>
           </Text>
+        <Text>
+          <linkedMain/>
+          <style>Composer</style>
+          <text>George Shearing</text>
+          </Text>
+        <Text>
+          <linkedMain/>
+          <style>Lyricist</style>
+          <text>George David Weiss</text>
+          </Text>
         </VBox>
       <Measure>
         <startRepeat/>
@@ -313,12 +323,6 @@
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Tempo>
-            <tempo>2</tempo>
-            <followText>1</followText>
-            <linkedMain/>
-            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-            </Tempo>
           <Harmony>
             <root>16</root>
             <name>m</name>
@@ -617,10 +621,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1050,10 +1050,6 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>12</root>
@@ -1331,10 +1327,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1607,10 +1599,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1767,10 +1755,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>13</root>
@@ -2142,10 +2126,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -6986,8 +6966,16 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
+            <linked>
+              </linked>
+            <style>Composer</style>
+            <text>George Shearing</text>
+            </Text>
+          <Text>
+            <linked>
+              </linked>
+            <style>Lyricist</style>
+            <text>George David Weiss</text>
             </Text>
           </VBox>
         <Measure>
@@ -7004,13 +6992,6 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Harmony>
               <root>16</root>
               <name>m</name>
@@ -7355,9 +7336,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -7853,9 +7832,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -8178,9 +8155,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -8499,9 +8474,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -8685,9 +8658,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -9118,9 +9089,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -9594,6 +9563,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -9818,8 +9790,22 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>George Shearing</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Lyricist</style>
+            <text>George David Weiss</text>
             </Text>
           </VBox>
         <Measure>
@@ -9836,32 +9822,18 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>4</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Harmony>
               <root>15</root>
               <name>m</name>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               </Harmony>
             <Chord>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               <Note>
                 <linked>
-                  <indexDiff>2</indexDiff>
                   </linked>
                 <pitch>72</pitch>
                 <tpc>14</tpc>
@@ -10194,12 +10166,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -10701,12 +10668,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11035,12 +10997,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11359,12 +11316,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11548,12 +11500,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11984,12 +11931,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -12463,6 +12405,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -12682,8 +12627,22 @@
 </text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>George Shearing</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Lyricist</style>
+            <text>George David Weiss</text>
             </Text>
           </VBox>
         <Measure>
@@ -12700,32 +12659,18 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>4</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Harmony>
               <root>13</root>
               <name>m</name>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               </Harmony>
             <Chord>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               <Note>
                 <linked>
-                  <indexDiff>2</indexDiff>
                   </linked>
                 <pitch>72</pitch>
                 <tpc>14</tpc>
@@ -13041,12 +12986,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -13524,12 +13464,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -13843,12 +13778,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -14150,12 +14080,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -14330,12 +14255,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -14746,12 +14666,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -15201,6 +15116,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>10</root>

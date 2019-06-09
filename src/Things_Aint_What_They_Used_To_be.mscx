@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -299,6 +299,11 @@
           <style>Title</style>
           <text>Things Ain't What They Used To Be</text>
           </Text>
+        <Text>
+          <linkedMain/>
+          <style>Composer</style>
+          <text>Mercer Ellington (1942)</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
@@ -311,12 +316,6 @@
             <sigN>4</sigN>
             <sigD>4</sigD>
             </TimeSig>
-          <Tempo>
-            <tempo>2</tempo>
-            <followText>1</followText>
-            <linkedMain/>
-            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-            </Tempo>
           <Tuplet>
             <linkedMain/>
             <normalNotes>2</normalNotes>
@@ -605,10 +604,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Chord>
             <linkedMain/>
@@ -975,10 +970,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Chord>
             <linkedMain/>
@@ -3331,8 +3322,10 @@
             <text>Things Ain't What They Used To Be</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Sax</text>
+            <linked>
+              </linked>
+            <style>Composer</style>
+            <text>Mercer Ellington (1942)</text>
             </Text>
           </VBox>
         <Measure>
@@ -3348,13 +3341,6 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Tuplet>
               <linked>
                 </linked>
@@ -3691,9 +3677,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -4121,9 +4105,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -4692,8 +4674,13 @@
             <text>Things Ain't What They Used To Be</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Mercer Ellington (1942)</text>
             </Text>
           </VBox>
         <Measure>
@@ -4709,20 +4696,8 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>4</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Tuplet>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <normalNotes>2</normalNotes>
               <actualNotes>3</actualNotes>
@@ -4734,7 +4709,6 @@
               </Tuplet>
             <Rest>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
@@ -5058,12 +5032,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -5491,12 +5460,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -6060,8 +6024,13 @@
             <text>Things Ain't What They Used To Be</text>
             </Text>
           <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Composer</style>
+            <text>Mercer Ellington (1942)</text>
             </Text>
           </VBox>
         <Measure>
@@ -6077,20 +6046,8 @@
               <sigN>4</sigN>
               <sigD>4</sigD>
               </TimeSig>
-            <Tempo>
-              <tempo>2</tempo>
-              <followText>1</followText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>4</indexDiff>
-                </linked>
-              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 120</text>
-              </Tempo>
             <Tuplet>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <normalNotes>2</normalNotes>
               <actualNotes>3</actualNotes>
@@ -6102,7 +6059,6 @@
               </Tuplet>
             <Rest>
               <linked>
-                <indexDiff>2</indexDiff>
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
@@ -6408,12 +6364,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -6818,12 +6769,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>

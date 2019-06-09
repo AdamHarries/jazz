@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -49,6 +49,7 @@
       <ottavaLineWidth>0.2</ottavaLineWidth>
       <tupletBracketWidth>0.2</tupletBracketWidth>
       <tupletFontFace>MuseJazz Text</tupletFontFace>
+      <defaultAlign>left,baseline</defaultAlign>
       <defaultFramePadding>0.5</defaultFramePadding>
       <defaultFrameWidth>0.2</defaultFrameWidth>
       <defaultFrameRound>25</defaultFrameRound>
@@ -77,6 +78,9 @@
       <rhGuitarFingeringFramePadding>0.5</rhGuitarFingeringFramePadding>
       <rhGuitarFingeringFrameWidth>0.2</rhGuitarFingeringFrameWidth>
       <rhGuitarFingeringFrameRound>25</rhGuitarFingeringFrameRound>
+      <longInstrumentFontFace>MuseJazz Text</longInstrumentFontFace>
+      <shortInstrumentFontFace>MuseJazz Text</shortInstrumentFontFace>
+      <partInstrumentFontFace>MuseJazz Text</partInstrumentFontFace>
       <partInstrumentFramePadding>0.5</partInstrumentFramePadding>
       <partInstrumentFrameWidth>0.2</partInstrumentFrameWidth>
       <partInstrumentFrameRound>25</partInstrumentFrameRound>
@@ -90,6 +94,10 @@
       <tempoFrameRound>25</tempoFrameRound>
       <metronomeFontFace>MuseJazz Text</metronomeFontFace>
       <measureNumberFontFace>MuseJazz Text</measureNumberFontFace>
+      <measureNumberAlign>center,bottom</measureNumberAlign>
+      <translatorAlign>center,top</translatorAlign>
+      <systemFontFace>MuseJazz Text</systemFontFace>
+      <systemAlign>left,top</systemAlign>
       <systemFramePadding>0.5</systemFramePadding>
       <systemFrameWidth>0.2</systemFrameWidth>
       <systemFrameRound>25</systemFrameRound>
@@ -98,6 +106,9 @@
       <staffFramePadding>0.5</staffFramePadding>
       <staffFrameWidth>0.2</staffFrameWidth>
       <staffFrameRound>25</staffFrameRound>
+      <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
+      <rehearsalMarkFontSize>12</rehearsalMarkFontSize>
+      <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
       <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
       <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
       <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -106,6 +117,12 @@
       <repeatRightFramePadding>0.5</repeatRightFramePadding>
       <repeatRightFrameWidth>0.2</repeatRightFrameWidth>
       <repeatRightFrameRound>25</repeatRightFrameRound>
+      <glissandoAlign>center,baseline</glissandoAlign>
+      <bendAlign>center,bottom</bendAlign>
+      <headerAlign>center,top</headerAlign>
+      <footerAlign>center,bottom</footerAlign>
+      <instrumentChangeAlign>left,bottom</instrumentChangeAlign>
+      <user1Align>right,baseline</user1Align>
       <Spatium>1.76389</Spatium>
       </Style>
     <showInvisible>1</showInvisible>
@@ -353,6 +370,10 @@
             <linkedMain/>
             <durationType>eighth</durationType>
             </Rest>
+          <RehearsalMark>
+            <linkedMain/>
+            <text>Solo</text>
+            </RehearsalMark>
           <Chord>
             <linkedMain/>
             <BeamMode>no</BeamMode>
@@ -532,54 +553,10 @@
             <linkedMain/>
             <durationType>eighth</durationType>
             </Rest>
-          <InstrumentChange>
-            <Instrument>
-              <longName>Piano</longName>
-              <shortName>Pno.</shortName>
-              <trackName>Piano</trackName>
-              <minPitchP>21</minPitchP>
-              <maxPitchP>108</maxPitchP>
-              <minPitchA>21</minPitchA>
-              <maxPitchA>108</maxPitchA>
-              <clef staff="2">F</clef>
-              <Articulation>
-                <velocity>100</velocity>
-                <gateTime>95</gateTime>
-                </Articulation>
-              <Articulation name="staccatissimo">
-                <velocity>100</velocity>
-                <gateTime>33</gateTime>
-                </Articulation>
-              <Articulation name="staccato">
-                <velocity>100</velocity>
-                <gateTime>50</gateTime>
-                </Articulation>
-              <Articulation name="portato">
-                <velocity>100</velocity>
-                <gateTime>67</gateTime>
-                </Articulation>
-              <Articulation name="tenuto">
-                <velocity>100</velocity>
-                <gateTime>100</gateTime>
-                </Articulation>
-              <Articulation name="marcato">
-                <velocity>120</velocity>
-                <gateTime>67</gateTime>
-                </Articulation>
-              <Articulation name="sforzato">
-                <velocity>120</velocity>
-                <gateTime>100</gateTime>
-                </Articulation>
-              <Channel>
-                <program value="0"/>
-                <synti>Fluid</synti>
-                <midiPort>0</midiPort>
-                <midiChannel>2</midiChannel>
-                </Channel>
-              </Instrument>
+          <RehearsalMark>
             <linkedMain/>
-            <text>Unison</text>
-            </InstrumentChange>
+            <text>Tutti</text>
+            </RehearsalMark>
           <Chord>
             <linkedMain/>
             <BeamMode>no</BeamMode>
@@ -715,10 +692,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Beam>
             <StemDirection>up</StemDirection>
@@ -1066,10 +1039,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>10</root>
@@ -1468,10 +1437,6 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>15</root>
@@ -1861,10 +1826,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -2151,10 +2112,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>11</root>
@@ -2520,10 +2477,6 @@
           </voice>
         </Measure>
       <Measure>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <voice>
           <Harmony>
             <root>10</root>
@@ -9269,10 +9222,6 @@
             <style>Composer</style>
             <text>Ben Webster</text>
             </Text>
-          <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Piano</text>
-            </Text>
           </VBox>
         <Measure len="2/4">
           <voice>
@@ -9297,6 +9246,11 @@
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
+            <RehearsalMark>
+              <linked>
+                </linked>
+              <text>Solo</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -9504,53 +9458,11 @@
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
-            <InstrumentChange>
-              <Instrument>
-                <longName>Piano</longName>
-                <shortName>Pno.</shortName>
-                <trackName>Piano</trackName>
-                <minPitchP>21</minPitchP>
-                <maxPitchP>108</maxPitchP>
-                <minPitchA>21</minPitchA>
-                <maxPitchA>108</maxPitchA>
-                <clef staff="2">F</clef>
-                <Articulation>
-                  <velocity>100</velocity>
-                  <gateTime>95</gateTime>
-                  </Articulation>
-                <Articulation name="staccatissimo">
-                  <velocity>100</velocity>
-                  <gateTime>33</gateTime>
-                  </Articulation>
-                <Articulation name="staccato">
-                  <velocity>100</velocity>
-                  <gateTime>50</gateTime>
-                  </Articulation>
-                <Articulation name="portato">
-                  <velocity>100</velocity>
-                  <gateTime>67</gateTime>
-                  </Articulation>
-                <Articulation name="tenuto">
-                  <velocity>100</velocity>
-                  <gateTime>100</gateTime>
-                  </Articulation>
-                <Articulation name="marcato">
-                  <velocity>120</velocity>
-                  <gateTime>67</gateTime>
-                  </Articulation>
-                <Articulation name="sforzato">
-                  <velocity>120</velocity>
-                  <gateTime>100</gateTime>
-                  </Articulation>
-                <Channel>
-                  <program value="0"/>
-                  <synti>Fluid</synti>
-                  </Channel>
-                </Instrument>
+            <RehearsalMark>
               <linked>
                 </linked>
-              <text>Unison</text>
-              </InstrumentChange>
+              <text>Tutti</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -9709,9 +9621,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Beam>
@@ -10118,9 +10028,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -10580,9 +10488,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11030,9 +10936,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11362,9 +11266,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -11781,9 +11683,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -12526,10 +12426,6 @@
             <style>Composer</style>
             <text>Ben Webster</text>
             </Text>
-          <Text>
-            <style>Instrument Name (Part)</style>
-            <text>Alto Saxophone</text>
-            </Text>
           </VBox>
         <Measure len="2/4">
           <voice>
@@ -12549,6 +12445,14 @@
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-1</staves>
+                  </location>
+                </linked>
+              <text>Solo</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -12768,6 +12672,14 @@
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-1</staves>
+                  </location>
+                </linked>
+              <text>Tutti</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -12937,12 +12849,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Beam>
@@ -13374,12 +13281,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -13865,12 +13767,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -14475,12 +14372,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -15049,12 +14941,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -15512,12 +15399,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -16296,10 +16178,6 @@
             <style>Composer</style>
             <text>Ben Webster</text>
             </Text>
-          <Text>
-            <style>Instrument Name (Part)</style>
-            <text>B♭ Trumpet</text>
-            </Text>
           </VBox>
         <Measure len="2/4">
           <voice>
@@ -16324,6 +16202,14 @@
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-2</staves>
+                  </location>
+                </linked>
+              <text>Solo</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -16543,6 +16429,14 @@
                 </linked>
               <durationType>eighth</durationType>
               </Rest>
+            <RehearsalMark>
+              <linked>
+                <location>
+                  <staves>-2</staves>
+                  </location>
+                </linked>
+              <text>Tutti</text>
+              </RehearsalMark>
             <Chord>
               <linked>
                 </linked>
@@ -16712,12 +16606,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Beam>
@@ -17149,12 +17038,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -17640,12 +17524,7 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -18230,12 +18109,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -18805,12 +18679,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -19268,12 +19137,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>

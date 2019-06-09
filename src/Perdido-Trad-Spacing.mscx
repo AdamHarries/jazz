@@ -301,7 +301,7 @@
         <Text>
           <linkedMain/>
           <style>Title</style>
-          <text>Perdido
+          <text>Perdido (Trad Spacing)
 </text>
           </Text>
         <Text>
@@ -2271,6 +2271,9 @@
         <LayoutBreak>
           <linkedMain/>
           <subtype>section</subtype>
+          </LayoutBreak>
+        <LayoutBreak>
+          <subtype>page</subtype>
           </LayoutBreak>
         <voice>
           <Harmony>
@@ -12080,7 +12083,7 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text>Perdido
+            <text>Perdido (Trad Spacing)
 </text>
             </Text>
           <Text>
@@ -12358,6 +12361,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -12658,6 +12664,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -13028,6 +13037,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>21</root>
@@ -13243,6 +13255,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -13455,6 +13470,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -13844,6 +13862,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -14240,6 +14261,9 @@
               </linked>
             <subtype>section</subtype>
             </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -14583,6 +14607,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -14875,6 +14902,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -15239,6 +15269,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -16034,6 +16067,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -16636,7 +16672,7 @@
             <linked>
               </linked>
             <style>Title</style>
-            <text>Perdido
+            <text>Perdido (Trad Spacing)
 </text>
             </Text>
           <Text>
@@ -16924,6 +16960,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -17240,6 +17279,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -17617,6 +17659,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>24</root>
@@ -17693,7 +17738,6 @@
             <Chord>
               <linked>
                 </linked>
-              <offset x="0" y="-4"/>
               <durationType>whole</durationType>
               <Note>
                 <linked>
@@ -17842,6 +17886,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>18</root>
@@ -18065,6 +18112,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -18474,6 +18524,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -18887,6 +18940,9 @@
               </linked>
             <subtype>section</subtype>
             </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>19</root>
@@ -19243,6 +19299,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>19</root>
@@ -19552,6 +19611,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -19930,6 +19992,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -20769,6 +20834,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>19</root>
@@ -21455,7 +21523,7 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text>Perdido
+            <text>Perdido (Trad Spacing)
 </text>
             </Text>
           <Text>
@@ -21741,6 +21809,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -22057,6 +22128,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -22443,6 +22517,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>23</root>
@@ -22667,6 +22744,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -22890,6 +22970,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -23299,6 +23382,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -23715,6 +23801,9 @@
               </linked>
             <subtype>section</subtype>
             </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>18</root>
@@ -24076,6 +24165,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>18</root>
@@ -24385,6 +24477,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -24766,6 +24861,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -25246,6 +25344,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -25605,6 +25706,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>18</root>
