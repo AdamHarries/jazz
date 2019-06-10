@@ -1,9 +1,27 @@
-# Notes on stuff, scores to write up, etc. 
+# Notes on stuff, scores to write up, etc.
 
-Anything Frank Foster wrote for the Basie Band, e.g.: 
+TODO (priority):
+    - Good Bait
+    - Pennies from Heaven
+    - Slipped Disk
+    - Do Nothing Till You Hear From Me
+    - Strollin'
+    - Tea For Two
+    - Sugar
+    - Cute
+    - Opus One
+    - Jive at Five
+    - I Can't Give You Anything But Love
+    - Ain't Misbehaving
+    - One O'Clock Jump
+    - Satin Doll
+    - Rhythm Changes Mashup (Oleo/Lester Leaps In/I Got Rhythm/Cottontail)
+    - Blues Tune Mashup (One O'Clock Jump/In The Mood/C Jam Blues/Night Train/Blues in Hoss' Flat)
+
+Anything Frank Foster wrote for the Basie Band, e.g.:
  - Down for the Count
- - Blues Backstage 
- - Blues in Hoss' Flat 
+ - Blues Backstage
+ - Blues in Hoss' Flat
  - Baack to the Apple
 
 
