@@ -1,6 +1,7 @@
 # Notes on stuff, scores to write up, etc.
 
 TODO (priority):
+
     - Good Bait
     - Pennies from Heaven
     - Slipped Disk
@@ -19,11 +20,13 @@ TODO (priority):
     - Blues Tune Mashup (One O'Clock Jump/In The Mood/C Jam Blues/Night Train/Blues in Hoss' Flat)
 
 Anything Frank Foster wrote for the Basie Band, e.g.:
- - Down for the Count
- - Blues Backstage
- - Blues in Hoss' Flat
- - Baack to the Apple
 
+    - Down for the Count
+    - Blues Backstage
+    - Blues in Hoss' Flat
+    - Baack to the Apple
+
+Some of the tunes recorded by the Metronome All-Stars: https://en.wikipedia.org/wiki/Metronome_All-Stars
 
 Good Bait - Count Basie: http://www.musiclassroom.com/partitions/goodbait.pdf
 
