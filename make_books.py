@@ -150,44 +150,76 @@ def generate_pdfs(path, tmpd, outd, book_d, logf):
 # Header and footer for the tex file that will become our books
 tex_header = """
 %!TEX encoding = UTF-8 Unicode
-\\documentclass{{book}}
+\\documentclass{{scrartcl}}
 \\usepackage{{pdfpages}}
 \\usepackage{{hyperref}}
 \\usepackage{{fontspec}}
 \\usepackage{{tocloft}}    % tocloft for table of contents style
 \\usepackage[compact]{{titlesec}}  % titlesec for title section layout
- \\usepackage{{multicol}}
+\\usepackage{{multicol}}
+\\usepackage{{fancyhdr}}
+\\usepackage{{geometry}}
+\\usepackage{{graphicx}}
+\\usepackage{{tocstyle}}
 
 \\setmainfont[Ligatures={{Common,TeX}}, Mapping=tex-ansi]{{MuseJazzText}}
 
-\\renewcommand{{\\contentsname}}{{Stompin' At Summerhall - {} \\ {{\\small Release "{}".}} }}
-
+% Add a wrapper command for adding a chart, which adds it to the ToC
 \\newcommand{{\\chart}}[1]{{%
 \\par\\refstepcounter{{section}}% Increase section counter
 \\sectionmark{{#1}}% Add section mark (header)
-\\addcontentsline{{toc}}{{section}}{{\\protect\\numberline{{\\thesection}}#1}}% Add section to ToC
+\\addcontentsline{{toc}}{{section}}{{#1}}% Add section to ToC
 % Add more content here, if needed.
 }}
 
-\\setlength{{\\cftbeforetoctitleskip}}{{-10em}}
+% Tighten up the spacing on the ToC
+\\setcounter{{tocdepth}}{{1}}
+\\newtocstyle{{compact}}{{%
+  \\settocfeature[1]{{entryhook}}{{\\bfseries}}%
+  \\settocfeature[1]{{entryvskip}}{{0pt plus 2pt}}%
+  \\settocfeature[1]{{leaders}}{{\\hfill}}%
+}}
+\\usetocstyle{{compact}}
+
+% Add page numbers, even though we're importing pdfs, and move them to the corner
+\\fancyhf{{}} % clear all header and footers
+\\renewcommand{{\\headrulewidth}}{{0pt}} % remove the header rule
+\\fancyfoot[LE,RO]{{\\thepage}} % Left side on Even pages; Right side on Odd pages
+\\pagestyle{{fancy}}
+\\fancypagestyle{{plain}}{{%
+  \\fancyhf{{}}%
+  \\renewcommand{{\\headrulewidth}}{{0pt}}%
+  \\fancyhf[lef,rof]{{\\thepage}}%
+}}
+\\geometry{{footskip=114pt}} % don't set this manually else geometry won't know!
+
 
 \\begin{{document}}
 
+% Use the fancy Stompin' At Summerhall logo for the title of the books
+\\title{{
+    \\vspace{{-3em}}
+    \\includegraphics[width=\\textwidth]{{logo_bars.pdf}}
+}}
 
-% Uncomment the below, and comment the \\tableofcontents command if the ToC ever overspills to the next page.
+% (ab)use the author and date command(s) to set the key and release name
+\\author{{\\vspace{{-2em}}\\Huge {}}}
+\\date{{\\small Release "{}"}}
 
-% \\makeatletter
-% \\chapter*{{\\contentsname
-%  \\@mkboth{{%
-%    \\MakeUppercase\\contentsname}}{{\\MakeUppercase\\contentsname}}}}
-% \\begin{{multicols*}}{{2}}
-%  \\@starttoc{{toc}}
-% \\end{{multicols*}}
-% \\makeatother
+\\maketitle
 
- \\tableofcontents
+\\let\\cleardoublepage\\clearpage
 
-\\clearpage
+\\makeatletter
+\\chapter{{
+\\@mkboth{{%
+\\MakeUppercase\\contentsname}}{{\\MakeUppercase\\contentsname}}}}
+\\begin{{multicols*}}{{2}}
+\\@starttoc{{toc}}
+\\end{{multicols*}}
+\\makeatother
+
+ \\clearpage
 """
 
 tex_footer = """
@@ -213,7 +245,7 @@ def generate_tex(key, tp_pairs, release_name):
         tex += """
 % {}
     \\chart{{{}}}
-    \\includepdf[pages=-]{{{}}}
+    \\includepdf[pages=-, pagecommand={{\\thispagestyle{{plain}}}}]{{{}}}
     """.format(title, title, pdf)
 
     tex += tex_footer
@@ -304,10 +336,11 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        '--release_name', 
-        dest='release_name', 
-        default='Custom', 
-        help='For automated releases, the specific tag that was used to build the books'
+        '--release_name',
+        dest='release_name',
+        default='Custom',
+        help=
+        'For automated releases, the specific tag that was used to build the books'
     )
 
     args = parser.parse_args()
@@ -316,6 +349,5 @@ if __name__ == "__main__":
     print("Book directory: " + args.book_d)
     print("Build directory: " + args.build_d)
     print("Release name: " + args.release_name)
-    
 
     main(args.source_d, args.book_d, args.build_d, args.release_name)
