@@ -44,10 +44,11 @@ RUN wget -q https://github.com/musescore/MuseScore/releases/download/v3.1/MuseSc
 ADD make_books.py make_books.py
 ADD src src
 ADD drafts drafts
-ADD MuseJazzText.otf MuseJazzText.otf
-ADD general_style.mss general_style.mss
+ADD resources/MuseJazzText.otf resources/MuseJazzText.otf
+ADD resources/general_style.mss resources/general_style.mss
+ADD resources/logo_bars.pdf resources/logo_bars.pdf
 
-RUN chmod 644 MuseJazzText.otf && cp MuseJazzText.otf /usr/local/share/fonts && fc-cache -v
+RUN chmod 644 resources/MuseJazzText.otf && cp resources/MuseJazzText.otf /usr/local/share/fonts && fc-cache -v
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

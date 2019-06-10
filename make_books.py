@@ -134,7 +134,7 @@ def generate_pdfs(path, tmpd, outd, book_d, logf):
                 json.dump(job_data, outfile)
 
             proc = subprocess.Popen(
-                [mscore, "-j", jsonfile, "-S", "general_style.mss"],
+                [mscore, "-j", jsonfile, "-S", "resources/general_style.mss"],
                 stdout=logfo,
                 stderr=logfo)
             proc.wait()
@@ -199,7 +199,7 @@ tex_header = """
 % Use the fancy Stompin' At Summerhall logo for the title of the books
 \\title{{
     \\vspace{{-3em}}
-    \\includegraphics[width=\\textwidth]{{logo_bars.pdf}}
+    \\includegraphics[width=\\textwidth]{{resources/logo_bars.pdf}}
 }}
 
 % (ab)use the author and date command(s) to set the key and release name
