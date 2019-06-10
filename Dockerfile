@@ -16,6 +16,7 @@ RUN yes | apt-get install \
     locales \
     locales-all \
     texlive-xetex \
+    texlive-latex-recommended \
     libvorbisfile3 \
     libsndfile1 \
     ecasound \
