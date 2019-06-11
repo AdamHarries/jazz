@@ -24,7 +24,7 @@ Anything Frank Foster wrote for the Basie Band, e.g.:
     - Down for the Count
     - Blues Backstage
     - Blues in Hoss' Flat
-    - Baack to the Apple
+    - Back to the Apple
 
 Some of the tunes recorded by the Metronome All-Stars: https://en.wikipedia.org/wiki/Metronome_All-Stars
 
