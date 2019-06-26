@@ -2,22 +2,39 @@
 
 TODO (priority):
 
-    - Good Bait
-    - Pennies from Heaven
-    - Slipped Disk
-    - Do Nothing Till You Hear From Me
-    - Strollin'
-    - Tea For Two
-    - Sugar
-    - Cute
-    - Opus One
-    - Jive at Five
-    - I Can't Give You Anything But Love
-    - Ain't Misbehaving
-    - One O'Clock Jump
-    - Satin Doll
-    - Rhythm Changes Mashup (Oleo/Lester Leaps In/I Got Rhythm/Cottontail)
-    - Blues Tune Mashup (One O'Clock Jump/In The Mood/C Jam Blues/Night Train/Blues in Hoss' Flat)
+    - 'T ain't what you do (Score)
+    - Good Bait (NIR)
+    - Pennies from Heaven (02)
+    - Slipped Disk (02)
+    - Do Nothing Till You Hear From Me (02, 11)
+    - Strollin' (02)
+    - Tea For Two (NIR)
+    - Sugar (01)
+    - Cute (NIR)
+    - Opus One (04)
+    - Jive at Five (NIR)
+    - I Can't Give You Anything But Love (01)
+    - Ain't Misbehaving (03)
+    - One O'Clock Jump (05, Score)
+    - Satin Doll (01)
+    - Rhythm Changes Mashup (Oleo/Lester Leaps In/I Got Rhythm/Cottontail) (01/NIR/04/01)
+    - Blues Tune Mashup (One O'Clock Jump/In The Mood/C Jam Blues/Night Train/Blues in Hoss' Flat) (05, score/01, score/02/01/04)
+
+Classical:
+    - Beethoven Sonata Op. 49, No. 1
+    - Beethoven Sonata Op. 2, No. 1
+    - Saint Saens Danse Macabre
+    - Saint Saens Carnival of the Animals, Bones
+    - Lizt Hungarian Rhapsody #2 in C Minor.
+
+From Scores:
+    - Lindy Hoppers Delight
+    - Christopher Columbus
+    - Main Stem
+    - Ko Ko
+    - Bli-Blip
+    - Jump For Joy
+    - Happy-go-lucky-local
 
 Anything Frank Foster wrote for the Basie Band, e.g.:
 
