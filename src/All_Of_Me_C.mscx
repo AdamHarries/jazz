@@ -309,7 +309,6 @@
       <Measure>
         <voice>
           <KeySig>
-            <linkedMain/>
             <accidental>3</accidental>
             </KeySig>
           <TimeSig>
@@ -747,6 +746,10 @@
               <tpc2>16</tpc2>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>double</subtype>
+            <linkedMain/>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -1522,6 +1525,10 @@
               <tpc2>16</tpc2>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>double</subtype>
+            <linkedMain/>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -2250,6 +2257,10 @@
               <tpc2>15</tpc2>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>double</subtype>
+            <linkedMain/>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -3025,6 +3036,10 @@
               <tpc2>15</tpc2>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>double</subtype>
+            <linkedMain/>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -3725,6 +3740,10 @@
               <tpc>13</tpc>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>double</subtype>
+            <linkedMain/>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -4457,6 +4476,10 @@
               <tpc>13</tpc>
               </Note>
             </Chord>
+          <BarLine>
+            <subtype>double</subtype>
+            <linkedMain/>
+            </BarLine>
           </voice>
         </Measure>
       <Measure>
@@ -5416,6 +5439,11 @@
                 <tpc>13</tpc>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              <linked>
+                </linked>
+              </BarLine>
             </voice>
           </Measure>
         <Measure>
@@ -6269,6 +6297,11 @@
                 <tpc>13</tpc>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              <linked>
+                </linked>
+              </BarLine>
             </voice>
           </Measure>
         <Measure>
@@ -6751,7 +6784,6 @@
               </KeySig>
             <TimeSig>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <sigN>4</sigN>
               <sigD>4</sigD>
@@ -6760,17 +6792,14 @@
               <root>17</root>
               <name>Maj7</name>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               </Harmony>
             <Chord>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>quarter</durationType>
               <Note>
                 <linked>
-                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>60</pitch>
                 <tpc>14</tpc>
@@ -7255,6 +7284,11 @@
                 <tpc2>16</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              <linked>
+                </linked>
+              </BarLine>
             </voice>
           </Measure>
         <Measure>
@@ -8151,6 +8185,11 @@
                 <tpc2>16</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              <linked>
+                </linked>
+              </BarLine>
             </voice>
           </Measure>
         <Measure>
@@ -9212,6 +9251,11 @@
                 <tpc2>15</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              <linked>
+                </linked>
+              </BarLine>
             </voice>
           </Measure>
         <Measure>
@@ -10108,6 +10152,11 @@
                 <tpc2>15</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              <linked>
+                </linked>
+              </BarLine>
             </voice>
           </Measure>
         <Measure>
