@@ -166,9 +166,9 @@ tex_header = """
 
 % Add a wrapper command for adding a chart, which adds it to the ToC
 \\newcommand{{\\chart}}[1]{{%
-\\par\\refstepcounter{{section}}% Increase section counter
-\\sectionmark{{#1}}% Add section mark (header)
-\\addcontentsline{{toc}}{{section}}{{#1}}% Add section to ToC
+\\par\\refstepcounter{{section}} % Increase section counter
+\\sectionmark{{#1}} % Add section mark (header)
+\\addcontentsline{{toc}}{{section}}{{\\protect\\numberline{{\\thesection}} #1}}% Add section to ToC
 % Add more content here, if needed.
 }}
 
