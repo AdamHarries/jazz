@@ -20512,6 +20512,9 @@
           </VBox>
         <Measure>
           <voice>
+            <KeySig>
+              <accidental>-1</accidental>
+              </KeySig>
             <TimeSig>
               <sigN>4</sigN>
               <sigD>4</sigD>
@@ -22461,9 +22464,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -22582,6 +22582,9 @@
               <Note>
                 <linked>
                   </linked>
+                <Accidental>
+                  <subtype>accidentalNatural</subtype>
+                  </Accidental>
                 <pitch>74</pitch>
                 <tpc>16</tpc>
                 <tpc2>19</tpc2>
@@ -22698,6 +22701,9 @@
               <Note>
                 <linked>
                   </linked>
+                <Accidental>
+                  <subtype>accidentalNatural</subtype>
+                  </Accidental>
                 <pitch>74</pitch>
                 <tpc>16</tpc>
                 <tpc2>19</tpc2>

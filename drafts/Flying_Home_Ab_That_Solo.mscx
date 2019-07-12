@@ -7311,6 +7311,9 @@
           </VBox>
         <Measure>
           <voice>
+            <KeySig>
+              <accidental>-1</accidental>
+              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -7820,9 +7823,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -8556,9 +8556,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>61</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -8690,9 +8687,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -9317,9 +9311,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>61</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -9370,9 +9361,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>61</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -9474,6 +9462,9 @@
               <Note>
                 <linked>
                   </linked>
+                <Accidental>
+                  <subtype>accidentalNatural</subtype>
+                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -9534,6 +9525,9 @@
               <Note>
                 <linked>
                   </linked>
+                <Accidental>
+                  <subtype>accidentalNatural</subtype>
+                  </Accidental>
                 <pitch>74</pitch>
                 <tpc>16</tpc>
                 <tpc2>19</tpc2>
@@ -9690,9 +9684,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -9866,9 +9857,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -10104,9 +10092,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -10367,9 +10352,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -10860,9 +10842,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -11917,9 +11896,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -13281,9 +13257,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>61</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -13541,9 +13514,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>61</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -13753,9 +13723,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -13917,9 +13884,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>61</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -14768,9 +14732,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
@@ -14886,9 +14847,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>73</pitch>
                 <tpc>9</tpc>
                 <tpc2>12</tpc2>
