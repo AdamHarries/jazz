@@ -1,10 +1,15 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # Obtained from https://github.com/klutt/klutt-musescore-tools
 # Adapted/cleaned up further from there.
 
 # Define the name of the 'musescore' program that we'll be calling at the command line.
-mscore = "musescore-portable"
+import platform 
+mscore=""
+if platform.system() == "Linux": 
+    mscore = "musescore-portable"
+elif platform.system() == "Darwin": 
+    mscore = "/Applications/MuseScore 3.app/Contents/MacOS/mscore"
 
 # Imports
 import sys
