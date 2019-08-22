@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.1.0</programVersion>
-  <programRevision>06f0ddd</programRevision>
+  <programVersion>3.0.5</programVersion>
+  <programRevision>58dd23d</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -2041,6 +2041,9 @@
       <Measure>
         <startRepeat/>
         <endRepeat>2</endRepeat>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
         <voice>
           <RehearsalMark>
             <linkedMain/>
@@ -12611,7 +12614,7 @@
           <startRepeat/>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <subtype>line</subtype>
+            <subtype>page</subtype>
             </LayoutBreak>
           <voice>
             <RehearsalMark>
@@ -17048,7 +17051,7 @@
           <startRepeat/>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <subtype>line</subtype>
+            <subtype>page</subtype>
             </LayoutBreak>
           <voice>
             <RehearsalMark>
@@ -21810,7 +21813,7 @@
           <startRepeat/>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <subtype>line</subtype>
+            <subtype>page</subtype>
             </LayoutBreak>
           <voice>
             <RehearsalMark>
