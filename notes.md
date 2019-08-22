@@ -1,9 +1,17 @@
 # Notes on stuff, scores to write up, etc.
 
+For next gig (from group meeting):
+
+    - Sunny Side of the Street (DONE)
+    - Perdido (DONE)
+    - Flying Home (DONE)
+    - Comes Love (DONE)
+    - Softly as a Morning Sunrise (DONE)
+
 TODO (priority):
 
     - 'T ain't what you do (Score)
-    - Good Bait (NIR)
+    - ~~Good Bait (NIR)~~ DONE
     - Pennies from Heaven (02)
     - Slipped Disk (02)
     - Do Nothing Till You Hear From Me (02, 11)
@@ -45,12 +53,12 @@ Anything Frank Foster wrote for the Basie Band, e.g.:
 
 Some of the tunes recorded by the Metronome All-Stars: https://en.wikipedia.org/wiki/Metronome_All-Stars
 
-Good Bait - Count Basie: http://www.musiclassroom.com/partitions/goodbait.pdf
+~~Good Bait - Count Basie: http://www.musiclassroom.com/partitions/goodbait.pdf~~ DONE
 
 Beautiful Love - Lester Young: http://www.musiclassroom.com/partitions/beautiful%20love.pdf
 
-Pick a Rib - Lionel Hampton/Bennie Goodman: http://www.musiclassroom.com/partitions/extraits.pdf
+~~Pick a Rib - Lionel Hampton/Bennie Goodman: http://www.musiclassroom.com/partitions/extraits.pdf~~
 
-Taps Miller - Count Basie: https://www.jwpepper.com/Taps-Miller/10640137.item#/submit
+~~Taps Miller - Count Basie: https://www.jwpepper.com/Taps-Miller/10640137.item#/submit~~ DONE
 
 Loads here: http://www.janwolters.nl/jwfree-uk.html

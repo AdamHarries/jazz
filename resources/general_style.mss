@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
   <Style>
-    <pageWidth>8.27</pageWidth>
-    <pageHeight>11.69</pageHeight>
-    <pagePrintableWidth>7.4826</pagePrintableWidth>
+    <pageWidth>8.26771</pageWidth>
+    <pageHeight>11.6929</pageHeight>
+    <pagePrintableWidth>7.48031</pagePrintableWidth>
     <pageEvenLeftMargin>0.393701</pageEvenLeftMargin>
     <pageOddLeftMargin>0.393701</pageOddLeftMargin>
     <pageEvenTopMargin>0.393701</pageEvenTopMargin>
-    <pageEvenBottomMargin>0.787402</pageEvenBottomMargin>
+    <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
     <pageOddTopMargin>0.393701</pageOddTopMargin>
-    <pageOddBottomMargin>0.787402</pageOddBottomMargin>
+    <pageOddBottomMargin>0.787403</pageOddBottomMargin>
     <pageTwosided>1</pageTwosided>
     <staffUpperBorder>7</staffUpperBorder>
     <staffLowerBorder>7</staffLowerBorder>
@@ -22,7 +22,6 @@
     <lyricsPosBelow x="0" y="3"/>
     <lyricsMinTopDistance>1</lyricsMinTopDistance>
     <lyricsMinBottomDistance>2</lyricsMinBottomDistance>
-    <lyricsMinDistance>0</lyricsMinDistance>
     <lyricsLineHeight>1</lyricsLineHeight>
     <lyricsDashMinLength>0.4</lyricsDashMinLength>
     <lyricsDashMaxLegth>0.8</lyricsDashMaxLegth>
@@ -137,7 +136,7 @@
     <hairpinHeight>1.2</hairpinHeight>
     <hairpinContHeight>0.5</hairpinContHeight>
     <hairpinWidth>0.2</hairpinWidth>
-    <hairpinFontFace>FreeSerif</hairpinFontFace>
+    <hairpinFontFace>MuseJazz Text</hairpinFontFace>
     <hairpinFontSize>12</hairpinFontSize>
     <hairpinFontSpatiumDependent>1</hairpinFontSpatiumDependent>
     <hairpinFontStyle>2</hairpinFontStyle>
@@ -162,7 +161,7 @@
     <pedalListStyle>1</pedalListStyle>
     <pedalBeginTextOffset x="0" y="0.15"/>
     <pedalHookHeight>-1.2</pedalHookHeight>
-    <pedalFontFace>FreeSerif</pedalFontFace>
+    <pedalFontFace>MuseJazz Text</pedalFontFace>
     <pedalFontSize>12</pedalFontSize>
     <pedalFontSpatiumDependent>1</pedalFontSpatiumDependent>
     <pedalFontStyle>0</pedalFontStyle>
@@ -252,7 +251,7 @@
     <chordsXmlFile>0</chordsXmlFile>
     <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
     <concertPitch>0</concertPitch>
-    <createMultiMeasureRests>1</createMultiMeasureRests>
+    <createMultiMeasureRests>0</createMultiMeasureRests>
     <minEmptyMeasures>2</minEmptyMeasures>
     <minMMRestWidth>4</minMMRestWidth>
     <hideEmptyStaves>0</hideEmptyStaves>
@@ -296,7 +295,7 @@
     <voltaHook>1.9</voltaHook>
     <voltaLineWidth>0.2</voltaLineWidth>
     <voltaLineStyle>1</voltaLineStyle>
-    <voltaFontFace>FreeSerif</voltaFontFace>
+    <voltaFontFace>MuseJazz Text</voltaFontFace>
     <voltaFontSize>11</voltaFontSize>
     <voltaFontSpatiumDependent>1</voltaFontSpatiumDependent>
     <voltaFontStyle>1</voltaFontStyle>
@@ -333,7 +332,7 @@
     <ottavaLineWidth>0.2</ottavaLineWidth>
     <ottavaLineStyle>2</ottavaLineStyle>
     <ottavaNumbersOnly>1</ottavaNumbersOnly>
-    <ottavaFontFace>FreeSerif</ottavaFontFace>
+    <ottavaFontFace>MuseJazz Text</ottavaFontFace>
     <ottavaFontSize>12</ottavaFontSize>
     <ottavaFontSpatiumDependent>1</ottavaFontSpatiumDependent>
     <ottavaFontStyle>0</ottavaFontStyle>
@@ -400,7 +399,7 @@
     <tremoloBarLineWidth>0.12</tremoloBarLineWidth>
     <jumpPosAbove x="0" y="-2"/>
     <markerPosAbove x="0" y="-2"/>
-    <defaultFontFace>FreeSerif</defaultFontFace>
+    <defaultFontFace>MuseJazz Text</defaultFontFace>
     <defaultFontSize>10</defaultFontSize>
     <defaultFontSpatiumDependent>1</defaultFontSpatiumDependent>
     <defaultFontStyle>0</defaultFontStyle>
@@ -468,7 +467,7 @@
     <lyricistFrameRound>25</lyricistFrameRound>
     <lyricistFrameFgColor r="0" g="0" b="0" a="255"/>
     <lyricistFrameBgColor r="255" g="255" b="255" a="0"/>
-    <fingeringFontFace>FreeSerif</fingeringFontFace>
+    <fingeringFontFace>MuseJazz Text</fingeringFontFace>
     <fingeringFontSize>8</fingeringFontSize>
     <fingeringFontSpatiumDependent>1</fingeringFontSpatiumDependent>
     <fingeringFontStyle>0</fingeringFontStyle>
@@ -480,7 +479,7 @@
     <fingeringFrameFgColor r="0" g="0" b="0" a="255"/>
     <fingeringFrameBgColor r="255" g="255" b="255" a="0"/>
     <fingeringOffset x="0" y="0"/>
-    <lhGuitarFingeringFontFace>FreeSerif</lhGuitarFingeringFontFace>
+    <lhGuitarFingeringFontFace>MuseJazz Text</lhGuitarFingeringFontFace>
     <lhGuitarFingeringFontSize>8</lhGuitarFingeringFontSize>
     <lhGuitarFingeringFontSpatiumDependent>1</lhGuitarFingeringFontSpatiumDependent>
     <lhGuitarFingeringFontStyle>0</lhGuitarFingeringFontStyle>
@@ -492,7 +491,7 @@
     <lhGuitarFingeringFrameFgColor r="0" g="0" b="0" a="255"/>
     <lhGuitarFingeringFrameBgColor r="255" g="255" b="255" a="0"/>
     <lhGuitarFingeringOffset x="-0.5" y="0"/>
-    <rhGuitarFingeringFontFace>FreeSerif</rhGuitarFingeringFontFace>
+    <rhGuitarFingeringFontFace>MuseJazz Text</rhGuitarFingeringFontFace>
     <rhGuitarFingeringFontSize>8</rhGuitarFingeringFontSize>
     <rhGuitarFingeringFontSpatiumDependent>1</rhGuitarFingeringFontSpatiumDependent>
     <rhGuitarFingeringFontStyle>0</rhGuitarFingeringFontStyle>
@@ -504,7 +503,7 @@
     <rhGuitarFingeringFrameFgColor r="0" g="0" b="0" a="255"/>
     <rhGuitarFingeringFrameBgColor r="255" g="255" b="255" a="0"/>
     <rhGuitarFingeringOffset x="0" y="0"/>
-    <stringNumberFontFace>FreeSerif</stringNumberFontFace>
+    <stringNumberFontFace>MuseJazz Text</stringNumberFontFace>
     <stringNumberFontSize>8</stringNumberFontSize>
     <stringNumberFontSpatiumDependent>1</stringNumberFontSpatiumDependent>
     <stringNumberFontStyle>0</stringNumberFontStyle>
@@ -516,7 +515,7 @@
     <stringNumberFrameFgColor r="0" g="0" b="0" a="255"/>
     <stringNumberFrameBgColor r="255" g="255" b="255" a="0"/>
     <stringNumberOffset x="0" y="-2"/>
-    <longInstrumentFontFace>FreeSerif</longInstrumentFontFace>
+    <longInstrumentFontFace>MuseJazz Text</longInstrumentFontFace>
     <longInstrumentFontSize>12</longInstrumentFontSize>
     <longInstrumentFontSpatiumDependent>1</longInstrumentFontSpatiumDependent>
     <longInstrumentFontStyle>0</longInstrumentFontStyle>
@@ -528,7 +527,7 @@
     <longInstrumentFrameRound>0</longInstrumentFrameRound>
     <longInstrumentFrameFgColor r="0" g="0" b="0" a="255"/>
     <longInstrumentFrameBgColor r="255" g="255" b="255" a="0"/>
-    <shortInstrumentFontFace>FreeSerif</shortInstrumentFontFace>
+    <shortInstrumentFontFace>MuseJazz Text</shortInstrumentFontFace>
     <shortInstrumentFontSize>12</shortInstrumentFontSize>
     <shortInstrumentFontSpatiumDependent>1</shortInstrumentFontSpatiumDependent>
     <shortInstrumentFontStyle>0</shortInstrumentFontStyle>
@@ -540,7 +539,7 @@
     <shortInstrumentFrameRound>0</shortInstrumentFrameRound>
     <shortInstrumentFrameFgColor r="0" g="0" b="0" a="255"/>
     <shortInstrumentFrameBgColor r="255" g="255" b="255" a="0"/>
-    <partInstrumentFontFace>FreeSerif</partInstrumentFontFace>
+    <partInstrumentFontFace>MuseJazz Text</partInstrumentFontFace>
     <partInstrumentFontSize>18</partInstrumentFontSize>
     <partInstrumentFontSpatiumDependent>0</partInstrumentFontSpatiumDependent>
     <partInstrumentFontStyle>0</partInstrumentFontStyle>
@@ -619,7 +618,7 @@
     <measureNumberFrameRound>0</measureNumberFrameRound>
     <measureNumberFrameFgColor r="0" g="0" b="0" a="255"/>
     <measureNumberFrameBgColor r="255" g="255" b="255" a="0"/>
-    <translatorFontFace>FreeSerif</translatorFontFace>
+    <translatorFontFace>MuseJazz Text</translatorFontFace>
     <translatorFontSize>11</translatorFontSize>
     <translatorFontSpatiumDependent>0</translatorFontSpatiumDependent>
     <translatorFontStyle>0</translatorFontStyle>
@@ -632,10 +631,10 @@
     <translatorFrameRound>0</translatorFrameRound>
     <translatorFrameFgColor r="0" g="0" b="0" a="255"/>
     <translatorFrameBgColor r="255" g="255" b="255" a="0"/>
-    <systemFontFace>FreeSerif</systemFontFace>
+    <systemFontFace>MuseJazz Text</systemFontFace>
     <systemFontSize>10</systemFontSize>
     <systemFontSpatiumDependent>1</systemFontSpatiumDependent>
-    <systemFontStyle>0</systemFontStyle>
+    <systemFontStyle>2</systemFontStyle>
     <systemTextColor r="0" g="0" b="0" a="255"/>
     <systemAlign>left,top</systemAlign>
     <systemOffsetType>1</systemOffsetType>
@@ -649,7 +648,7 @@
     <systemFrameRound>25</systemFrameRound>
     <systemFrameFgColor r="0" g="0" b="0" a="255"/>
     <systemFrameBgColor r="255" g="255" b="255" a="0"/>
-    <staffFontFace>FreeSerif</staffFontFace>
+    <staffFontFace>MuseJazz Text</staffFontFace>
     <staffFontSize>10</staffFontSize>
     <staffFontSpatiumDependent>1</staffFontSpatiumDependent>
     <staffFontStyle>0</staffFontStyle>
@@ -666,7 +665,7 @@
     <staffFrameRound>25</staffFrameRound>
     <staffFrameFgColor r="0" g="0" b="0" a="255"/>
     <staffFrameBgColor r="255" g="255" b="255" a="0"/>
-    <rehearsalMarkFontFace>FreeSerif</rehearsalMarkFontFace>
+    <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
     <rehearsalMarkFontSize>14</rehearsalMarkFontSize>
     <rehearsalMarkFontSpatiumDependent>1</rehearsalMarkFontSpatiumDependent>
     <rehearsalMarkFontStyle>1</rehearsalMarkFontStyle>
@@ -705,7 +704,7 @@
     <repeatRightFrameRound>25</repeatRightFrameRound>
     <repeatRightFrameFgColor r="0" g="0" b="0" a="255"/>
     <repeatRightFrameBgColor r="255" g="255" b="255" a="0"/>
-    <frameFontFace>FreeSerif</frameFontFace>
+    <frameFontFace>MuseJazz Text</frameFontFace>
     <frameFontSize>12</frameFontSize>
     <frameFontSpatiumDependent>0</frameFontSpatiumDependent>
     <frameFontStyle>0</frameFontStyle>
@@ -717,12 +716,12 @@
     <frameFrameRound>0</frameFrameRound>
     <frameFrameFgColor r="0" g="0" b="0" a="255"/>
     <frameFrameBgColor r="255" g="255" b="255" a="0"/>
-    <textLineFontFace>FreeSerif</textLineFontFace>
+    <textLineFontFace>MuseJazz Text</textLineFontFace>
     <textLineFontSize>12</textLineFontSize>
     <textLineFontSpatiumDependent>1</textLineFontSpatiumDependent>
     <textLineFontStyle>0</textLineFontStyle>
     <textLineColor r="0" g="0" b="0" a="255"/>
-    <glissandoFontFace>FreeSerif</glissandoFontFace>
+    <glissandoFontFace>MuseJazz Text</glissandoFontFace>
     <glissandoFontSize>8</glissandoFontSize>
     <glissandoFontSpatiumDependent>1</glissandoFontSpatiumDependent>
     <glissandoFontStyle>2</glissandoFontStyle>
@@ -737,7 +736,7 @@
     <glissandoFrameBgColor r="255" g="255" b="255" a="0"/>
     <glissandoLineWidth>0.15</glissandoLineWidth>
     <glissandoText>gliss.</glissandoText>
-    <bendFontFace>FreeSerif</bendFontFace>
+    <bendFontFace>MuseJazz Text</bendFontFace>
     <bendFontSize>8</bendFontSize>
     <bendFontSpatiumDependent>1</bendFontSpatiumDependent>
     <bendFontStyle>0</bendFontStyle>
@@ -752,7 +751,7 @@
     <bendFrameBgColor r="255" g="255" b="255" a="0"/>
     <bendLineWidth>0.15</bendLineWidth>
     <bendArrowWidth>0.5</bendArrowWidth>
-    <headerFontFace>FreeSerif</headerFontFace>
+    <headerFontFace>MuseJazz Text</headerFontFace>
     <headerFontSize>8</headerFontSize>
     <headerFontSpatiumDependent>0</headerFontSpatiumDependent>
     <headerFontStyle>0</headerFontStyle>
@@ -765,7 +764,7 @@
     <headerFrameRound>0</headerFrameRound>
     <headerFrameFgColor r="0" g="0" b="0" a="255"/>
     <headerFrameBgColor r="255" g="255" b="255" a="0"/>
-    <footerFontFace>FreeSerif</footerFontFace>
+    <footerFontFace>MuseJazz Text</footerFontFace>
     <footerFontSize>8</footerFontSize>
     <footerFontSpatiumDependent>0</footerFontSpatiumDependent>
     <footerFontStyle>0</footerFontStyle>
@@ -778,7 +777,7 @@
     <footerFrameRound>0</footerFrameRound>
     <footerFrameFgColor r="0" g="0" b="0" a="255"/>
     <footerFrameBgColor r="255" g="255" b="255" a="0"/>
-    <instrumentChangeFontFace>FreeSerif</instrumentChangeFontFace>
+    <instrumentChangeFontFace>MuseJazz Text</instrumentChangeFontFace>
     <instrumentChangeFontSize>12</instrumentChangeFontSize>
     <instrumentChangeFontSpatiumDependent>1</instrumentChangeFontSpatiumDependent>
     <instrumentChangeFontStyle>1</instrumentChangeFontStyle>
@@ -801,7 +800,7 @@
     <figuredBassFontStyle>0</figuredBassFontStyle>
     <figuredBassColor r="0" g="0" b="0" a="255"/>
     <user1Name></user1Name>
-    <user1FontFace>FreeSerif</user1FontFace>
+    <user1FontFace>MuseJazz Text</user1FontFace>
     <user1FontSize>10</user1FontSize>
     <user1FontSpatiumDependent>1</user1FontSpatiumDependent>
     <user1FontStyle>0</user1FontStyle>
@@ -816,7 +815,7 @@
     <user1FrameFgColor r="0" g="0" b="0" a="255"/>
     <user1FrameBgColor r="255" g="255" b="255" a="0"/>
     <user2Name></user2Name>
-    <user2FontFace>FreeSerif</user2FontFace>
+    <user2FontFace>MuseJazz Text</user2FontFace>
     <user2FontSize>10</user2FontSize>
     <user2FontSpatiumDependent>1</user2FontSpatiumDependent>
     <user2FontStyle>0</user2FontStyle>
@@ -830,7 +829,7 @@
     <user2FrameFgColor r="0" g="0" b="0" a="255"/>
     <user2FrameBgColor r="255" g="255" b="255" a="0"/>
     <user3Name></user3Name>
-    <user3FontFace>FreeSerif</user3FontFace>
+    <user3FontFace>MuseJazz Text</user3FontFace>
     <user3FontSize>10</user3FontSize>
     <user3FontSpatiumDependent>1</user3FontSpatiumDependent>
     <user3FontStyle>0</user3FontStyle>
@@ -844,7 +843,7 @@
     <user3FrameFgColor r="0" g="0" b="0" a="255"/>
     <user3FrameBgColor r="255" g="255" b="255" a="0"/>
     <user4Name></user4Name>
-    <user4FontFace>FreeSerif</user4FontFace>
+    <user4FontFace>MuseJazz Text</user4FontFace>
     <user4FontSize>10</user4FontSize>
     <user4FontSpatiumDependent>1</user4FontSpatiumDependent>
     <user4FontStyle>0</user4FontStyle>
@@ -858,7 +857,7 @@
     <user4FrameFgColor r="0" g="0" b="0" a="255"/>
     <user4FrameBgColor r="255" g="255" b="255" a="0"/>
     <user5Name></user5Name>
-    <user5FontFace>FreeSerif</user5FontFace>
+    <user5FontFace>MuseJazz Text</user5FontFace>
     <user5FontSize>10</user5FontSize>
     <user5FontSpatiumDependent>1</user5FontSpatiumDependent>
     <user5FontStyle>0</user5FontStyle>
@@ -872,7 +871,7 @@
     <user5FrameFgColor r="0" g="0" b="0" a="255"/>
     <user5FrameBgColor r="255" g="255" b="255" a="0"/>
     <user6Name></user6Name>
-    <user6FontFace>FreeSerif</user6FontFace>
+    <user6FontFace>MuseJazz Text</user6FontFace>
     <user6FontSize>10</user6FontSize>
     <user6FontSpatiumDependent>1</user6FontSpatiumDependent>
     <user6FontStyle>0</user6FontStyle>
@@ -885,7 +884,7 @@
     <user6FrameRound>0</user6FrameRound>
     <user6FrameFgColor r="0" g="0" b="0" a="255"/>
     <user6FrameBgColor r="255" g="255" b="255" a="0"/>
-    <letRingFontFace>FreeSerif</letRingFontFace>
+    <letRingFontFace>MuseJazz Text</letRingFontFace>
     <letRingFontSize>10</letRingFontSize>
     <letRingFontSpatiumDependent>1</letRingFontSpatiumDependent>
     <letRingFontStyle>0</letRingFontStyle>
@@ -904,8 +903,7 @@
     <letRingFrameRound>0</letRingFrameRound>
     <letRingFrameFgColor r="0" g="0" b="0" a="255"/>
     <letRingFrameBgColor r="255" g="255" b="255" a="0"/>
-    <letRingEndHookType>3</letRingEndHookType>
-    <palmMuteFontFace>FreeSerif</palmMuteFontFace>
+    <palmMuteFontFace>MuseJazz Text</palmMuteFontFace>
     <palmMuteFontSize>10</palmMuteFontSize>
     <palmMuteFontSpatiumDependent>1</palmMuteFontSpatiumDependent>
     <palmMuteFontStyle>0</palmMuteFontStyle>
@@ -924,7 +922,6 @@
     <palmMuteFrameRound>0</palmMuteFrameRound>
     <palmMuteFrameFgColor r="0" g="0" b="0" a="255"/>
     <palmMuteFrameBgColor r="255" g="255" b="255" a="0"/>
-    <palmMuteEndHookType>3</palmMuteEndHookType>
     <fermataPosAbove x="0" y="-1"/>
     <fermataPosBelow x="0" y="1"/>
     <fermataMinDistance>0.4</fermataMinDistance>
