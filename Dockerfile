@@ -42,8 +42,6 @@ WORKDIR /home/root
 RUN wget -q https://github.com/musescore/MuseScore/releases/download/v3.1/MuseScore-3.1.0-x86_64.AppImage
 
 ADD make_books.py make_books.py
-ADD src src
-ADD drafts drafts
 ADD resources/MuseJazzText.otf resources/MuseJazzText.otf
 ADD resources/general_style.mss resources/general_style.mss
 ADD resources/logo_bars.pdf resources/logo_bars.pdf
@@ -51,4 +49,7 @@ ADD resources/logo_bars.pdf resources/logo_bars.pdf
 RUN chmod 644 resources/MuseJazzText.otf && cp resources/MuseJazzText.otf /usr/local/share/fonts && fc-cache -v
 
 ADD entrypoint.sh /entrypoint.sh
+
+ADD src src
+ADD drafts drafts
 ENTRYPOINT ["/entrypoint.sh"]
