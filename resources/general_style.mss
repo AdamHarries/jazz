@@ -127,7 +127,7 @@
     <propertyDistance>1</propertyDistance>
     <articulationMag>1</articulationMag>
     <articulationPosAbove x="0" y="0"/>
-    <lastSystemFillLimit>0.3</lastSystemFillLimit>
+    <lastSystemFillLimit>0</lastSystemFillLimit>
     <hairpinPlacement>1</hairpinPlacement>
     <hairpinPosAbove x="0" y="-3.5"/>
     <hairpinPosBelow x="0" y="3.5"/>
@@ -594,7 +594,7 @@
     <metronomeFontFace>MuseJazz Text</metronomeFontFace>
     <metronomeFontSize>12</metronomeFontSize>
     <metronomeFontSpatiumDependent>0</metronomeFontSpatiumDependent>
-    <metronomeFontStyle>1</metronomeFontStyle>
+    <metronomeFontStyle>0</metronomeFontStyle>
     <metronomeColor r="0" g="0" b="0" a="255"/>
     <metronomePlacement>0</metronomePlacement>
     <metronomeOffset x="0" y="0"/>
@@ -668,7 +668,7 @@
     <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
     <rehearsalMarkFontSize>14</rehearsalMarkFontSize>
     <rehearsalMarkFontSpatiumDependent>1</rehearsalMarkFontSpatiumDependent>
-    <rehearsalMarkFontStyle>1</rehearsalMarkFontStyle>
+    <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
     <rehearsalMarkColor r="0" g="0" b="0" a="255"/>
     <rehearsalMarkFrameType>1</rehearsalMarkFrameType>
     <rehearsalMarkFramePadding>0.5</rehearsalMarkFramePadding>
@@ -780,7 +780,7 @@
     <instrumentChangeFontFace>MuseJazz Text</instrumentChangeFontFace>
     <instrumentChangeFontSize>12</instrumentChangeFontSize>
     <instrumentChangeFontSpatiumDependent>1</instrumentChangeFontSpatiumDependent>
-    <instrumentChangeFontStyle>1</instrumentChangeFontStyle>
+    <instrumentChangeFontStyle>0</instrumentChangeFontStyle>
     <instrumentChangeColor r="0" g="0" b="0" a="255"/>
     <instrumentChangeAlign>left,bottom</instrumentChangeAlign>
     <instrumentChangeOffset x="0" y="0"/>
