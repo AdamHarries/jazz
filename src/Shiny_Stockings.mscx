@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.1.0</programVersion>
-  <programRevision>06f0ddd</programRevision>
+  <programVersion>3.0.5</programVersion>
+  <programRevision>58dd23d</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -1283,7 +1283,7 @@
               </Volta>
             <next>
               <location>
-                <measures>3</measures>
+                <measures>4</measures>
                 <fractions>1/1</fractions>
                 </location>
               </next>
@@ -1464,10 +1464,19 @@
             <durationType>measure</durationType>
             <duration>4/4</duration>
             </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <linkedMain/>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
           <Spanner type="Volta">
             <prev>
               <location>
-                <measures>-3</measures>
+                <measures>-4</measures>
                 <fractions>-1/1</fractions>
                 </location>
               </prev>
@@ -2600,6 +2609,15 @@
             </Rest>
           </voice>
         </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <linkedMain/>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
       </Staff>
     <Staff id="3">
       <Measure>
@@ -3651,6 +3669,15 @@
             <name>6</name>
             <linkedMain/>
             </Harmony>
+          <Rest>
+            <linkedMain/>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Rest>
             <linkedMain/>
             <durationType>measure</durationType>
@@ -4963,7 +4990,7 @@
                 </Volta>
               <next>
                 <location>
-                  <measures>3</measures>
+                  <measures>4</measures>
                   <fractions>1/1</fractions>
                   </location>
                 </next>
@@ -5174,10 +5201,20 @@
               <durationType>measure</durationType>
               <duration>4/4</duration>
               </Rest>
+            </voice>
+          </Measure>
+        <Measure>
+          <voice>
+            <Rest>
+              <linked>
+                </linked>
+              <durationType>measure</durationType>
+              <duration>4/4</duration>
+              </Rest>
             <Spanner type="Volta">
               <prev>
                 <location>
-                  <measures>-3</measures>
+                  <measures>-4</measures>
                   <fractions>-1/1</fractions>
                   </location>
                 </prev>
@@ -6561,7 +6598,7 @@
                 </Volta>
               <next>
                 <location>
-                  <measures>3</measures>
+                  <measures>4</measures>
                   <fractions>1/1</fractions>
                   </location>
                 </next>
@@ -6775,10 +6812,20 @@
               <durationType>measure</durationType>
               <duration>4/4</duration>
               </Rest>
+            </voice>
+          </Measure>
+        <Measure>
+          <voice>
+            <Rest>
+              <linked>
+                </linked>
+              <durationType>measure</durationType>
+              <duration>4/4</duration>
+              </Rest>
             <Spanner type="Volta">
               <prev>
                 <location>
-                  <measures>-3</measures>
+                  <measures>-4</measures>
                   <fractions>-1/1</fractions>
                   </location>
                 </prev>
@@ -8101,7 +8148,7 @@
                 </Volta>
               <next>
                 <location>
-                  <measures>3</measures>
+                  <measures>4</measures>
                   <fractions>1/1</fractions>
                   </location>
                 </next>
@@ -8303,10 +8350,20 @@
               <durationType>measure</durationType>
               <duration>4/4</duration>
               </Rest>
+            </voice>
+          </Measure>
+        <Measure>
+          <voice>
+            <Rest>
+              <linked>
+                </linked>
+              <durationType>measure</durationType>
+              <duration>4/4</duration>
+              </Rest>
             <Spanner type="Volta">
               <prev>
                 <location>
-                  <measures>-3</measures>
+                  <measures>-4</measures>
                   <fractions>-1/1</fractions>
                   </location>
                 </prev>
