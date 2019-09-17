@@ -52,4 +52,5 @@ ADD entrypoint.sh /entrypoint.sh
 
 ADD src src
 ADD drafts drafts
+
 ENTRYPOINT ["/entrypoint.sh"]
