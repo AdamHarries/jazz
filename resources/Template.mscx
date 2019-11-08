@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.1.0</programVersion>
-  <programRevision>06f0ddd</programRevision>
+  <programVersion>3.2.3</programVersion>
+  <programRevision>d2d863f</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
-    <Synthesizer>
-      </Synthesizer>
     <Division>480</Division>
     <Style>
       <pageWidth>8.26771</pageWidth>
@@ -186,6 +184,7 @@
         <transposeDiatonic>-5</transposeDiatonic>
         <transposeChromatic>-9</transposeChromatic>
         <Channel>
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="65"/>
           <controller ctrl="10" value="63"/>
@@ -252,11 +251,13 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel name="open">
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="56"/>
           <synti>Fluid</synti>
           </Channel>
         <Channel name="mute">
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="59"/>
           <synti>Fluid</synti>
@@ -332,13 +333,15 @@
       <VBox>
         <height>10</height>
         <linkedMain/>
+        <Text>
+          <linkedMain/>
+          <style>Title</style>
+          <text>Jive at Five
+</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
-          <KeySig>
-            <linkedMain/>
-            <accidental>0</accidental>
-            </KeySig>
           <TimeSig>
             <linkedMain/>
             <sigN>4</sigN>
@@ -857,8 +860,6 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
-      <Synthesizer>
-        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.27</pageWidth>
@@ -1046,6 +1047,16 @@
           <Text>
             <style>Instrument Name (Part)</style>
             <text>Piano</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Title</style>
+            <text>Jive at Five
+</text>
             </Text>
           </VBox>
         <Measure>
@@ -1271,8 +1282,6 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
-      <Synthesizer>
-        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.27</pageWidth>
@@ -1397,6 +1406,7 @@
           <transposeDiatonic>-5</transposeDiatonic>
           <transposeChromatic>-9</transposeChromatic>
           <Channel>
+            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="65"/>
             <controller ctrl="10" value="63"/>
@@ -1413,14 +1423,16 @@
             <style>Instrument Name (Part)</style>
             <text>Alto Sax</text>
             </Text>
+          <Text>
+            <linked>
+              </linked>
+            <style>Title</style>
+            <text>Jive at Five
+</text>
+            </Text>
           </VBox>
         <Measure>
           <voice>
-            <KeySig>
-              <linked>
-                </linked>
-              <accidental>0</accidental>
-              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -1439,9 +1451,6 @@
           <multiMeasureRest>17</multiMeasureRest>
           <endRepeat>2</endRepeat>
           <voice>
-            <KeySig>
-              <accidental>0</accidental>
-              </KeySig>
             <TimeSig>
               <sigN>4</sigN>
               <sigD>4</sigD>
@@ -1619,8 +1628,6 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
-      <Synthesizer>
-        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.27</pageWidth>
@@ -1792,11 +1799,13 @@
             <gateTime>100</gateTime>
             </Articulation>
           <Channel name="open">
+            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="56"/>
             <synti>Fluid</synti>
             </Channel>
           <Channel name="mute">
+            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="59"/>
             <synti>Fluid</synti>
@@ -1814,6 +1823,16 @@
           <Text>
             <style>Instrument Name (Part)</style>
             <text>B♭ Trumpet</text>
+            </Text>
+          <Text>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Title</style>
+            <text>Jive at Five
+</text>
             </Text>
           </VBox>
         <Measure>
