@@ -10,7 +10,7 @@ For next gig (from group meeting):
 
 TODO (priority):
 
-    - 'T ain't what you do (Score)
+    - ~~'T ain't what you do (Score)~~ DONE
     - ~~Good Bait (NIR)~~ DONE
     - Pennies from Heaven (02)
     - Slipped Disk (02)
@@ -34,6 +34,7 @@ Classical:
     - Saint Saens Danse Macabre
     - Saint Saens Carnival of the Animals, Bones
     - Lizt Hungarian Rhapsody #2 in C Minor.
+    - Dvorak Symphony #9 (from the new world)
 
 From Scores:
     - Lindy Hoppers Delight
@@ -57,7 +58,7 @@ Some of the tunes recorded by the Metronome All-Stars: https://en.wikipedia.org/
 
 Beautiful Love - Lester Young: http://www.musiclassroom.com/partitions/beautiful%20love.pdf
 
-~~Pick a Rib - Lionel Hampton/Bennie Goodman: http://www.musiclassroom.com/partitions/extraits.pdf~~
+~~Pick a Rib - Lionel Hampton/Bennie Goodman: http://www.musiclassroom.com/partitions/extraits.pdf~~ DONE
 
 ~~Taps Miller - Count Basie: https://www.jwpepper.com/Taps-Miller/10640137.item#/submit~~ DONE
 
