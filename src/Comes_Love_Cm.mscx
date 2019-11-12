@@ -314,10 +314,6 @@
         </VBox>
       <Measure>
         <voice>
-          <KeySig>
-            <linkedMain/>
-            <accidental>0</accidental>
-            </KeySig>
           <TimeSig>
             <linkedMain/>
             <sigN>4</sigN>
@@ -6977,11 +6973,6 @@
           </VBox>
         <Measure>
           <voice>
-            <KeySig>
-              <linked>
-                </linked>
-              <accidental>0</accidental>
-              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -9035,6 +9026,9 @@
           </VBox>
         <Measure>
           <voice>
+            <KeySig>
+              <accidental>-1</accidental>
+              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -9842,9 +9836,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>80</pitch>
                 <tpc>10</tpc>
                 <tpc2>12</tpc2>
@@ -9879,9 +9870,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>80</pitch>
                 <tpc>10</tpc>
                 <tpc2>12</tpc2>

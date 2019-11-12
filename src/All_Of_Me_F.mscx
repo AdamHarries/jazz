@@ -4964,6 +4964,9 @@
           </VBox>
         <Measure>
           <voice>
+            <KeySig>
+              <accidental>-1</accidental>
+              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -5400,9 +5403,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -6261,9 +6261,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -6789,7 +6786,7 @@
         <Measure>
           <voice>
             <KeySig>
-              <accidental>3</accidental>
+              <accidental>2</accidental>
               </KeySig>
             <TimeSig>
               <linked>
@@ -7249,9 +7246,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>
@@ -8153,9 +8147,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <Spanner type="Tie">
                   <Tie>
                     <linked>

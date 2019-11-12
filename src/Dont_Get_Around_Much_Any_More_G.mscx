@@ -10108,6 +10108,9 @@
           </VBox>
         <Measure>
           <voice>
+            <KeySig>
+              <accidental>1</accidental>
+              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -11306,9 +11309,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalSharp</subtype>
-                  </Accidental>
                 <pitch>66</pitch>
                 <tpc>20</tpc>
                 </Note>
