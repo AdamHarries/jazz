@@ -336,7 +336,7 @@
         <Text>
           <linkedMain/>
           <style>Title</style>
-          <text>Jive at Five
+          <text>They call it &quot;The Blues&quot;.
 </text>
           </Text>
         </VBox>
@@ -1055,7 +1055,7 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text>Jive at Five
+            <text>They call it &quot;The Blues&quot;.
 </text>
             </Text>
           </VBox>
@@ -1427,7 +1427,7 @@
             <linked>
               </linked>
             <style>Title</style>
-            <text>Jive at Five
+            <text>They call it &quot;The Blues&quot;.
 </text>
             </Text>
           </VBox>
@@ -1831,7 +1831,7 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text>Jive at Five
+            <text>They call it &quot;The Blues&quot;.
 </text>
             </Text>
           </VBox>
