@@ -735,7 +735,7 @@
     <glissandoFrameFgColor r="0" g="0" b="0" a="255"/>
     <glissandoFrameBgColor r="255" g="255" b="255" a="0"/>
     <glissandoLineWidth>0.15</glissandoLineWidth>
-    <glissandoText>gliss.</glissandoText>
+    <glissandoText></glissandoText>
     <bendFontFace>MuseJazz Text</bendFontFace>
     <bendFontSize>8</bendFontSize>
     <bendFontSpatiumDependent>1</bendFontSpatiumDependent>
