@@ -298,7 +298,7 @@
     <voltaFontFace>MuseJazz Text</voltaFontFace>
     <voltaFontSize>11</voltaFontSize>
     <voltaFontSpatiumDependent>1</voltaFontSpatiumDependent>
-    <voltaFontStyle>1</voltaFontStyle>
+    <voltaFontStyle>0</voltaFontStyle>
     <voltaColor r="0" g="0" b="0" a="255"/>
     <voltaOffset x="0.5" y="1.9"/>
     <voltaFrameType>0</voltaFrameType>
