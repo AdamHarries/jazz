@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.0.5</programVersion>
-  <programRevision>58dd23d</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -3500,9 +3500,12 @@
             <durationType>eighth</durationType>
             <Note>
               <linkedMain/>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
-              <tpc2>16</tpc2>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>66</pitch>
+              <tpc>8</tpc>
+              <tpc2>11</tpc2>
               </Note>
             </Chord>
           <Harmony>
@@ -7321,9 +7324,12 @@
             <durationType>eighth</durationType>
             <Note>
               <linkedMain/>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
-              <tpc2>15</tpc2>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>66</pitch>
+              <tpc>8</tpc>
+              <tpc2>10</tpc2>
               </Note>
             </Chord>
           <Harmony>
@@ -10919,8 +10925,11 @@
             <durationType>eighth</durationType>
             <Note>
               <linkedMain/>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>66</pitch>
+              <tpc>8</tpc>
               </Note>
             </Chord>
           <Harmony>
@@ -15242,8 +15251,11 @@
               <Note>
                 <linked>
                   </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
+                <Accidental>
+                  <subtype>accidentalFlat</subtype>
+                  </Accidental>
+                <pitch>66</pitch>
+                <tpc>8</tpc>
                 </Note>
               </Chord>
             <Harmony>
@@ -19890,9 +19902,12 @@
               <Note>
                 <linked>
                   </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
-                <tpc2>16</tpc2>
+                <Accidental>
+                  <subtype>accidentalFlat</subtype>
+                  </Accidental>
+                <pitch>66</pitch>
+                <tpc>8</tpc>
+                <tpc2>11</tpc2>
                 </Note>
               </Chord>
             <Harmony>
@@ -24601,9 +24616,12 @@
               <Note>
                 <linked>
                   </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
-                <tpc2>15</tpc2>
+                <Accidental>
+                  <subtype>accidentalFlat</subtype>
+                  </Accidental>
+                <pitch>66</pitch>
+                <tpc>8</tpc>
+                <tpc2>10</tpc2>
                 </Note>
               </Chord>
             <Harmony>
