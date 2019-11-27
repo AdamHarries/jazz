@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.1.0</programVersion>
-  <programRevision>06f0ddd</programRevision>
+  <programVersion>3.0.5</programVersion>
+  <programRevision>58dd23d</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -5136,7 +5136,7 @@
           <startRepeat/>
           <voice>
             <KeySig>
-              <accidental>3</accidental>
+              <accidental>2</accidental>
               </KeySig>
             <TimeSig>
               <linked>
@@ -5238,9 +5238,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 <tpc2>15</tpc2>
@@ -5358,9 +5355,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 <tpc2>15</tpc2>
@@ -5576,9 +5570,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 <tpc2>15</tpc2>
@@ -5982,9 +5973,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 <tpc2>15</tpc2>
@@ -6453,9 +6441,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 <tpc2>15</tpc2>
@@ -6597,6 +6582,9 @@
               <Note>
                 <linked>
                   </linked>
+                <Accidental>
+                  <subtype>accidentalSharp</subtype>
+                  </Accidental>
                 <pitch>71</pitch>
                 <tpc>19</tpc>
                 <tpc2>22</tpc2>
@@ -6788,9 +6776,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 <tpc2>15</tpc2>
@@ -9383,6 +9368,9 @@
         <Measure>
           <startRepeat/>
           <voice>
+            <KeySig>
+              <accidental>-1</accidental>
+              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -9478,9 +9466,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 </Note>
@@ -9592,9 +9577,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 </Note>
@@ -9797,9 +9779,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 </Note>
@@ -10190,9 +10169,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 </Note>
@@ -10634,9 +10610,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 </Note>
@@ -10770,6 +10743,9 @@
               <Note>
                 <linked>
                   </linked>
+                <Accidental>
+                  <subtype>accidentalNatural</subtype>
+                  </Accidental>
                 <pitch>71</pitch>
                 <tpc>19</tpc>
                 </Note>
@@ -10950,9 +10926,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalFlat</subtype>
-                  </Accidental>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
                 </Note>
