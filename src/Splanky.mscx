@@ -2719,7 +2719,7 @@
         <Jump>
           <linkedMain/>
           <style>Repeat Text Right</style>
-          <text>Head al Coda</text>
+          <text>Head al Coda after solos</text>
           <jumpTo>start</jumpTo>
           <playUntil>coda</playUntil>
           <continueAt>codab</continueAt>
@@ -2805,7 +2805,7 @@
         <Marker>
           <linkedMain/>
           <style>Repeat Text Left</style>
-          <text><sym>coda</sym></text>
+          <text><font face="ScoreText"/></text>
           <label>codab</label>
           </Marker>
         <voice>
@@ -14287,9 +14287,6 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
-          <LayoutBreak>
             <linked>
               <location>
                 <staves>-2</staves>
@@ -14304,7 +14301,7 @@
                 </location>
               </linked>
             <style>Repeat Text Right</style>
-            <text>Head al Coda</text>
+            <text>Head al Coda after solos</text>
             <jumpTo>start</jumpTo>
             <playUntil>coda</playUntil>
             <continueAt>codab</continueAt>
@@ -14400,7 +14397,7 @@
                 </location>
               </linked>
             <style>Repeat Text Left</style>
-            <text><sym>coda</sym></text>
+            <text><font face="ScoreText"/></text>
             <label>codab</label>
             </Marker>
           <voice>
@@ -18842,9 +18839,6 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
-          <LayoutBreak>
             <linked>
               </linked>
             <subtype>section</subtype>
@@ -18853,7 +18847,7 @@
             <linked>
               </linked>
             <style>Repeat Text Right</style>
-            <text>Head al Coda</text>
+            <text>Head al Coda after solos</text>
             <jumpTo>start</jumpTo>
             <playUntil>coda</playUntil>
             <continueAt>codab</continueAt>
@@ -18950,7 +18944,7 @@
             <linked>
               </linked>
             <style>Repeat Text Left</style>
-            <text><sym>coda</sym></text>
+            <text><font face="ScoreText"/></text>
             <label>codab</label>
             </Marker>
           <voice>
@@ -23519,9 +23513,6 @@
         <Measure>
           <endRepeat>2</endRepeat>
           <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
-          <LayoutBreak>
             <linked>
               <location>
                 <staves>-1</staves>
@@ -23536,7 +23527,7 @@
                 </location>
               </linked>
             <style>Repeat Text Right</style>
-            <text>Head al Coda</text>
+            <text>Head al Coda after solos</text>
             <jumpTo>start</jumpTo>
             <playUntil>coda</playUntil>
             <continueAt>codab</continueAt>
@@ -23636,7 +23627,7 @@
                 </location>
               </linked>
             <style>Repeat Text Left</style>
-            <text><sym>coda</sym></text>
+            <text><font face="ScoreText"/></text>
             <label>codab</label>
             </Marker>
           <voice>
