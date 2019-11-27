@@ -2712,10 +2712,6 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
-        <LayoutBreak>
-          <linkedMain/>
-          <subtype>section</subtype>
-          </LayoutBreak>
         <Jump>
           <linkedMain/>
           <style>Repeat Text Right</style>
@@ -2724,6 +2720,13 @@
           <playUntil>coda</playUntil>
           <continueAt>codab</continueAt>
           </Jump>
+        <LayoutBreak>
+          <subtype>page</subtype>
+          </LayoutBreak>
+        <LayoutBreak>
+          <linkedMain/>
+          <subtype>section</subtype>
+          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -2805,7 +2808,7 @@
         <Marker>
           <linkedMain/>
           <style>Repeat Text Left</style>
-          <text><font face="ScoreText"/></text>
+          <text><font face="ScoreText"></font></text>
           <label>codab</label>
           </Marker>
         <voice>
@@ -13654,6 +13657,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -13810,9 +13816,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -13968,6 +13971,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -14286,14 +14292,6 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
-          <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-2</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <Jump>
             <linked>
               <location>
@@ -14306,6 +14304,17 @@
             <playUntil>coda</playUntil>
             <continueAt>codab</continueAt>
             </Jump>
+          <LayoutBreak>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>11</root>
@@ -14397,7 +14406,7 @@
                 </location>
               </linked>
             <style>Repeat Text Left</style>
-            <text><font face="ScoreText"/></text>
+            <text><font face="ScoreText"></font></text>
             <label>codab</label>
             </Marker>
           <voice>
@@ -14502,7 +14511,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <subtype>page</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -18174,6 +18183,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -18338,9 +18350,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -18504,6 +18513,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -18838,11 +18850,6 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
-          <LayoutBreak>
-            <linked>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <Jump>
             <linked>
               </linked>
@@ -18852,6 +18859,14 @@
             <playUntil>coda</playUntil>
             <continueAt>codab</continueAt>
             </Jump>
+          <LayoutBreak>
+            <linked>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -18944,7 +18959,7 @@
             <linked>
               </linked>
             <style>Repeat Text Left</style>
-            <text><font face="ScoreText"/></text>
+            <text><font face="ScoreText"></font></text>
             <label>codab</label>
             </Marker>
           <voice>
@@ -19061,7 +19076,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <subtype>page</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -22848,6 +22863,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -23012,9 +23030,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -23178,6 +23193,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -23512,14 +23530,6 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
-          <LayoutBreak>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <subtype>section</subtype>
-            </LayoutBreak>
           <Jump>
             <linked>
               <location>
@@ -23532,6 +23542,17 @@
             <playUntil>coda</playUntil>
             <continueAt>codab</continueAt>
             </Jump>
+          <LayoutBreak>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -23627,7 +23648,7 @@
                 </location>
               </linked>
             <style>Repeat Text Left</style>
-            <text><font face="ScoreText"/></text>
+            <text><font face="ScoreText"></font></text>
             <label>codab</label>
             </Marker>
           <voice>
@@ -23742,7 +23763,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <subtype>page</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
