@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.1.0</programVersion>
-  <programRevision>06f0ddd</programRevision>
+  <programVersion>3.0.5</programVersion>
+  <programRevision>58dd23d</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
@@ -911,7 +911,7 @@
             </Harmony>
           <SystemText>
             <linkedMain/>
-            <text>Head</text>
+            <text>Head (Always play twice!)</text>
             </SystemText>
           <Rest>
             <linkedMain/>
@@ -1636,6 +1636,12 @@
           </voice>
         </Measure>
       <Measure>
+        <Marker>
+          <linkedMain/>
+          <style>Repeat Text Right</style>
+          <text>To Coda</text>
+          <label>coda</label>
+          </Marker>
         <voice>
           <Harmony>
             <root>20</root>
@@ -1896,6 +1902,7 @@
           </voice>
         </Measure>
       <Measure>
+        <startRepeat/>
         <voice>
           <Harmony>
             <root>12</root>
@@ -2632,19 +2639,6 @@
             <root>12</root>
             <linkedMain/>
             </Harmony>
-          <Spanner type="Volta">
-            <Volta>
-              <endHookType>1</endHookType>
-              <beginText>If more solos...</beginText>
-              <linkedMain/>
-              <endings>1</endings>
-              </Volta>
-            <next>
-              <location>
-                <measures>2</measures>
-                </location>
-              </next>
-            </Spanner>
           <Chord>
             <linkedMain/>
             <BeamMode>no</BeamMode>
@@ -2718,6 +2712,18 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
+        <LayoutBreak>
+          <linkedMain/>
+          <subtype>section</subtype>
+          </LayoutBreak>
+        <Jump>
+          <linkedMain/>
+          <style>Repeat Text Right</style>
+          <text>Head al Coda</text>
+          <jumpTo>start</jumpTo>
+          <playUntil>coda</playUntil>
+          <continueAt>codab</continueAt>
+          </Jump>
         <voice>
           <Harmony>
             <root>14</root>
@@ -2796,30 +2802,17 @@
           </voice>
         </Measure>
       <Measure>
+        <Marker>
+          <linkedMain/>
+          <style>Repeat Text Left</style>
+          <text><sym>coda</sym></text>
+          <label>codab</label>
+          </Marker>
         <voice>
           <Harmony>
             <root>12</root>
             <linkedMain/>
             </Harmony>
-          <Spanner type="Volta">
-            <prev>
-              <location>
-                <measures>-2</measures>
-                </location>
-              </prev>
-            </Spanner>
-          <Spanner type="Volta">
-            <Volta>
-              <beginText>End of final solo only</beginText>
-              <linkedMain/>
-              <endings>2</endings>
-              </Volta>
-            <next>
-              <location>
-                <measures>2</measures>
-                </location>
-              </next>
-            </Spanner>
           <Rest>
             <linkedMain/>
             <offset x="0" y="2"/>
@@ -3004,13 +2997,6 @@
       <Measure>
         <startRepeat/>
         <voice>
-          <Spanner type="Volta">
-            <prev>
-              <location>
-                <measures>-2</measures>
-                </location>
-              </prev>
-            </Spanner>
           <Rest>
             <linkedMain/>
             <durationType>eighth</durationType>
@@ -4169,10 +4155,6 @@
             <linkedMain/>
             <rightParen/>
             </Harmony>
-          <SystemText>
-            <linkedMain/>
-            <text>To Head/End</text>
-            </SystemText>
           <Chord>
             <linkedMain/>
             <BeamMode>no</BeamMode>
@@ -11526,6 +11508,7 @@
         <musicalTextFont>MuseJazz Text</musicalTextFont>
         <voltaLineWidth>0.2</voltaLineWidth>
         <voltaFontFace>MuseJazz Text</voltaFontFace>
+        <voltaFontStyle>0</voltaFontStyle>
         <ottavaLineWidth>0.2</ottavaLineWidth>
         <ottavaFontFace>MuseJazz Text</ottavaFontFace>
         <tupletBracketWidth>0.2</tupletBracketWidth>
@@ -12289,6 +12272,9 @@
                 <tpc>10</tpc>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              </BarLine>
             </voice>
           <voice>
             <location>
@@ -12339,7 +12325,7 @@
                   </location>
                 <indexDiff>1</indexDiff>
                 </linked>
-              <text>Head</text>
+              <text>Head (Always play twice!)</text>
               </SystemText>
             <Rest>
               <linked>
@@ -13130,6 +13116,16 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>To Coda</text>
+            <label>coda</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>17</root>
@@ -14212,35 +14208,14 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <Volta>
-                <endHookType>1</endHookType>
-                <beginText>If more solos...</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-2</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>1</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Chord>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <BeamMode>no</BeamMode>
               <durationType>quarter</durationType>
               <noStem>1</noStem>
               <Note>
                 <linked>
-                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
@@ -14314,6 +14289,26 @@
           <LayoutBreak>
             <subtype>line</subtype>
             </LayoutBreak>
+          <LayoutBreak>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <Jump>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>Head al Coda</text>
+            <jumpTo>start</jumpTo>
+            <playUntil>coda</playUntil>
+            <continueAt>codab</continueAt>
+            </Jump>
           <voice>
             <Harmony>
               <root>11</root>
@@ -14398,40 +14393,24 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Left</style>
+            <text><sym>coda</sym></text>
+            <label>codab</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>9</root>
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
-            <Spanner type="Volta">
-              <Volta>
-                <beginText>End of final solo only</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-2</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>2</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Rest>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>half</durationType>
               </Rest>
@@ -14626,13 +14605,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -15916,15 +15888,6 @@
                 <fixedLine>4</fixedLine>
                 </Note>
               </Chord>
-            <SystemText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>1</indexDiff>
-                </linked>
-              <text>To Head/End</text>
-              </SystemText>
             <Harmony>
               <leftParen/>
               <root>6</root>
@@ -16761,6 +16724,9 @@
                 <tpc2>13</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              </BarLine>
             </voice>
           <voice>
             <location>
@@ -16809,7 +16775,7 @@
             <SystemText>
               <linked>
                 </linked>
-              <text>Head</text>
+              <text>Head (Always play twice!)</text>
               </SystemText>
             <Rest>
               <linked>
@@ -17653,6 +17619,13 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>To Coda</text>
+            <label>coda</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>20</root>
@@ -18786,20 +18759,6 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <Volta>
-                <endHookType>1</endHookType>
-                <beginText>If more solos...</beginText>
-                <linked>
-                  </linked>
-                <endings>1</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Chord>
               <linked>
                 </linked>
@@ -18885,6 +18844,20 @@
           <LayoutBreak>
             <subtype>line</subtype>
             </LayoutBreak>
+          <LayoutBreak>
+            <linked>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <Jump>
+            <linked>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>Head al Coda</text>
+            <jumpTo>start</jumpTo>
+            <playUntil>coda</playUntil>
+            <continueAt>codab</continueAt>
+            </Jump>
           <voice>
             <Harmony>
               <root>14</root>
@@ -18973,32 +18946,19 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              </linked>
+            <style>Repeat Text Left</style>
+            <text><sym>coda</sym></text>
+            <label>codab</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>12</root>
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
-            <Spanner type="Volta">
-              <Volta>
-                <beginText>End of final solo only</beginText>
-                <linked>
-                  </linked>
-                <endings>2</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -19210,13 +19170,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -20573,11 +20526,6 @@
                 </linked>
               <rightParen/>
               </Harmony>
-            <SystemText>
-              <linked>
-                </linked>
-              <text>To Head/End</text>
-              </SystemText>
             <Chord>
               <linked>
                 </linked>
@@ -20654,6 +20602,7 @@
         <musicalTextFont>MuseJazz Text</musicalTextFont>
         <voltaLineWidth>0.2</voltaLineWidth>
         <voltaFontFace>MuseJazz Text</voltaFontFace>
+        <voltaFontStyle>0</voltaFontStyle>
         <ottavaLineWidth>0.2</ottavaLineWidth>
         <ottavaFontFace>MuseJazz Text</ottavaFontFace>
         <tupletBracketWidth>0.2</tupletBracketWidth>
@@ -21465,6 +21414,9 @@
                 <tpc2>12</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              </BarLine>
             </voice>
           <voice>
             <location>
@@ -21517,7 +21469,7 @@
                   </location>
                 <indexDiff>1</indexDiff>
                 </linked>
-              <text>Head</text>
+              <text>Head (Always play twice!)</text>
               </SystemText>
             <Rest>
               <linked>
@@ -22340,6 +22292,16 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>To Coda</text>
+            <label>coda</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>19</root>
@@ -23474,35 +23436,14 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <Volta>
-                <endHookType>1</endHookType>
-                <beginText>If more solos...</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-1</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>1</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Chord>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <BeamMode>no</BeamMode>
               <durationType>quarter</durationType>
               <noStem>1</noStem>
               <Note>
                 <linked>
-                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
@@ -23580,6 +23521,26 @@
           <LayoutBreak>
             <subtype>line</subtype>
             </LayoutBreak>
+          <LayoutBreak>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <Jump>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>Head al Coda</text>
+            <jumpTo>start</jumpTo>
+            <playUntil>coda</playUntil>
+            <continueAt>codab</continueAt>
+            </Jump>
           <voice>
             <Harmony>
               <root>13</root>
@@ -23668,40 +23629,24 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Left</style>
+            <text><sym>coda</sym></text>
+            <label>codab</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>11</root>
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
-            <Spanner type="Volta">
-              <Volta>
-                <beginText>End of final solo only</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-1</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>2</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Rest>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>half</durationType>
               </Rest>
@@ -23908,13 +23853,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -25260,15 +25198,6 @@
                 <fixedLine>4</fixedLine>
                 </Note>
               </Chord>
-            <SystemText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>1</indexDiff>
-                </linked>
-              <text>To Head/End</text>
-              </SystemText>
             <Harmony>
               <leftParen/>
               <root>8</root>
