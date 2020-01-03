@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.1.0</programVersion>
-  <programRevision>06f0ddd</programRevision>
+  <programVersion>3.2.3</programVersion>
+  <programRevision>d2d863f</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
-    <Synthesizer>
-      </Synthesizer>
     <Division>480</Division>
     <Style>
       <pageWidth>8.26771</pageWidth>
@@ -184,6 +182,7 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel>
+          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="65"/>
           <synti>Fluid</synti>
@@ -1930,9 +1929,9 @@
             <durationType>quarter</durationType>
             <Note>
               <linkedMain/>
-              <pitch>75</pitch>
-              <tpc>11</tpc>
-              <tpc2>14</tpc2>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              <tpc2>16</tpc2>
               </Note>
             </Chord>
           <Chord>
@@ -6628,8 +6627,6 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
-      <Synthesizer>
-        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.27</pageWidth>
@@ -6791,6 +6788,7 @@
             <gateTime>100</gateTime>
             </Articulation>
           <Channel>
+            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="65"/>
             <synti>Fluid</synti>
@@ -8755,17 +8753,17 @@
                     <fractions>1/2</fractions>
                     </location>
                   </linked>
-                <pitch>75</pitch>
-                <tpc>11</tpc>
-                <tpc2>14</tpc2>
+                <pitch>65</pitch>
+                <tpc>13</tpc>
+                <tpc2>16</tpc2>
                 </Note>
               </Chord>
             <Chord>
               <durationType>quarter</durationType>
               <Note>
-                <pitch>60</pitch>
-                <tpc>14</tpc>
-                <tpc2>17</tpc2>
+                <pitch>67</pitch>
+                <tpc>15</tpc>
+                <tpc2>18</tpc2>
                 </Note>
               </Chord>
             <Chord>
@@ -8800,9 +8798,9 @@
               <Note>
                 <linked>
                   </linked>
-                <pitch>75</pitch>
-                <tpc>11</tpc>
-                <tpc2>14</tpc2>
+                <pitch>65</pitch>
+                <tpc>13</tpc>
+                <tpc2>16</tpc2>
                 </Note>
               </Chord>
             <Chord>
