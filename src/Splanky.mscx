@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.2.3</programVersion>
-  <programRevision>d2d863f</programRevision>
+  <programVersion>3.0.5</programVersion>
+  <programRevision>58dd23d</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
+    <Synthesizer>
+      </Synthesizer>
     <Division>480</Division>
     <Style>
       <pageWidth>8.26771</pageWidth>
@@ -185,7 +187,6 @@
         <transposeDiatonic>-5</transposeDiatonic>
         <transposeChromatic>-9</transposeChromatic>
         <Channel>
-          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="65"/>
           <controller ctrl="10" value="63"/>
@@ -252,13 +253,11 @@
           <gateTime>100</gateTime>
           </Articulation>
         <Channel name="open">
-          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="56"/>
           <synti>Fluid</synti>
           </Channel>
         <Channel name="mute">
-          <controller ctrl="0" value="0"/>
           <controller ctrl="32" value="17"/>
           <program value="59"/>
           <synti>Fluid</synti>
@@ -912,7 +911,7 @@
             </Harmony>
           <SystemText>
             <linkedMain/>
-            <text>Head</text>
+            <text>Head (Always play twice!)</text>
             </SystemText>
           <Rest>
             <linkedMain/>
@@ -1637,6 +1636,12 @@
           </voice>
         </Measure>
       <Measure>
+        <Marker>
+          <linkedMain/>
+          <style>Repeat Text Right</style>
+          <text>To Coda</text>
+          <label>coda</label>
+          </Marker>
         <voice>
           <Harmony>
             <root>20</root>
@@ -1897,6 +1902,7 @@
           </voice>
         </Measure>
       <Measure>
+        <startRepeat/>
         <voice>
           <Harmony>
             <root>12</root>
@@ -2633,19 +2639,6 @@
             <root>12</root>
             <linkedMain/>
             </Harmony>
-          <Spanner type="Volta">
-            <Volta>
-              <endHookType>1</endHookType>
-              <beginText>If more solos...</beginText>
-              <linkedMain/>
-              <endings>1</endings>
-              </Volta>
-            <next>
-              <location>
-                <measures>2</measures>
-                </location>
-              </next>
-            </Spanner>
           <Chord>
             <linkedMain/>
             <BeamMode>no</BeamMode>
@@ -2719,6 +2712,21 @@
         </Measure>
       <Measure>
         <endRepeat>2</endRepeat>
+        <Jump>
+          <linkedMain/>
+          <style>Repeat Text Right</style>
+          <text>Head al Coda after solos</text>
+          <jumpTo>start</jumpTo>
+          <playUntil>coda</playUntil>
+          <continueAt>codab</continueAt>
+          </Jump>
+        <LayoutBreak>
+          <subtype>page</subtype>
+          </LayoutBreak>
+        <LayoutBreak>
+          <linkedMain/>
+          <subtype>section</subtype>
+          </LayoutBreak>
         <voice>
           <Harmony>
             <root>14</root>
@@ -2797,30 +2805,17 @@
           </voice>
         </Measure>
       <Measure>
+        <Marker>
+          <linkedMain/>
+          <style>Repeat Text Left</style>
+          <text><font face="ScoreText"></font></text>
+          <label>codab</label>
+          </Marker>
         <voice>
           <Harmony>
             <root>12</root>
             <linkedMain/>
             </Harmony>
-          <Spanner type="Volta">
-            <prev>
-              <location>
-                <measures>-2</measures>
-                </location>
-              </prev>
-            </Spanner>
-          <Spanner type="Volta">
-            <Volta>
-              <beginText>End of final solo only</beginText>
-              <linkedMain/>
-              <endings>2</endings>
-              </Volta>
-            <next>
-              <location>
-                <measures>2</measures>
-                </location>
-              </next>
-            </Spanner>
           <Rest>
             <linkedMain/>
             <offset x="0" y="2"/>
@@ -3005,13 +3000,6 @@
       <Measure>
         <startRepeat/>
         <voice>
-          <Spanner type="Volta">
-            <prev>
-              <location>
-                <measures>-2</measures>
-                </location>
-              </prev>
-            </Spanner>
           <Rest>
             <linkedMain/>
             <durationType>eighth</durationType>
@@ -3844,8 +3832,8 @@
             <durationType>quarter</durationType>
             <Articulation>
               <subtype>articAccentAbove</subtype>
-              <anchor>3</anchor>
               <linkedMain/>
+              <anchor>3</anchor>
               </Articulation>
             <Note>
               <linkedMain/>
@@ -4170,10 +4158,6 @@
             <linkedMain/>
             <rightParen/>
             </Harmony>
-          <SystemText>
-            <linkedMain/>
-            <text>To Head/End</text>
-            </SystemText>
           <Chord>
             <linkedMain/>
             <BeamMode>no</BeamMode>
@@ -4216,6 +4200,34 @@
             <durationType>half</durationType>
             <Note>
               <linkedMain/>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              <tpc2>15</tpc2>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              <tpc2>12</tpc2>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>70</pitch>
+              <tpc>12</tpc>
+              <tpc2>14</tpc2>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>73</pitch>
+              <tpc>9</tpc>
+              <tpc2>11</tpc2>
+              </Note>
+            </Chord>
+          <Chord>
+            <linkedMain/>
+            <durationType>half</durationType>
+            <Note>
+              <linkedMain/>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
                 </Accidental>
@@ -4245,6 +4257,42 @@
               <tpc2>11</tpc2>
               </Note>
             </Chord>
+          </voice>
+        <voice>
+          <Rest>
+            <linkedMain/>
+            <offset x="0" y="3"/>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Chord>
+            <linkedMain/>
+            <durationType>quarter</durationType>
+            <Note>
+              <linkedMain/>
+              <pitch>56</pitch>
+              <tpc>10</tpc>
+              <tpc2>12</tpc2>
+              </Note>
+            </Chord>
+          <Rest>
+            <linkedMain/>
+            <offset x="0" y="3"/>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Chord>
+            <linkedMain/>
+            <durationType>quarter</durationType>
+            <Note>
+              <linkedMain/>
+              <pitch>56</pitch>
+              <tpc>10</tpc>
+              <tpc2>12</tpc2>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Chord>
             <linkedMain/>
             <durationType>half</durationType>
@@ -4281,42 +4329,6 @@
               <tpc2>11</tpc2>
               </Note>
             </Chord>
-          </voice>
-        <voice>
-          <Rest>
-            <linkedMain/>
-            <offset x="0" y="3"/>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Chord>
-            <linkedMain/>
-            <durationType>quarter</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>56</pitch>
-              <tpc>10</tpc>
-              <tpc2>12</tpc2>
-              </Note>
-            </Chord>
-          <Rest>
-            <linkedMain/>
-            <offset x="0" y="3"/>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Chord>
-            <linkedMain/>
-            <durationType>quarter</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>56</pitch>
-              <tpc>10</tpc>
-              <tpc2>12</tpc2>
-              </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
           <Chord>
             <linkedMain/>
             <durationType>half</durationType>
@@ -4351,34 +4363,6 @@
               <tpc2>11</tpc2>
               </Note>
             </Chord>
-          <Chord>
-            <linkedMain/>
-            <durationType>half</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
-              <tpc2>15</tpc2>
-              </Note>
-            <Note>
-              <linkedMain/>
-              <pitch>68</pitch>
-              <tpc>10</tpc>
-              <tpc2>12</tpc2>
-              </Note>
-            <Note>
-              <linkedMain/>
-              <pitch>70</pitch>
-              <tpc>12</tpc>
-              <tpc2>14</tpc2>
-              </Note>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              <tpc2>11</tpc2>
-              </Note>
-            </Chord>
           </voice>
         <voice>
           <Rest>
@@ -4406,14 +4390,6 @@
             <durationType>quarter</durationType>
             <Note>
               <linkedMain/>
-              <Symbol>
-                <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
-                </Symbol>
-              <Symbol>
-                <name>noteheadParenthesisRight</name>
-                <linkedMain/>
-                </Symbol>
               <pitch>56</pitch>
               <tpc>10</tpc>
               <tpc2>12</tpc2>
@@ -4425,6 +4401,7 @@
         <voice>
           <Rest>
             <linkedMain/>
+            <offset x="0" y="3"/>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
@@ -4520,6 +4497,37 @@
               <pitch>68</pitch>
               <tpc>10</tpc>
               <tpc2>12</tpc2>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <linkedMain/>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <linkedMain/>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              <tpc2>15</tpc2>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              <tpc2>12</tpc2>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>70</pitch>
+              <tpc>12</tpc>
+              <tpc2>14</tpc2>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>73</pitch>
+              <tpc>9</tpc>
+              <tpc2>11</tpc2>
               </Note>
             </Chord>
           </voice>
@@ -7600,8 +7608,8 @@
             <durationType>quarter</durationType>
             <Articulation>
               <subtype>articAccentAbove</subtype>
-              <anchor>3</anchor>
               <linkedMain/>
+              <anchor>3</anchor>
               </Articulation>
             <Note>
               <linkedMain/>
@@ -7939,6 +7947,30 @@
             <durationType>half</durationType>
             <Note>
               <linkedMain/>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>70</pitch>
+              <tpc>12</tpc>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>73</pitch>
+              <tpc>9</tpc>
+              </Note>
+            </Chord>
+          <Chord>
+            <linkedMain/>
+            <durationType>half</durationType>
+            <Note>
+              <linkedMain/>
               <Accidental>
                 <subtype>accidentalNatural</subtype>
                 </Accidental>
@@ -7964,6 +7996,40 @@
               <tpc>9</tpc>
               </Note>
             </Chord>
+          </voice>
+        <voice>
+          <Rest>
+            <linkedMain/>
+            <offset x="0" y="3"/>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Chord>
+            <linkedMain/>
+            <durationType>quarter</durationType>
+            <Note>
+              <linkedMain/>
+              <pitch>56</pitch>
+              <tpc>10</tpc>
+              </Note>
+            </Chord>
+          <Rest>
+            <linkedMain/>
+            <offset x="0" y="3"/>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Chord>
+            <linkedMain/>
+            <durationType>quarter</durationType>
+            <Note>
+              <linkedMain/>
+              <pitch>56</pitch>
+              <tpc>10</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
           <Chord>
             <linkedMain/>
             <durationType>half</durationType>
@@ -7996,40 +8062,6 @@
               <tpc>9</tpc>
               </Note>
             </Chord>
-          </voice>
-        <voice>
-          <Rest>
-            <linkedMain/>
-            <offset x="0" y="3"/>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Chord>
-            <linkedMain/>
-            <durationType>quarter</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>56</pitch>
-              <tpc>10</tpc>
-              </Note>
-            </Chord>
-          <Rest>
-            <linkedMain/>
-            <offset x="0" y="3"/>
-            <durationType>quarter</durationType>
-            </Rest>
-          <Chord>
-            <linkedMain/>
-            <durationType>quarter</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>56</pitch>
-              <tpc>10</tpc>
-              </Note>
-            </Chord>
-          </voice>
-        </Measure>
-      <Measure>
-        <voice>
           <Chord>
             <linkedMain/>
             <durationType>half</durationType>
@@ -8060,30 +8092,6 @@
               <tpc>9</tpc>
               </Note>
             </Chord>
-          <Chord>
-            <linkedMain/>
-            <durationType>half</durationType>
-            <Note>
-              <linkedMain/>
-              <pitch>65</pitch>
-              <tpc>13</tpc>
-              </Note>
-            <Note>
-              <linkedMain/>
-              <pitch>68</pitch>
-              <tpc>10</tpc>
-              </Note>
-            <Note>
-              <linkedMain/>
-              <pitch>70</pitch>
-              <tpc>12</tpc>
-              </Note>
-            <Note>
-              <linkedMain/>
-              <pitch>73</pitch>
-              <tpc>9</tpc>
-              </Note>
-            </Chord>
           </voice>
         <voice>
           <Rest>
@@ -8110,14 +8118,6 @@
             <durationType>quarter</durationType>
             <Note>
               <linkedMain/>
-              <Symbol>
-                <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
-                </Symbol>
-              <Symbol>
-                <name>noteheadParenthesisRight</name>
-                <linkedMain/>
-                </Symbol>
               <pitch>56</pitch>
               <tpc>10</tpc>
               </Note>
@@ -8128,6 +8128,7 @@
         <voice>
           <Rest>
             <linkedMain/>
+            <offset x="0" y="3"/>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
@@ -8215,6 +8216,33 @@
                 </Spanner>
               <pitch>68</pitch>
               <tpc>10</tpc>
+              </Note>
+            </Chord>
+          </voice>
+        <voice>
+          <Chord>
+            <linkedMain/>
+            <durationType>half</durationType>
+            <StemDirection>up</StemDirection>
+            <Note>
+              <linkedMain/>
+              <pitch>65</pitch>
+              <tpc>13</tpc>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>68</pitch>
+              <tpc>10</tpc>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>70</pitch>
+              <tpc>12</tpc>
+              </Note>
+            <Note>
+              <linkedMain/>
+              <pitch>73</pitch>
+              <tpc>9</tpc>
               </Note>
             </Chord>
           </voice>
@@ -11133,8 +11161,8 @@
             <durationType>quarter</durationType>
             <Articulation>
               <subtype>articAccentAbove</subtype>
-              <anchor>3</anchor>
               <linkedMain/>
+              <anchor>3</anchor>
               </Articulation>
             <Note>
               <linkedMain/>
@@ -11442,6 +11470,8 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
+      <Synthesizer>
+        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.27</pageWidth>
@@ -11481,6 +11511,7 @@
         <musicalTextFont>MuseJazz Text</musicalTextFont>
         <voltaLineWidth>0.2</voltaLineWidth>
         <voltaFontFace>MuseJazz Text</voltaFontFace>
+        <voltaFontStyle>0</voltaFontStyle>
         <ottavaLineWidth>0.2</ottavaLineWidth>
         <ottavaFontFace>MuseJazz Text</ottavaFontFace>
         <tupletBracketWidth>0.2</tupletBracketWidth>
@@ -11709,20 +11740,14 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
+                <pitch>65</pitch>
+                <tpc>13</tpc>
                 </Note>
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
+                <pitch>68</pitch>
+                <tpc>10</tpc>
                 </Note>
               <Note>
                 <linked>
@@ -11745,21 +11770,19 @@
                 <linked>
                   </linked>
                 <Accidental>
-                  <role>1</role>
-                  <subtype>accidentalFlat</subtype>
+                  <subtype>accidentalNatural</subtype>
                   </Accidental>
-                <pitch>63</pitch>
-                <tpc>11</tpc>
+                <pitch>64</pitch>
+                <tpc>18</tpc>
                 </Note>
               <Note>
                 <linked>
                   </linked>
                 <Accidental>
-                  <role>1</role>
-                  <subtype>accidentalFlat</subtype>
+                  <subtype>accidentalNatural</subtype>
                   </Accidental>
-                <pitch>66</pitch>
-                <tpc>8</tpc>
+                <pitch>67</pitch>
+                <tpc>15</tpc>
                 </Note>
               <Note>
                 <linked>
@@ -11823,6 +11846,43 @@
                 <linked>
                   </linked>
                 <Accidental>
+                  <role>1</role>
+                  <subtype>accidentalFlat</subtype>
+                  </Accidental>
+                <pitch>63</pitch>
+                <tpc>11</tpc>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <Accidental>
+                  <role>1</role>
+                  <subtype>accidentalFlat</subtype>
+                  </Accidental>
+                <pitch>66</pitch>
+                <tpc>8</tpc>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>70</pitch>
+                <tpc>12</tpc>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>73</pitch>
+                <tpc>9</tpc>
+                </Note>
+              </Chord>
+            <Chord>
+              <linked>
+                </linked>
+              <durationType>half</durationType>
+              <Note>
+                <linked>
+                  </linked>
+                <Accidental>
                   <subtype>accidentalNatural</subtype>
                   </Accidental>
                 <pitch>64</pitch>
@@ -11850,35 +11910,6 @@
                 <tpc>9</tpc>
                 </Note>
               </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>half</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>68</pitch>
-                <tpc>10</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>70</pitch>
-                <tpc>12</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                </Note>
-              </Chord>
             </voice>
           <voice>
             <Rest>
@@ -11911,16 +11942,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
                 <pitch>56</pitch>
                 <tpc>10</tpc>
                 </Note>
@@ -11932,6 +11953,7 @@
             <Rest>
               <linked>
                 </linked>
+              <offset x="0" y="6"/>
               <durationType>eighth</durationType>
               </Rest>
             <Chord>
@@ -11939,6 +11961,7 @@
                 </linked>
               <dots>1</dots>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -11956,6 +11979,7 @@
               <linked>
                 </linked>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -11969,6 +11993,9 @@
                 <tpc>8</tpc>
                 </Note>
               </Chord>
+            <Beam>
+              <StemDirection>down</StemDirection>
+              </Beam>
             <Chord>
               <linked>
                 </linked>
@@ -12034,6 +12061,38 @@
                 </Note>
               </Chord>
             </voice>
+          <voice>
+            <Chord>
+              <linked>
+                </linked>
+              <durationType>half</durationType>
+              <StemDirection>up</StemDirection>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>65</pitch>
+                <tpc>13</tpc>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>68</pitch>
+                <tpc>10</tpc>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>70</pitch>
+                <tpc>12</tpc>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>73</pitch>
+                <tpc>9</tpc>
+                </Note>
+              </Chord>
+            </voice>
           </Measure>
         <Measure>
           <LayoutBreak>
@@ -12078,6 +12137,7 @@
               <linked>
                 </linked>
               <durationType>eighth</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -12215,11 +12275,17 @@
                 <tpc>10</tpc>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              </BarLine>
             </voice>
           <voice>
             <location>
               <fractions>3/4</fractions>
               </location>
+            <Beam>
+              <StemDirection>up</StemDirection>
+              </Beam>
             <Chord>
               <linked>
                 </linked>
@@ -12262,7 +12328,7 @@
                   </location>
                 <indexDiff>1</indexDiff>
                 </linked>
-              <text>Head</text>
+              <text>Head (Always play twice!)</text>
               </SystemText>
             <Rest>
               <linked>
@@ -12573,7 +12639,9 @@
                 <subtype>ornamentMordent</subtype>
                 <linked>
                   </linked>
+                <anchor>1</anchor>
                 </Articulation>
+              <StemDirection>up</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -12943,6 +13011,7 @@
                 <subtype>ornamentMordent</subtype>
                 <linked>
                   </linked>
+                <anchor>1</anchor>
                 </Articulation>
               <Note>
                 <linked>
@@ -13050,6 +13119,16 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>To Coda</text>
+            <label>coda</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>17</root>
@@ -13290,6 +13369,7 @@
                 <subtype>ornamentMordent</subtype>
                 <linked>
                   </linked>
+                <anchor>1</anchor>
                 </Articulation>
               <Note>
                 <linked>
@@ -13577,6 +13657,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -13733,9 +13816,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -13891,6 +13971,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>12</root>
@@ -14131,35 +14214,14 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <Volta>
-                <endHookType>1</endHookType>
-                <beginText>If more solos...</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-2</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>1</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Chord>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <BeamMode>no</BeamMode>
               <durationType>quarter</durationType>
               <noStem>1</noStem>
               <Note>
                 <linked>
-                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
@@ -14230,8 +14292,28 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
+          <Jump>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>Head al Coda after solos</text>
+            <jumpTo>start</jumpTo>
+            <playUntil>coda</playUntil>
+            <continueAt>codab</continueAt>
+            </Jump>
           <LayoutBreak>
-            <subtype>line</subtype>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -14317,40 +14399,24 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-2</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Left</style>
+            <text><font face="ScoreText"></font></text>
+            <label>codab</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>9</root>
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
-            <Spanner type="Volta">
-              <Volta>
-                <beginText>End of final solo only</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-2</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>2</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Rest>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>half</durationType>
               </Rest>
@@ -14445,7 +14511,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <subtype>page</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -14545,13 +14611,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -15482,9 +15541,9 @@
               <durationType>quarter</durationType>
               <Articulation>
                 <subtype>articAccentAbove</subtype>
-                <anchor>3</anchor>
                 <linked>
                   </linked>
+                <anchor>3</anchor>
                 </Articulation>
               <Note>
                 <linked>
@@ -15835,15 +15894,6 @@
                 <fixedLine>4</fixedLine>
                 </Note>
               </Chord>
-            <SystemText>
-              <linked>
-                <location>
-                  <staves>-2</staves>
-                  </location>
-                <indexDiff>1</indexDiff>
-                </linked>
-              <text>To Head/End</text>
-              </SystemText>
             <Harmony>
               <leftParen/>
               <root>6</root>
@@ -15885,6 +15935,8 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
+      <Synthesizer>
+        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.26771</pageWidth>
@@ -16053,7 +16105,6 @@
           <transposeDiatonic>-5</transposeDiatonic>
           <transposeChromatic>-9</transposeChromatic>
           <Channel>
-            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="65"/>
             <controller ctrl="10" value="63"/>
@@ -16335,6 +16386,7 @@
             <Rest>
               <linked>
                 </linked>
+              <offset x="0" y="3"/>
               <durationType>eighth</durationType>
               </Rest>
             <Chord>
@@ -16342,6 +16394,7 @@
                 </linked>
               <dots>1</dots>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -16361,6 +16414,7 @@
               <linked>
                 </linked>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -16377,6 +16431,7 @@
                 </Note>
               </Chord>
             <Beam>
+              <StemDirection>down</StemDirection>
               </Beam>
             <Chord>
               <linked>
@@ -16452,6 +16507,7 @@
               <linked>
                 </linked>
               <durationType>half</durationType>
+              <StemDirection>up</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -16528,6 +16584,7 @@
               <linked>
                 </linked>
               <durationType>eighth</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -16673,12 +16730,16 @@
                 <tpc2>13</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              </BarLine>
             </voice>
           <voice>
             <location>
               <fractions>3/4</fractions>
               </location>
             <Beam>
+              <StemDirection>up</StemDirection>
               </Beam>
             <Chord>
               <linked>
@@ -16720,7 +16781,7 @@
             <SystemText>
               <linked>
                 </linked>
-              <text>Head</text>
+              <text>Head (Always play twice!)</text>
               </SystemText>
             <Rest>
               <linked>
@@ -17564,6 +17625,13 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>To Coda</text>
+            <label>coda</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>20</root>
@@ -18115,6 +18183,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -18279,9 +18350,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -18445,6 +18513,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -18697,20 +18768,6 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <Volta>
-                <endHookType>1</endHookType>
-                <beginText>If more solos...</beginText>
-                <linked>
-                  </linked>
-                <endings>1</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Chord>
               <linked>
                 </linked>
@@ -18793,8 +18850,22 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
+          <Jump>
+            <linked>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>Head al Coda after solos</text>
+            <jumpTo>start</jumpTo>
+            <playUntil>coda</playUntil>
+            <continueAt>codab</continueAt>
+            </Jump>
           <LayoutBreak>
-            <subtype>line</subtype>
+            <linked>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -18884,32 +18955,19 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              </linked>
+            <style>Repeat Text Left</style>
+            <text><font face="ScoreText"></font></text>
+            <label>codab</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>12</root>
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
-            <Spanner type="Volta">
-              <Volta>
-                <beginText>End of final solo only</beginText>
-                <linked>
-                  </linked>
-                <endings>2</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -19018,7 +19076,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <subtype>page</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -19121,13 +19179,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -20484,11 +20535,6 @@
                 </linked>
               <rightParen/>
               </Harmony>
-            <SystemText>
-              <linked>
-                </linked>
-              <text>To Head/End</text>
-              </SystemText>
             <Chord>
               <linked>
                 </linked>
@@ -20523,6 +20569,8 @@
     <Score>
       <LayerTag id="0" tag="default"></LayerTag>
       <currentLayer>0</currentLayer>
+      <Synthesizer>
+        </Synthesizer>
       <Division>480</Division>
       <Style>
         <pageWidth>8.27</pageWidth>
@@ -20563,6 +20611,7 @@
         <musicalTextFont>MuseJazz Text</musicalTextFont>
         <voltaLineWidth>0.2</voltaLineWidth>
         <voltaFontFace>MuseJazz Text</voltaFontFace>
+        <voltaFontStyle>0</voltaFontStyle>
         <ottavaLineWidth>0.2</ottavaLineWidth>
         <ottavaFontFace>MuseJazz Text</ottavaFontFace>
         <tupletBracketWidth>0.2</tupletBracketWidth>
@@ -20732,13 +20781,11 @@
             <gateTime>100</gateTime>
             </Articulation>
           <Channel name="open">
-            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="56"/>
             <synti>Fluid</synti>
             </Channel>
           <Channel name="mute">
-            <controller ctrl="0" value="0"/>
             <controller ctrl="32" value="17"/>
             <program value="59"/>
             <synti>Fluid</synti>
@@ -20798,22 +20845,16 @@
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalSharp</subtype>
-                  </Accidental>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                <tpc2>20</tpc2>
+                <pitch>65</pitch>
+                <tpc>13</tpc>
+                <tpc2>15</tpc2>
                 </Note>
               <Note>
                 <linked>
                   </linked>
-                <Accidental>
-                  <subtype>accidentalNatural</subtype>
-                  </Accidental>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                <tpc2>17</tpc2>
+                <pitch>68</pitch>
+                <tpc>10</tpc>
+                <tpc2>12</tpc2>
                 </Note>
               <Note>
                 <linked>
@@ -20838,23 +20879,21 @@
                 <linked>
                   </linked>
                 <Accidental>
-                  <role>1</role>
-                  <subtype>accidentalNatural</subtype>
+                  <subtype>accidentalSharp</subtype>
                   </Accidental>
-                <pitch>63</pitch>
-                <tpc>11</tpc>
-                <tpc2>13</tpc2>
+                <pitch>64</pitch>
+                <tpc>18</tpc>
+                <tpc2>20</tpc2>
                 </Note>
               <Note>
                 <linked>
                   </linked>
                 <Accidental>
-                  <role>1</role>
-                  <subtype>accidentalFlat</subtype>
+                  <subtype>accidentalNatural</subtype>
                   </Accidental>
-                <pitch>66</pitch>
-                <tpc>8</tpc>
-                <tpc2>10</tpc2>
+                <pitch>67</pitch>
+                <tpc>15</tpc>
+                <tpc2>17</tpc2>
                 </Note>
               <Note>
                 <linked>
@@ -20922,6 +20961,47 @@
                 <linked>
                   </linked>
                 <Accidental>
+                  <role>1</role>
+                  <subtype>accidentalNatural</subtype>
+                  </Accidental>
+                <pitch>63</pitch>
+                <tpc>11</tpc>
+                <tpc2>13</tpc2>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <Accidental>
+                  <role>1</role>
+                  <subtype>accidentalFlat</subtype>
+                  </Accidental>
+                <pitch>66</pitch>
+                <tpc>8</tpc>
+                <tpc2>10</tpc2>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>70</pitch>
+                <tpc>12</tpc>
+                <tpc2>14</tpc2>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>73</pitch>
+                <tpc>9</tpc>
+                <tpc2>11</tpc2>
+                </Note>
+              </Chord>
+            <Chord>
+              <linked>
+                </linked>
+              <durationType>half</durationType>
+              <Note>
+                <linked>
+                  </linked>
+                <Accidental>
                   <subtype>accidentalSharp</subtype>
                   </Accidental>
                 <pitch>64</pitch>
@@ -20953,39 +21033,6 @@
                 <tpc2>11</tpc2>
                 </Note>
               </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>half</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
-                <tpc2>15</tpc2>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>68</pitch>
-                <tpc>10</tpc>
-                <tpc2>12</tpc2>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>70</pitch>
-                <tpc>12</tpc>
-                <tpc2>14</tpc2>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>73</pitch>
-                <tpc>9</tpc>
-                <tpc2>11</tpc2>
-                </Note>
-              </Chord>
             </voice>
           <voice>
             <Rest>
@@ -21019,16 +21066,6 @@
               <Note>
                 <linked>
                   </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
                 <pitch>56</pitch>
                 <tpc>10</tpc>
                 <tpc2>12</tpc2>
@@ -21041,6 +21078,7 @@
             <Rest>
               <linked>
                 </linked>
+              <offset x="0" y="6"/>
               <durationType>eighth</durationType>
               </Rest>
             <Chord>
@@ -21048,6 +21086,7 @@
                 </linked>
               <dots>1</dots>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -21067,6 +21106,7 @@
               <linked>
                 </linked>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -21082,6 +21122,9 @@
                 <tpc2>10</tpc2>
                 </Note>
               </Chord>
+            <Beam>
+              <StemDirection>down</StemDirection>
+              </Beam>
             <Chord>
               <linked>
                 </linked>
@@ -21151,6 +21194,42 @@
                 </Note>
               </Chord>
             </voice>
+          <voice>
+            <Chord>
+              <linked>
+                </linked>
+              <durationType>half</durationType>
+              <StemDirection>up</StemDirection>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>65</pitch>
+                <tpc>13</tpc>
+                <tpc2>15</tpc2>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>68</pitch>
+                <tpc>10</tpc>
+                <tpc2>12</tpc2>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>70</pitch>
+                <tpc>12</tpc>
+                <tpc2>14</tpc2>
+                </Note>
+              <Note>
+                <linked>
+                  </linked>
+                <pitch>73</pitch>
+                <tpc>9</tpc>
+                <tpc2>11</tpc2>
+                </Note>
+              </Chord>
+            </voice>
           </Measure>
         <Measure>
           <LayoutBreak>
@@ -21162,6 +21241,7 @@
                 </linked>
               <dots>1</dots>
               <durationType>quarter</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -21197,6 +21277,7 @@
               <linked>
                 </linked>
               <durationType>eighth</durationType>
+              <StemDirection>down</StemDirection>
               <Note>
                 <linked>
                   </linked>
@@ -21342,11 +21423,17 @@
                 <tpc2>12</tpc2>
                 </Note>
               </Chord>
+            <BarLine>
+              <subtype>double</subtype>
+              </BarLine>
             </voice>
           <voice>
             <location>
               <fractions>3/4</fractions>
               </location>
+            <Beam>
+              <StemDirection>up</StemDirection>
+              </Beam>
             <Chord>
               <linked>
                 </linked>
@@ -21391,7 +21478,7 @@
                   </location>
                 <indexDiff>1</indexDiff>
                 </linked>
-              <text>Head</text>
+              <text>Head (Always play twice!)</text>
               </SystemText>
             <Rest>
               <linked>
@@ -22214,6 +22301,16 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>To Coda</text>
+            <label>coda</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>19</root>
@@ -22766,6 +22863,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -22930,9 +23030,6 @@
             </voice>
           </Measure>
         <Measure>
-          <LayoutBreak>
-            <subtype>line</subtype>
-            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -23096,6 +23193,9 @@
             </voice>
           </Measure>
         <Measure>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>14</root>
@@ -23348,35 +23448,14 @@
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <Volta>
-                <endHookType>1</endHookType>
-                <beginText>If more solos...</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-1</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>1</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Chord>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <BeamMode>no</BeamMode>
               <durationType>quarter</durationType>
               <noStem>1</noStem>
               <Note>
                 <linked>
-                  <indexDiff>1</indexDiff>
                   </linked>
                 <pitch>70</pitch>
                 <tpc>12</tpc>
@@ -23451,8 +23530,28 @@
           </Measure>
         <Measure>
           <endRepeat>2</endRepeat>
+          <Jump>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Right</style>
+            <text>Head al Coda after solos</text>
+            <jumpTo>start</jumpTo>
+            <playUntil>coda</playUntil>
+            <continueAt>codab</continueAt>
+            </Jump>
           <LayoutBreak>
-            <subtype>line</subtype>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <subtype>section</subtype>
+            </LayoutBreak>
+          <LayoutBreak>
+            <subtype>page</subtype>
             </LayoutBreak>
           <voice>
             <Harmony>
@@ -23542,40 +23641,24 @@
             </voice>
           </Measure>
         <Measure>
+          <Marker>
+            <linked>
+              <location>
+                <staves>-1</staves>
+                </location>
+              </linked>
+            <style>Repeat Text Left</style>
+            <text><font face="ScoreText"></font></text>
+            <label>codab</label>
+            </Marker>
           <voice>
             <Harmony>
               <root>11</root>
               <linked>
                 </linked>
               </Harmony>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
-            <Spanner type="Volta">
-              <Volta>
-                <beginText>End of final solo only</beginText>
-                <beginFontStyle>0</beginFontStyle>
-                <linked>
-                  <location>
-                    <staves>-1</staves>
-                    </location>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <endings>2</endings>
-                </Volta>
-              <next>
-                <location>
-                  <measures>2</measures>
-                  </location>
-                </next>
-              </Spanner>
             <Rest>
               <linked>
-                <indexDiff>1</indexDiff>
                 </linked>
               <durationType>half</durationType>
               </Rest>
@@ -23680,7 +23763,7 @@
           </Measure>
         <Measure>
           <LayoutBreak>
-            <subtype>page</subtype>
+            <subtype>line</subtype>
             </LayoutBreak>
           <voice>
             <Chord>
@@ -23782,13 +23865,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <Spanner type="Volta">
-              <prev>
-                <location>
-                  <measures>-2</measures>
-                  </location>
-                </prev>
-              </Spanner>
             <Rest>
               <linked>
                 </linked>
@@ -24764,9 +24840,9 @@
               <durationType>quarter</durationType>
               <Articulation>
                 <subtype>articAccentAbove</subtype>
-                <anchor>3</anchor>
                 <linked>
                   </linked>
+                <anchor>3</anchor>
                 </Articulation>
               <Note>
                 <linked>
@@ -25134,15 +25210,6 @@
                 <fixedLine>4</fixedLine>
                 </Note>
               </Chord>
-            <SystemText>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>1</indexDiff>
-                </linked>
-              <text>To Head/End</text>
-              </SystemText>
             <Harmony>
               <leftParen/>
               <root>8</root>
