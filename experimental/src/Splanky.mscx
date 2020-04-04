@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <museScore version="3.01">
-  <programVersion>3.4.0</programVersion>
-  <programRevision>684f74e</programRevision>
+  <programVersion>3.1.0</programVersion>
+  <programRevision>06f0ddd</programRevision>
   <Score>
     <LayerTag id="0" tag="default"></LayerTag>
     <currentLayer>0</currentLayer>
+    <Synthesizer>
+      </Synthesizer>
     <Division>480</Division>
     <Style>
       <pageWidth>8.26771</pageWidth>
@@ -44,6 +46,8 @@
       <swingUnit>eighth</swingUnit>
       <chordStyle>jazz</chordStyle>
       <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
+      <hideEmptyStaves>1</hideEmptyStaves>
+      <dontHidStavesInFirstSystm>0</dontHidStavesInFirstSystm>
       <slurEndWidth>0.12</slurEndWidth>
       <slurMidWidth>0.25</slurMidWidth>
       <musicalSymbolFont>MuseJazz</musicalSymbolFont>
@@ -181,6 +185,11 @@
         <bracket type="1" span="1" col="0"/>
         <barLineSpan>1</barLineSpan>
         </Staff>
+      <Staff id="2">
+        <StaffType group="pitched">
+          <name>stdNormal</name>
+          </StaffType>
+        </Staff>
       <trackName>Piano</trackName>
       <Instrument>
         <longName>Piano</longName>
@@ -243,15 +252,12 @@
     <Staff id="1">
       <VBox>
         <height>10</height>
-        <linkedMain/>
         <Text>
-          <linkedMain/>
           <style>Title</style>
           <text>Splanky
 </text>
           </Text>
         <Text>
-          <linkedMain/>
           <style>Composer</style>
           <text>Neal Hefti/William &quot;Count&quot; Basie</text>
           </Text>
@@ -267,7 +273,6 @@
             <sigD>4</sigD>
             </TimeSig>
           <SystemText>
-            <linkedMain/>
             <text>Intro</text>
             </SystemText>
           <Harmony>
@@ -458,7 +463,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -473,7 +477,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -548,7 +551,6 @@
                 </Accidental>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -562,7 +564,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -579,7 +580,6 @@
                 </Accidental>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -593,7 +593,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -689,7 +688,6 @@
         <startRepeat/>
         <voice>
           <SystemText>
-            <linkedMain/>
             <text>Head (Always play twice!)</text>
             </SystemText>
           <Harmony>
@@ -775,8 +773,6 @@
           <Rest>
             <durationType>eighth</durationType>
             </Rest>
-          <Beam>
-            </Beam>
           <Chord>
             <durationType>eighth</durationType>
             <Note>
@@ -906,7 +902,6 @@
                 </Accidental>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -1177,7 +1172,6 @@
                 </Accidental>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -1279,7 +1273,6 @@
         </Measure>
       <Measure>
         <Marker>
-          <linkedMain/>
           <style>Repeat Text Right</style>
           <text>To Coda</text>
           <label>coda</label>
@@ -1435,7 +1428,6 @@
                 </Accidental>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -1494,7 +1486,6 @@
         <startRepeat/>
         <voice>
           <SystemText>
-            <linkedMain/>
             <text>Solo changes</text>
             </SystemText>
           <Harmony>
@@ -2164,7 +2155,6 @@
       <Measure>
         <endRepeat>2</endRepeat>
         <Jump>
-          <linkedMain/>
           <style>Repeat Text Right</style>
           <text>Head al Coda after solos</text>
           <jumpTo>start</jumpTo>
@@ -2239,7 +2229,6 @@
         </Measure>
       <Measure>
         <Marker>
-          <linkedMain/>
           <style>Repeat Text Left</style>
           <text><font face="ScoreText"></font></text>
           <label>codab</label>
@@ -2264,7 +2253,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2285,7 +2273,6 @@
             <text>(Drums)</text>
             </StaffText>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -2411,7 +2398,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2516,7 +2502,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2722,7 +2707,6 @@
             <base>8</base>
             </Harmony>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -2804,7 +2788,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2943,7 +2926,6 @@
             <Volta>
               <endHookType>1</endHookType>
               <beginText>1.</beginText>
-              <linkedMain/>
               <endings>1</endings>
               </Volta>
             <next>
@@ -2995,7 +2977,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3084,7 +3065,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3161,7 +3141,6 @@
             <Volta>
               <endHookType>1</endHookType>
               <beginText>2.</beginText>
-              <linkedMain/>
               <endings>2</endings>
               </Volta>
             <next>
@@ -3349,6 +3328,480 @@
                 </location>
               </prev>
             </Spanner>
+          </voice>
+        </Measure>
+      </Staff>
+    <Staff id="2">
+      <Measure>
+        <voice>
+          <KeySig>
+            <accidental>-5</accidental>
+            </KeySig>
+          <TimeSig>
+            <sigN>4</sigN>
+            <sigD>4</sigD>
+            </TimeSig>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          <BarLine>
+            <subtype>double</subtype>
+            <span>1</span>
+            </BarLine>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <small>1</small>
+            <durationType>quarter</durationType>
+            </Rest>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>6</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>73</pitch>
+              <tpc>9</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Rest>
+            <small>1</small>
+            <durationType>half</durationType>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <small>1</small>
+            <durationType>eighth</durationType>
+            </Rest>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>6</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>78</pitch>
+              <tpc>8</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <Accidental>
+                <subtype>accidentalNatural</subtype>
+                </Accidental>
+              <pitch>79</pitch>
+              <tpc>15</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Rest>
+            <small>1</small>
+            <durationType>half</durationType>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <small>1</small>
+            <durationType>eighth</durationType>
+            </Rest>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <Accidental>
+                <role>1</role>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>78</pitch>
+              <tpc>8</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <Accidental>
+                <subtype>accidentalFlat</subtype>
+                </Accidental>
+              <pitch>76</pitch>
+              <tpc>6</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Chord>
+            <durationType>eighth</durationType>
+            <Note>
+              <pitch>73</pitch>
+              <tpc>9</tpc>
+              <small>1</small>
+              </Note>
+            </Chord>
+          <Rest>
+            <small>1</small>
+            <durationType>half</durationType>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <StaffText>
+            <text>Etc / ctd echo ofmelody</text>
+            </StaffText>
+          <Rest>
+            <visible>0</visible>
+            <small>1</small>
+            <durationType>half</durationType>
+            </Rest>
+          <Rest>
+            <visible>0</visible>
+            <small>1</small>
+            <durationType>half</durationType>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
+          </voice>
+        </Measure>
+      <Measure>
+        <voice>
+          <Rest>
+            <durationType>measure</durationType>
+            <duration>4/4</duration>
+            </Rest>
           </voice>
         </Measure>
       </Staff>
