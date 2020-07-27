@@ -39,7 +39,9 @@ ENV LANGUAGE en_GB.UTF-8
 
 WORKDIR /home/root
 
-RUN wget -q https://github.com/musescore/MuseScore/releases/download/v3.1/MuseScore-3.1.0-x86_64.AppImage
+RUN wget https://github.com/musescore/MuseScore/releases/download/v3.5rc/MuseScore-3.5.0-RC-x86_64.AppImage
+
+RUN ls -lthra
 
 ADD make_books.py make_books.py
 ADD resources/MuseJazzText.otf resources/MuseJazzText.otf

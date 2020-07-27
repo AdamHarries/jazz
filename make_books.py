@@ -239,6 +239,7 @@ def generate_tex(key, tp_pairs, release_name):
     tex += tex_header.format(pretty_print(key), release_name)
 
     for (title, pdf) in sorted(tp_pairs.items(), key=lambda kv: kv[0]):
+        print("Adding: {} / {}".format(title, pdf))
         tex += """
 % {}
     \\chart{{{}}}
@@ -281,6 +282,7 @@ def main(source_d, book_d, build_d, release_name, mscore):
     pairs[c_key_name] = {}
 
     for c in charts:
+        print("Adding chart: {}".format(c))
         title = c['title']
         for k in c['pdfs']:
             pairs[k][title] = c['pdfs'][k]
@@ -306,7 +308,7 @@ def main(source_d, book_d, build_d, release_name, mscore):
         subprocess.Popen([
             "cp",
             os.path.join(texd, "{}.pdf".format(k)),
-            os.path.join(book_d, "{}.pdf".format(k))
+            os.path.join(book_d, "Stompin' Charts - {}.pdf".format(k))
         ]).wait()
 
     print("Done.")

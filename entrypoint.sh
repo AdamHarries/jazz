@@ -10,8 +10,8 @@ echo "Building and labelling with release '$release'"
 
 # Install musescore - this has to be done at runtime, rather than when building
 # the docker image, as it requires fuse.
-chmod a+x MuseScore-3.1.0-x86_64.AppImage
-./MuseScore-3.1.0-x86_64.AppImage install
+chmod a+x ./MuseScore-3.5.0-RC-x86_64.AppImage
+./MuseScore-3.5.0-RC-x86_64.AppImage install
 
 # Set our locale, and XDG_RUNTIME direcotry
 export LC_ALL=$(locale -a | grep UTF-8)
