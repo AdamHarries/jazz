@@ -4,13 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dd2976af73cf76f05b2b67629ba27c59e04c6c4b9991ba584db2a1e7a462dee4
+-- hash: 440a9e5e6dec71a63da9a0269fc02ebb2ef4eff775b6cb8a718fc162f8a87b30
 
-name:           build-tool
+name:           hefti
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/build-tool#readme>
-homepage:       https://github.com/githubuser/build-tool#readme
-bug-reports:    https://github.com/githubuser/build-tool/issues
+description:    Please see the README on GitHub at <https://github.com/githubuser/hefti#readme>
+homepage:       https://github.com/githubuser/hefti#readme
+bug-reports:    https://github.com/githubuser/hefti/issues
 author:         Author name here
 maintainer:     example@example.com
 copyright:      2020 Author name here
@@ -23,52 +23,73 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/build-tool
+  location: https://github.com/githubuser/hefti
 
 library
   exposed-modules:
-      Lib
+      Args
+      BuildEnvironment
+      MuseScoreFile
+      Paths
   other-modules:
-      Paths_build_tool
+      Paths_hefti
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , directory
     , exceptions
+    , filepath
     , optparse-applicative
     , path
+    , path-io
+    , process
+    , split
+    , xeno
   default-language: Haskell2010
 
-executable build-tool-exe
+executable hefti-exe
   main-is: Main.hs
   other-modules:
-      Paths_build_tool
+      Paths_hefti
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , build-tool
+    , bytestring
     , directory
     , exceptions
+    , filepath
+    , hefti
     , optparse-applicative
     , path
+    , path-io
+    , process
+    , split
+    , xeno
   default-language: Haskell2010
 
-test-suite build-tool-test
+test-suite hefti-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_build_tool
+      Paths_hefti
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , build-tool
+    , bytestring
     , directory
     , exceptions
+    , filepath
+    , hefti
     , optparse-applicative
     , path
+    , path-io
+    , process
+    , split
+    , xeno
   default-language: Haskell2010
