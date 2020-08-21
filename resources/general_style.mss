@@ -11,17 +11,18 @@
     <pageOddTopMargin>0.393701</pageOddTopMargin>
     <pageOddBottomMargin>0.787403</pageOddBottomMargin>
     <pageTwosided>1</pageTwosided>
-    <staffUpperBorder>7</staffUpperBorder>
+    <staffUpperBorder>5.5</staffUpperBorder>
     <staffLowerBorder>7</staffLowerBorder>
-    <staffDistance>6.5</staffDistance>
+    <staffDistance>5.5</staffDistance>
     <akkoladeDistance>6.5</akkoladeDistance>
-    <minSystemDistance>8.5</minSystemDistance>
+    <minSystemDistance>6.5</minSystemDistance>
     <maxSystemDistance>15</maxSystemDistance>
     <lyricsPlacement>1</lyricsPlacement>
     <lyricsPosAbove x="0" y="-2"/>
     <lyricsPosBelow x="0" y="3"/>
     <lyricsMinTopDistance>1</lyricsMinTopDistance>
     <lyricsMinBottomDistance>2</lyricsMinBottomDistance>
+    <lyricsMinDistance>0</lyricsMinDistance>
     <lyricsLineHeight>1</lyricsLineHeight>
     <lyricsDashMinLength>0.4</lyricsDashMinLength>
     <lyricsDashMaxLegth>0.8</lyricsDashMaxLegth>
@@ -49,12 +50,12 @@
     <lyricsEvenFontSpatiumDependent>1</lyricsEvenFontSpatiumDependent>
     <lyricsEvenFontStyle>0</lyricsEvenFontStyle>
     <lyricsEvenColor r="0" g="0" b="0" a="255"/>
-    <lyricsOddFrameType>0</lyricsOddFrameType>
-    <lyricsOddFramePadding>0.2</lyricsOddFramePadding>
-    <lyricsOddFrameWidth>0.1</lyricsOddFrameWidth>
-    <lyricsOddFrameRound>0</lyricsOddFrameRound>
-    <lyricsOddFrameFgColor r="0" g="0" b="0" a="255"/>
-    <lyricsOddFrameBgColor r="255" g="255" b="255" a="0"/>
+    <lyricsEvenFrameType>0</lyricsEvenFrameType>
+    <lyricsEvenFramePadding>0.2</lyricsEvenFramePadding>
+    <lyricsEvenFrameWidth>0.1</lyricsEvenFrameWidth>
+    <lyricsEvenFrameRound>0</lyricsEvenFrameRound>
+    <lyricsEvenFrameFgColor r="0" g="0" b="0" a="255"/>
+    <lyricsEvenFrameBgColor r="255" g="255" b="255" a="0"/>
     <figuredBassFontFamily>MScoreBC</figuredBassFontFamily>
     <figuredBassYOffset>6</figuredBassYOffset>
     <figuredBassLineHeight>1</figuredBassLineHeight>
@@ -89,6 +90,7 @@
     <ambitusMargin>0.5</ambitusMargin>
     <timesigLeftMargin>0.5</timesigLeftMargin>
     <timesigScale w="1" h="1"/>
+    <midClefKeyRightMargin>1</midClefKeyRightMargin>
     <clefKeyRightMargin>1.75</clefKeyRightMargin>
     <clefKeyDistance>1</clefKeyDistance>
     <clefTimesigDistance>1</clefTimesigDistance>
@@ -127,6 +129,9 @@
     <propertyDistance>1</propertyDistance>
     <articulationMag>1</articulationMag>
     <articulationPosAbove x="0" y="0"/>
+    <articulationAnchorDefault>2</articulationAnchorDefault>
+    <articulationAnchorLuteFingering>4</articulationAnchorLuteFingering>
+    <articulationAnchorOther>0</articulationAnchorOther>
     <lastSystemFillLimit>0</lastSystemFillLimit>
     <hairpinPlacement>1</hairpinPlacement>
     <hairpinPosAbove x="0" y="-3.5"/>
@@ -181,11 +186,23 @@
     <harmonyFretDist>0.5</harmonyFretDist>
     <minHarmonyDistance>0.5</minHarmonyDistance>
     <maxHarmonyBarDistance>3</maxHarmonyBarDistance>
+    <maxChordShiftAbove>0</maxChordShiftAbove>
+    <maxChordShiftBelow>0</maxChordShiftBelow>
     <harmonyPlacement>0</harmonyPlacement>
+    <romanNumeralPlacement>1</romanNumeralPlacement>
+    <nashvilleNumberPlacement>0</nashvilleNumberPlacement>
+    <harmonyPlay>1</harmonyPlay>
+    <harmonyVoiceLiteral>1</harmonyVoiceLiteral>
+    <harmonyVoicing>0</harmonyVoicing>
+    <harmonyDuration>0</harmonyDuration>
     <chordSymbolPosAbove x="0" y="-2.5"/>
     <chordSymbolPosBelow x="0" y="3.5"/>
     <chordSymbolBPosAbove x="0" y="-5"/>
     <chordSymbolBPosBelow x="0" y="3.5"/>
+    <romanNumeralPosAbove x="0" y="-2.5"/>
+    <romanNumeralPosBelow x="0" y="3.5"/>
+    <nashvilleNumberPosAbove x="0" y="-2.5"/>
+    <nashvilleNumberPosBelow x="0" y="3.5"/>
     <chordSymbolAFontFace>MuseJazz Text</chordSymbolAFontFace>
     <chordSymbolAFontSize>12</chordSymbolAFontSize>
     <chordSymbolAFontSpatiumDependent>1</chordSymbolAFontSpatiumDependent>
@@ -208,6 +225,28 @@
     <chordSymbolBFrameRound>0</chordSymbolBFrameRound>
     <chordSymbolBFrameFgColor r="0" g="0" b="0" a="255"/>
     <chordSymbolBFrameBgColor r="255" g="255" b="255" a="0"/>
+    <romanNumeralFontFace>Campania</romanNumeralFontFace>
+    <romanNumeralFontSize>12</romanNumeralFontSize>
+    <romanNumeralFontSpatiumDependent>1</romanNumeralFontSpatiumDependent>
+    <romanNumeralFontStyle>0</romanNumeralFontStyle>
+    <romanNumeralColor r="0" g="0" b="0" a="255"/>
+    <romanNumeralFrameType>0</romanNumeralFrameType>
+    <romanNumeralFramePadding>0.2</romanNumeralFramePadding>
+    <romanNumeralFrameWidth>0.1</romanNumeralFrameWidth>
+    <romanNumeralFrameRound>0</romanNumeralFrameRound>
+    <romanNumeralFrameFgColor r="0" g="0" b="0" a="255"/>
+    <romanNumeralFrameBgColor r="255" g="255" b="255" a="0"/>
+    <nashvilleNumberFontFace>FreeSerif</nashvilleNumberFontFace>
+    <nashvilleNumberFontSize>12</nashvilleNumberFontSize>
+    <nashvilleNumberFontSpatiumDependent>1</nashvilleNumberFontSpatiumDependent>
+    <nashvilleNumberFontStyle>0</nashvilleNumberFontStyle>
+    <nashvilleNumberColor r="0" g="0" b="0" a="255"/>
+    <nashvilleNumberFrameType>0</nashvilleNumberFrameType>
+    <nashvilleNumberFramePadding>0.2</nashvilleNumberFramePadding>
+    <nashvilleNumberFrameWidth>0.1</nashvilleNumberFrameWidth>
+    <nashvilleNumberFrameRound>0</nashvilleNumberFrameRound>
+    <nashvilleNumberFrameFgColor r="0" g="0" b="0" a="255"/>
+    <nashvilleNumberFrameBgColor r="255" g="255" b="255" a="0"/>
     <capoPosition>0</capoPosition>
     <fretNumMag>2</fretNumMag>
     <fretNumPos>0</fretNumPos>
@@ -217,8 +256,13 @@
     <fretPlacement>0</fretPlacement>
     <fretStrings>6</fretStrings>
     <fretFrets>5</fretFrets>
-    <fretOffset>0</fretOffset>
-    <fretBarre>0</fretBarre>
+    <fretNut>1</fretNut>
+    <fretDotSize>1</fretDotSize>
+    <fretStringSpacing>0.7</fretStringSpacing>
+    <fretFretSpacing>0.8</fretFretSpacing>
+    <fretOrientation>0</fretOrientation>
+    <maxFretShiftAbove>0</maxFretShiftAbove>
+    <maxFretShiftBelow>0</maxFretShiftBelow>
     <showPageNumber>1</showPageNumber>
     <showPageNumberOne>0</showPageNumberOne>
     <pageNumberOddEven>1</pageNumberOddEven>
@@ -231,7 +275,7 @@
     <graceNoteMag>0.7</graceNoteMag>
     <smallStaffMag>0.7</smallStaffMag>
     <smallClefMag>0.8</smallClefMag>
-    <genClef>1</genClef>
+    <genClef>0</genClef>
     <genKeysig>1</genKeysig>
     <genCourtesyTimesig>1</genCourtesyTimesig>
     <genCourtesyKeysig>1</genCourtesyKeysig>
@@ -250,12 +294,18 @@
     <chordStyle>jazz</chordStyle>
     <chordsXmlFile>0</chordsXmlFile>
     <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
+    <chordExtensionMag>1</chordExtensionMag>
+    <chordExtensionAdjust>0</chordExtensionAdjust>
+    <chordModifierMag>1</chordModifierMag>
+    <chordModifierAdjust>0</chordModifierAdjust>
     <concertPitch>0</concertPitch>
     <createMultiMeasureRests>0</createMultiMeasureRests>
     <minEmptyMeasures>2</minEmptyMeasures>
     <minMMRestWidth>4</minMMRestWidth>
+    <mmRestNumberPos>-1.5</mmRestNumberPos>
     <hideEmptyStaves>0</hideEmptyStaves>
     <dontHidStavesInFirstSystm>1</dontHidStavesInFirstSystm>
+    <alwaysShowBracketsWhenEmptyStavesAreHidden>0</alwaysShowBracketsWhenEmptyStavesAreHidden>
     <hideInstrumentNameIfOneInstrument>1</hideInstrumentNameIfOneInstrument>
     <gateTime>100</gateTime>
     <tenutoGateTime>100</tenutoGateTime>
@@ -314,17 +364,29 @@
     <ottava22MAPlacement>0</ottava22MAPlacement>
     <ottava22MBPlacement>1</ottava22MBPlacement>
     <ottava8VAText>&lt;sym&gt;ottavaAlta&lt;/sym&gt;</ottava8VAText>
+    <ottava8VAContinueText>&lt;sym&gt;ottavaAlta&lt;/sym&gt;</ottava8VAContinueText>
     <ottava8VBText>&lt;sym&gt;ottavaBassaBa&lt;/sym&gt;</ottava8VBText>
+    <ottava8VBContinueText>&lt;sym&gt;ottavaBassa&lt;/sym&gt;</ottava8VBContinueText>
     <ottava15MAText>&lt;sym&gt;quindicesimaAlta&lt;/sym&gt;</ottava15MAText>
+    <ottava15MAContinueText>&lt;sym&gt;quindicesimaAlta&lt;/sym&gt;</ottava15MAContinueText>
     <ottava15MBText>&lt;sym&gt;quindicesimaBassa&lt;/sym&gt;</ottava15MBText>
+    <ottava15MBContinueText>&lt;sym&gt;quindicesimaBassa&lt;/sym&gt;</ottava15MBContinueText>
     <ottava22MAText>&lt;sym&gt;ventiduesimaAlta&lt;/sym&gt;</ottava22MAText>
+    <ottava22MAContinueText>&lt;sym&gt;ventiduesimaAlta&lt;/sym&gt;</ottava22MAContinueText>
     <ottava22MBText>&lt;sym&gt;ventiduesimaBassa&lt;/sym&gt;</ottava22MBText>
+    <ottava22MBContinueText>&lt;sym&gt;ventiduesimaBassa&lt;/sym&gt;</ottava22MBContinueText>
     <ottava8VAnoText>&lt;sym&gt;ottava&lt;/sym&gt;</ottava8VAnoText>
+    <ottava8VAnoContinueText>&lt;sym&gt;ottava&lt;/sym&gt;</ottava8VAnoContinueText>
     <ottava8VBnoText>&lt;sym&gt;ottava&lt;/sym&gt;</ottava8VBnoText>
+    <ottava8VBnoContinueText>&lt;sym&gt;ottava&lt;/sym&gt;</ottava8VBnoContinueText>
     <ottava15MAnoText>&lt;sym&gt;quindicesima&lt;/sym&gt;</ottava15MAnoText>
+    <ottava15MAnoContinueText>&lt;sym&gt;quindicesima&lt;/sym&gt;</ottava15MAnoContinueText>
     <ottava15MBnoText>&lt;sym&gt;quindicesima&lt;/sym&gt;</ottava15MBnoText>
+    <ottava15MBnoContinueText>&lt;sym&gt;quindicesima&lt;/sym&gt;</ottava15MBnoContinueText>
     <ottava22MAnoText>&lt;sym&gt;ventiduesima&lt;/sym&gt;</ottava22MAnoText>
+    <ottava22MAnoContinueText>&lt;sym&gt;ventiduesima&lt;/sym&gt;</ottava22MAnoContinueText>
     <ottava22MBnoText>&lt;sym&gt;ventiduesima&lt;/sym&gt;</ottava22MBnoText>
+    <ottava22MBnoContinueText>&lt;sym&gt;ventiduesima&lt;/sym&gt;</ottava22MBnoContinueText>
     <ottavaPosAbove x="0" y="-3"/>
     <ottavaPosBelow x="0" y="3"/>
     <ottavaHookAbove>1.9</ottavaHookAbove>
@@ -348,6 +410,8 @@
     <tremoloBoxHeight>0.65</tremoloBoxHeight>
     <tremoloLineWidth>0.5</tremoloLineWidth>
     <tremoloDistance>0.8</tremoloDistance>
+    <tremoloPlacement>0</tremoloPlacement>
+    <tremoloStrokeStyle>0</tremoloStrokeStyle>
     <linearStretch>1.5</linearStretch>
     <crossMeasureValues>0</crossMeasureValues>
     <keySigNaturals>0</keySigNaturals>
@@ -610,7 +674,10 @@
     <measureNumberFontStyle>0</measureNumberFontStyle>
     <measureNumberColor r="0" g="0" b="0" a="255"/>
     <measureNumberOffset x="0" y="-2"/>
+    <measureNumberPosBelow x="0" y="2"/>
     <measureNumberOffsetType>1</measureNumberOffsetType>
+    <measureNumberVPlacement>0</measureNumberVPlacement>
+    <measureNumberHPlacement>0</measureNumberHPlacement>
     <measureNumberAlign>center,bottom</measureNumberAlign>
     <measureNumberFrameType>0</measureNumberFrameType>
     <measureNumberFramePadding>0.2</measureNumberFramePadding>
@@ -668,12 +735,13 @@
     <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
     <rehearsalMarkFontSize>14</rehearsalMarkFontSize>
     <rehearsalMarkFontSpatiumDependent>1</rehearsalMarkFontSpatiumDependent>
-    <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
+    <rehearsalMarkFontStyle>2</rehearsalMarkFontStyle>
     <rehearsalMarkColor r="0" g="0" b="0" a="255"/>
+    <rehearsalMarkAlign>left,baseline</rehearsalMarkAlign>
     <rehearsalMarkFrameType>1</rehearsalMarkFrameType>
     <rehearsalMarkFramePadding>0.5</rehearsalMarkFramePadding>
-    <rehearsalMarkFrameWidth>0.2</rehearsalMarkFrameWidth>
-    <rehearsalMarkFrameRound>20</rehearsalMarkFrameRound>
+    <rehearsalMarkFrameWidth>0.1</rehearsalMarkFrameWidth>
+    <rehearsalMarkFrameRound>19</rehearsalMarkFrameRound>
     <rehearsalMarkFrameFgColor r="0" g="0" b="0" a="255"/>
     <rehearsalMarkFrameBgColor r="255" g="255" b="255" a="0"/>
     <rehearsalMarkPlacement>0</rehearsalMarkPlacement>
@@ -794,6 +862,22 @@
     <instrumentChangeFrameRound>0</instrumentChangeFrameRound>
     <instrumentChangeFrameFgColor r="0" g="0" b="0" a="255"/>
     <instrumentChangeFrameBgColor r="255" g="255" b="255" a="0"/>
+    <stickingFontFace>FreeSerif</stickingFontFace>
+    <stickingFontSize>12</stickingFontSize>
+    <stickingFontSpatiumDependent>1</stickingFontSpatiumDependent>
+    <stickingFontStyle>0</stickingFontStyle>
+    <stickingColor r="0" g="0" b="0" a="255"/>
+    <stickingOffset x="0" y="0"/>
+    <stickingPlacement>1</stickingPlacement>
+    <stickingPosAbove x="0" y="-2"/>
+    <stickingPosBelow x="0" y="2"/>
+    <stickingMinDistance>0.5</stickingMinDistance>
+    <stickingFrameType>0</stickingFrameType>
+    <stickingFramePadding>0.2</stickingFramePadding>
+    <stickingFrameWidth>0.1</stickingFrameWidth>
+    <stickingFrameRound>0</stickingFrameRound>
+    <stickingFrameFgColor r="0" g="0" b="0" a="255"/>
+    <stickingFrameBgColor r="255" g="255" b="255" a="0"/>
     <figuredBassFontFace>MScoreBC</figuredBassFontFace>
     <figuredBassFontSize>8</figuredBassFontSize>
     <figuredBassFontSpatiumDependent>1</figuredBassFontSpatiumDependent>
@@ -884,6 +968,90 @@
     <user6FrameRound>0</user6FrameRound>
     <user6FrameFgColor r="0" g="0" b="0" a="255"/>
     <user6FrameBgColor r="255" g="255" b="255" a="0"/>
+    <user7Name></user7Name>
+    <user7FontFace>FreeSerif</user7FontFace>
+    <user7FontSize>10</user7FontSize>
+    <user7FontSpatiumDependent>1</user7FontSpatiumDependent>
+    <user7FontStyle>0</user7FontStyle>
+    <user7Color r="0" g="0" b="0" a="255"/>
+    <user7Offset x="0" y="0"/>
+    <user7OffsetType>1</user7OffsetType>
+    <user7FrameType>0</user7FrameType>
+    <user7FramePadding>0.2</user7FramePadding>
+    <user7FrameWidth>0.1</user7FrameWidth>
+    <user7FrameRound>0</user7FrameRound>
+    <user7FrameFgColor r="0" g="0" b="0" a="255"/>
+    <user7FrameBgColor r="255" g="255" b="255" a="0"/>
+    <user8Name></user8Name>
+    <user8FontFace>FreeSerif</user8FontFace>
+    <user8FontSize>10</user8FontSize>
+    <user8FontSpatiumDependent>1</user8FontSpatiumDependent>
+    <user8FontStyle>0</user8FontStyle>
+    <user8Color r="0" g="0" b="0" a="255"/>
+    <user8Offset x="0" y="0"/>
+    <user8OffsetType>1</user8OffsetType>
+    <user8FrameType>0</user8FrameType>
+    <user8FramePadding>0.2</user8FramePadding>
+    <user8FrameWidth>0.1</user8FrameWidth>
+    <user8FrameRound>0</user8FrameRound>
+    <user8FrameFgColor r="0" g="0" b="0" a="255"/>
+    <user8FrameBgColor r="255" g="255" b="255" a="0"/>
+    <user9Name></user9Name>
+    <user9FontFace>FreeSerif</user9FontFace>
+    <user9FontSize>10</user9FontSize>
+    <user9FontSpatiumDependent>1</user9FontSpatiumDependent>
+    <user9FontStyle>0</user9FontStyle>
+    <user9Color r="0" g="0" b="0" a="255"/>
+    <user9Offset x="0" y="0"/>
+    <user9OffsetType>1</user9OffsetType>
+    <user9FrameType>0</user9FrameType>
+    <user9FramePadding>0.2</user9FramePadding>
+    <user9FrameWidth>0.1</user9FrameWidth>
+    <user9FrameRound>0</user9FrameRound>
+    <user9FrameFgColor r="0" g="0" b="0" a="255"/>
+    <user9FrameBgColor r="255" g="255" b="255" a="0"/>
+    <user10Name></user10Name>
+    <user10FontFace>FreeSerif</user10FontFace>
+    <user10FontSize>10</user10FontSize>
+    <user10FontSpatiumDependent>1</user10FontSpatiumDependent>
+    <user10FontStyle>0</user10FontStyle>
+    <user10Color r="0" g="0" b="0" a="255"/>
+    <user10Offset x="0" y="0"/>
+    <user10OffsetType>1</user10OffsetType>
+    <user10FrameType>0</user10FrameType>
+    <user10FramePadding>0.2</user10FramePadding>
+    <user10FrameWidth>0.1</user10FrameWidth>
+    <user10FrameRound>0</user10FrameRound>
+    <user10FrameFgColor r="0" g="0" b="0" a="255"/>
+    <user10FrameBgColor r="255" g="255" b="255" a="0"/>
+    <user11Name></user11Name>
+    <user11FontFace>FreeSerif</user11FontFace>
+    <user11FontSize>10</user11FontSize>
+    <user11FontSpatiumDependent>1</user11FontSpatiumDependent>
+    <user11FontStyle>0</user11FontStyle>
+    <user11Color r="0" g="0" b="0" a="255"/>
+    <user11Offset x="0" y="0"/>
+    <user11OffsetType>1</user11OffsetType>
+    <user11FrameType>0</user11FrameType>
+    <user11FramePadding>0.2</user11FramePadding>
+    <user11FrameWidth>0.1</user11FrameWidth>
+    <user11FrameRound>0</user11FrameRound>
+    <user11FrameFgColor r="0" g="0" b="0" a="255"/>
+    <user11FrameBgColor r="255" g="255" b="255" a="0"/>
+    <user12Name></user12Name>
+    <user12FontFace>FreeSerif</user12FontFace>
+    <user12FontSize>10</user12FontSize>
+    <user12FontSpatiumDependent>1</user12FontSpatiumDependent>
+    <user12FontStyle>0</user12FontStyle>
+    <user12Color r="0" g="0" b="0" a="255"/>
+    <user12Offset x="0" y="0"/>
+    <user12OffsetType>1</user12OffsetType>
+    <user12FrameType>0</user12FrameType>
+    <user12FramePadding>0.2</user12FramePadding>
+    <user12FrameWidth>0.1</user12FrameWidth>
+    <user12FrameRound>0</user12FrameRound>
+    <user12FrameFgColor r="0" g="0" b="0" a="255"/>
+    <user12FrameBgColor r="255" g="255" b="255" a="0"/>
     <letRingFontFace>MuseJazz Text</letRingFontFace>
     <letRingFontSize>10</letRingFontSize>
     <letRingFontSpatiumDependent>1</letRingFontSpatiumDependent>
@@ -903,6 +1071,7 @@
     <letRingFrameRound>0</letRingFrameRound>
     <letRingFrameFgColor r="0" g="0" b="0" a="255"/>
     <letRingFrameBgColor r="255" g="255" b="255" a="0"/>
+    <letRingEndHookType>3</letRingEndHookType>
     <palmMuteFontFace>MuseJazz Text</palmMuteFontFace>
     <palmMuteFontSize>10</palmMuteFontSize>
     <palmMuteFontSpatiumDependent>1</palmMuteFontSpatiumDependent>
@@ -922,10 +1091,26 @@
     <palmMuteFrameRound>0</palmMuteFrameRound>
     <palmMuteFrameFgColor r="0" g="0" b="0" a="255"/>
     <palmMuteFrameBgColor r="255" g="255" b="255" a="0"/>
+    <palmMuteEndHookType>3</palmMuteEndHookType>
     <fermataPosAbove x="0" y="-1"/>
     <fermataPosBelow x="0" y="1"/>
     <fermataMinDistance>0.4</fermataMinDistance>
     <fingeringPlacement>0</fingeringPlacement>
+    <articulationMinDistance>0.5</articulationMinDistance>
+    <fingeringMinDistance>0.5</fingeringMinDistance>
+    <hairpinMinDistance>0.7</hairpinMinDistance>
+    <letRingMinDistance>0.7</letRingMinDistance>
+    <ottavaMinDistance>0.7</ottavaMinDistance>
+    <palmMuteMinDistance>0.7</palmMuteMinDistance>
+    <pedalMinDistance>0.7</pedalMinDistance>
+    <repeatMinDistance>0.5</repeatMinDistance>
+    <textLineMinDistance>0.7</textLineMinDistance>
+    <trillMinDistance>1</trillMinDistance>
+    <vibratoMinDistance>1</vibratoMinDistance>
+    <voltaMinDistance>1</voltaMinDistance>
+    <figuredBassMinDistance>0.5</figuredBassMinDistance>
+    <tupletMinDistance>0.5</tupletMinDistance>
+    <autoplaceEnabled>1</autoplaceEnabled>
     <Spatium>1.76389</Spatium>
     </Style>
   </museScore>

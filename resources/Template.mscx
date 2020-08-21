@@ -16,6 +16,9 @@
       <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
       <pageOddTopMargin>0.393701</pageOddTopMargin>
       <pageOddBottomMargin>0.787403</pageOddBottomMargin>
+      <staffUpperBorder>5.5</staffUpperBorder>
+      <staffDistance>5.5</staffDistance>
+      <minSystemDistance>6.5</minSystemDistance>
       <lyricsDashForce>0</lyricsDashForce>
       <lyricsLineThickness>0.3</lyricsLineThickness>
       <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
@@ -39,8 +42,11 @@
       <hairpinFontFace>MuseJazz Text</hairpinFontFace>
       <pedalLineWidth>0.2</pedalLineWidth>
       <pedalFontFace>MuseJazz Text</pedalFontFace>
+      <harmonyFretDist>0.5</harmonyFretDist>
       <chordSymbolAFontFace>MuseJazz Text</chordSymbolAFontFace>
       <chordSymbolBFontFace>MuseJazz Text</chordSymbolBFontFace>
+      <fretY>2</fretY>
+      <genClef>0</genClef>
       <swingUnit>eighth</swingUnit>
       <chordStyle>jazz</chordStyle>
       <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
@@ -50,10 +56,16 @@
       <musicalTextFont>MuseJazz Text</musicalTextFont>
       <voltaLineWidth>0.2</voltaLineWidth>
       <voltaFontFace>MuseJazz Text</voltaFontFace>
+      <voltaFontStyle>0</voltaFontStyle>
+      <ottava8VBText>&lt;sym&gt;ottavaBassaBa&lt;/sym&gt;</ottava8VBText>
       <ottavaLineWidth>0.2</ottavaLineWidth>
       <ottavaFontFace>MuseJazz Text</ottavaFontFace>
+      <ottavaFontSize>12</ottavaFontSize>
+      <tabClef>29</tabClef>
       <tupletBracketWidth>0.2</tupletBracketWidth>
       <tupletFontFace>MuseJazz Text</tupletFontFace>
+      <textLinePosAbove x="0" y="-3.5"/>
+      <textLinePosBelow x="0" y="3.5"/>
       <defaultFontFace>MuseJazz Text</defaultFontFace>
       <defaultAlign>left,baseline</defaultAlign>
       <defaultFramePadding>0.5</defaultFramePadding>
@@ -88,6 +100,7 @@
       <rhGuitarFingeringFrameWidth>0.2</rhGuitarFingeringFrameWidth>
       <rhGuitarFingeringFrameRound>25</rhGuitarFingeringFrameRound>
       <stringNumberFontFace>MuseJazz Text</stringNumberFontFace>
+      <stringNumberOffset x="0" y="-2"/>
       <longInstrumentFontFace>MuseJazz Text</longInstrumentFontFace>
       <shortInstrumentFontFace>MuseJazz Text</shortInstrumentFontFace>
       <partInstrumentFontFace>MuseJazz Text</partInstrumentFontFace>
@@ -121,7 +134,10 @@
       <staffFrameWidth>0.2</staffFrameWidth>
       <staffFrameRound>25</staffFrameRound>
       <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
-      <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
+      <rehearsalMarkFontStyle>2</rehearsalMarkFontStyle>
+      <rehearsalMarkAlign>left,baseline</rehearsalMarkAlign>
+      <rehearsalMarkFrameWidth>0.1</rehearsalMarkFrameWidth>
+      <rehearsalMarkFrameRound>19</rehearsalMarkFrameRound>
       <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
       <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
       <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -134,12 +150,14 @@
       <textLineFontFace>MuseJazz Text</textLineFontFace>
       <glissandoFontFace>MuseJazz Text</glissandoFontFace>
       <glissandoAlign>center,baseline</glissandoAlign>
+      <glissandoText></glissandoText>
       <bendFontFace>MuseJazz Text</bendFontFace>
       <bendAlign>center,bottom</bendAlign>
       <headerFontFace>MuseJazz Text</headerFontFace>
       <headerAlign>center,top</headerAlign>
       <footerFontFace>MuseJazz Text</footerFontFace>
       <footerAlign>center,bottom</footerAlign>
+      <footerOffset x="0" y="0"/>
       <instrumentChangeFontFace>MuseJazz Text</instrumentChangeFontFace>
       <instrumentChangeFontStyle>0</instrumentChangeFontStyle>
       <instrumentChangeAlign>left,bottom</instrumentChangeAlign>
@@ -151,6 +169,8 @@
       <user5FontFace>MuseJazz Text</user5FontFace>
       <user6FontFace>MuseJazz Text</user6FontFace>
       <letRingFontFace>MuseJazz Text</letRingFontFace>
+      <letRingPosAbove x="0" y="-4"/>
+      <letRingPosBelow x="0" y="4"/>
       <palmMuteFontFace>MuseJazz Text</palmMuteFontFace>
       <Spatium>1.76389</Spatium>
       </Style>
@@ -331,7 +351,8 @@
       </Part>
     <Staff id="1">
       <VBox>
-        <height>10</height>
+        <height>5</height>
+        <topGap>5.5</topGap>
         <linkedMain/>
         <Text>
           <linkedMain/>
@@ -822,9 +843,6 @@
     <Staff id="3">
       <Measure>
         <voice>
-          <KeySig>
-            <accidental>0</accidental>
-            </KeySig>
           <TimeSig>
             <linkedMain/>
             <sigN>4</sigN>
@@ -1067,6 +1085,9 @@
         <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
         <pageOddTopMargin>0.393701</pageOddTopMargin>
         <pageOddBottomMargin>0.787403</pageOddBottomMargin>
+        <staffUpperBorder>5.5</staffUpperBorder>
+        <staffDistance>5.5</staffDistance>
+        <minSystemDistance>6.5</minSystemDistance>
         <lyricsDashForce>0</lyricsDashForce>
         <lyricsLineThickness>0.3</lyricsLineThickness>
         <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
@@ -1094,6 +1115,7 @@
         <chordSymbolAFontFace>MuseJazz Text</chordSymbolAFontFace>
         <chordSymbolBFontFace>MuseJazz Text</chordSymbolBFontFace>
         <fretY>2</fretY>
+        <genClef>0</genClef>
         <swingUnit>eighth</swingUnit>
         <chordStyle>jazz</chordStyle>
         <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
@@ -1181,7 +1203,10 @@
         <staffFrameWidth>0.2</staffFrameWidth>
         <staffFrameRound>25</staffFrameRound>
         <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
-        <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
+        <rehearsalMarkFontStyle>2</rehearsalMarkFontStyle>
+        <rehearsalMarkAlign>left,baseline</rehearsalMarkAlign>
+        <rehearsalMarkFrameWidth>0.1</rehearsalMarkFrameWidth>
+        <rehearsalMarkFrameRound>19</rehearsalMarkFrameRound>
         <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
         <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
         <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -1291,7 +1316,7 @@
         </Part>
       <Staff id="1">
         <VBox>
-          <height>10</height>
+          <height>5</height>
           <linked>
             <location>
               <staves>-2</staves>
@@ -1311,9 +1336,6 @@
         <Measure>
           <startRepeat/>
           <voice>
-            <KeySig>
-              <accidental>0</accidental>
-              </KeySig>
             <TimeSig>
               <linked>
                 </linked>
@@ -1622,6 +1644,9 @@
         <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
         <pageOddTopMargin>0.393701</pageOddTopMargin>
         <pageOddBottomMargin>0.787403</pageOddBottomMargin>
+        <staffUpperBorder>5.5</staffUpperBorder>
+        <staffDistance>5.5</staffDistance>
+        <minSystemDistance>6.5</minSystemDistance>
         <lyricsDashForce>0</lyricsDashForce>
         <lyricsLineThickness>0.3</lyricsLineThickness>
         <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
@@ -1649,6 +1674,7 @@
         <chordSymbolAFontFace>MuseJazz Text</chordSymbolAFontFace>
         <chordSymbolBFontFace>MuseJazz Text</chordSymbolBFontFace>
         <fretY>2</fretY>
+        <genClef>0</genClef>
         <swingUnit>eighth</swingUnit>
         <chordStyle>jazz</chordStyle>
         <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
@@ -1736,7 +1762,10 @@
         <staffFrameWidth>0.2</staffFrameWidth>
         <staffFrameRound>25</staffFrameRound>
         <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
-        <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
+        <rehearsalMarkFontStyle>2</rehearsalMarkFontStyle>
+        <rehearsalMarkAlign>left,baseline</rehearsalMarkAlign>
+        <rehearsalMarkFrameWidth>0.1</rehearsalMarkFrameWidth>
+        <rehearsalMarkFrameRound>19</rehearsalMarkFrameRound>
         <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
         <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
         <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -1801,7 +1830,7 @@
         </Part>
       <Staff id="1">
         <VBox>
-          <height>10</height>
+          <height>5</height>
           <linked>
             </linked>
           <Text>
@@ -2120,6 +2149,9 @@
         <pageEvenBottomMargin>0.787403</pageEvenBottomMargin>
         <pageOddTopMargin>0.393701</pageOddTopMargin>
         <pageOddBottomMargin>0.787403</pageOddBottomMargin>
+        <staffUpperBorder>5.5</staffUpperBorder>
+        <staffDistance>5.5</staffDistance>
+        <minSystemDistance>6.5</minSystemDistance>
         <lyricsDashForce>0</lyricsDashForce>
         <lyricsLineThickness>0.3</lyricsLineThickness>
         <lyricsOddFontFace>MuseJazz Text</lyricsOddFontFace>
@@ -2147,6 +2179,7 @@
         <chordSymbolAFontFace>MuseJazz Text</chordSymbolAFontFace>
         <chordSymbolBFontFace>MuseJazz Text</chordSymbolBFontFace>
         <fretY>2</fretY>
+        <genClef>0</genClef>
         <swingUnit>eighth</swingUnit>
         <chordStyle>jazz</chordStyle>
         <chordDescriptionFile>chords_jazz.xml</chordDescriptionFile>
@@ -2234,7 +2267,10 @@
         <staffFrameWidth>0.2</staffFrameWidth>
         <staffFrameRound>25</staffFrameRound>
         <rehearsalMarkFontFace>MuseJazz Text</rehearsalMarkFontFace>
-        <rehearsalMarkFontStyle>0</rehearsalMarkFontStyle>
+        <rehearsalMarkFontStyle>2</rehearsalMarkFontStyle>
+        <rehearsalMarkAlign>left,baseline</rehearsalMarkAlign>
+        <rehearsalMarkFrameWidth>0.1</rehearsalMarkFrameWidth>
+        <rehearsalMarkFrameRound>19</rehearsalMarkFrameRound>
         <repeatLeftFontFace>MuseJazz Text</repeatLeftFontFace>
         <repeatLeftFramePadding>0.5</repeatLeftFramePadding>
         <repeatLeftFrameWidth>0.2</repeatLeftFrameWidth>
@@ -2351,7 +2387,7 @@
         </Part>
       <Staff id="1">
         <VBox>
-          <height>10</height>
+          <height>5</height>
           <linked>
             <location>
               <staves>-1</staves>
