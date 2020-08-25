@@ -21,7 +21,7 @@ data BuildException
   = NoSourceDir
   | NoSourceFiles
   | CannotFindMuseScore
-  | CouldNotGetXMLFile
+  | CouldNotGetMSCX
   deriving (Show, Typeable)
 
 instance Exception BuildException

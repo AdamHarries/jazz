@@ -7,9 +7,12 @@ module Paths
         eitherAppendPath,
         appendPath,
         maybeAppendFile,
-        eitherAppendFile
+        eitherAppendFile,
+        MuseScoreFilePath(..),
+        asMuseScoreFilePath
     ) where
 
+import           Data.List.Split
 import           Path
 import           System.Directory
 import           System.FilePath
@@ -17,6 +20,11 @@ import           System.FilePath
 type AbsDir = Path Abs Dir
 type AbsFile = Path Abs File
 type RelFile = Path Rel File
+
+data MuseScoreFilePath
+  = MSCX AbsFile
+  | MSCZ AbsFile
+  deriving (Show, Eq)
 
 
 -- Various utilities for appending directory paths to absolute directories unsafely,
@@ -46,10 +54,9 @@ eitherAppendFile base app = case maybeAppendFile base app of
     Just p  -> Right p
     Nothing -> Left ("Failed to parse path: " ++ app)
 
-{-
-    Normalise path indirection, i.e.:
-    normaliseIndirection "/home/bar/../bar/foo/../foo" = "/home/bar/foo"
--}
+
+-- Normalise path indirection, i.e.:
+-- normaliseIndirection "/home/bar/../bar/foo/../foo" = "/home/bar/foo"
 normaliseIndirection :: FilePath -> FilePath
 normaliseIndirection fp =
   let elements = splitPath fp in
@@ -61,3 +68,12 @@ normaliseIndirection fp =
         normAdj fp xs
         else
           normAdj (fp System.FilePath.</> up) (lower : xs)
+
+-- Transforms an absolute file path into an equivalent musescore filepath
+asMuseScoreFilePath :: AbsFile -> Maybe MuseScoreFilePath
+asMuseScoreFilePath f =
+  let ex = Prelude.last $ Data.List.Split.splitOn "." $ toFilePath f
+   in case ex of
+        "mscx" -> Just $ MSCX f
+        "mscz" -> Just $ MSCZ f
+        _      -> Nothing

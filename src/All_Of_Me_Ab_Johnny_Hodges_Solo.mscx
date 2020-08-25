@@ -233,7 +233,7 @@
             <tempo>2.66667</tempo>
             <followText>1</followText>
             <linkedMain/>
-            <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 160</text>
+            <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 160</text>
             </Tempo>
           <Rest>
             <linkedMain/>
@@ -7490,7 +7490,7 @@
               <followText>1</followText>
               <linked>
                 </linked>
-              <text><font face="ScoreText"/><font face="MuseJazz Text"/> = 160</text>
+              <text><font face="ScoreText"></font><font face="MuseJazz Text"></font> = 160</text>
               </Tempo>
             <Rest>
               <linked>
@@ -7855,6 +7855,9 @@
           </Measure>
         <Measure>
           <stretch>0.9</stretch>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>16</root>
@@ -8314,6 +8317,9 @@
           </Measure>
         <Measure>
           <stretch>0.9</stretch>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>17</root>
@@ -8887,6 +8893,9 @@
           </Measure>
         <Measure>
           <stretch>0.9</stretch>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>15</root>
@@ -9508,6 +9517,9 @@
           </Measure>
         <Measure>
           <stretch>0.9</stretch>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Harmony>
               <root>13</root>
@@ -10310,6 +10322,9 @@
           </Measure>
         <Measure>
           <stretch>0.9</stretch>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>
@@ -10861,6 +10876,9 @@
           </Measure>
         <Measure>
           <stretch>0.9</stretch>
+          <LayoutBreak>
+            <subtype>line</subtype>
+            </LayoutBreak>
           <voice>
             <Chord>
               <linked>

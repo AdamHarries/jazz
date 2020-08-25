@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1cb01309f9976af8712fca69078b8ae83c3588e78733e65c83002f0558a562ce
+-- hash: 2cd31fcaa590fcfa6a41f4f1ba6e1dc0fd91f9ccff1a4833b3ed7a4316ebb401
 
 name:           hefti
 version:        0.1.0.0
@@ -29,17 +29,23 @@ library
   exposed-modules:
       Args
       BuildEnvironment
-      MuseScoreFile
+      MSFileIO
+      MSFileParser
+      MSPartGen
+      MSTypes
       Paths
+      XMLUtils
   other-modules:
       Paths_hefti
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers
     , directory
     , exceptions
     , filepath
+    , hspec
     , optparse-applicative
     , path
     , path-io
@@ -59,10 +65,12 @@ executable hefti-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
     , directory
     , exceptions
     , filepath
     , hefti
+    , hspec
     , optparse-applicative
     , path
     , path-io
@@ -83,10 +91,12 @@ test-suite hefti-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
     , directory
     , exceptions
     , filepath
     , hefti
+    , hspec
     , optparse-applicative
     , path
     , path-io
