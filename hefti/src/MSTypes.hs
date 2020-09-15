@@ -5,6 +5,7 @@ module MSTypes (
     parseInstrument,
     Key(..),
     instKey,
+    textKey,
     Score(..),
     Part(..),
 )where
@@ -55,6 +56,11 @@ instKey Piano    = C
 instKey Clarinet = Bb
 instKey _        = C
 
+textKey :: Key -> TE.Text
+textKey C  = "C"
+textKey Eb = "Eb"
+textKey Bb = "Bb"
+
 
 -- ProgramInfo, metadata from a musescore file
 data ProgramInfo = ProgramInfo {
@@ -65,4 +71,4 @@ data ProgramInfo = ProgramInfo {
 }
 
 instance Show ProgramInfo where
-  show p = "ProgramVersion: " ++ (show . programVersion $ p) ++ ", ProgramRevision: " ++ (show . programRevision $ p)
+  show p = "{ProgramVersion: " ++ (show . programVersion $ p) ++ ", ProgramRevision: " ++ (show . programRevision $ p) ++ "}"

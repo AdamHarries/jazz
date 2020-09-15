@@ -31,9 +31,10 @@ dependencies:
 - split
 - process
 - text
-- xml-conduit
+- xml-conduit >=1.1 && <1.9
 - transformers
-- containers
+- containers >=0.4.0 && <0.6
+- xml-html-conduit-lens
 
 library:
   source-dirs: src

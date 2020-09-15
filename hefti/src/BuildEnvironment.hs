@@ -10,12 +10,11 @@ module BuildEnvironment
 )where
 
 import           Args
+import           Control.Exception
 import           Path
 import           Path.IO
 import           Paths
 import           Type.Reflection
-
-import           Control.Exception
 
 data BuildException
   = NoSourceDir

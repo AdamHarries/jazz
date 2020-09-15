@@ -1,10 +1,11 @@
 {-# LANGUAGE QuasiQuotes #-}
 
-module Args
-(
+
+module Args(
     CmdLineArgs(..),
     opts
-)where
+) where
+
 
 import           Data.Semigroup      ((<>))
 import           Options.Applicative

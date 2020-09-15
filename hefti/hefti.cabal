@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2cd31fcaa590fcfa6a41f4f1ba6e1dc0fd91f9ccff1a4833b3ed7a4316ebb401
+-- hash: 9cf14d94509a09a7158bbca98e40b6d434605784dd66b29215bd85f0e9499a7f
 
 name:           hefti
 version:        0.1.0.0
@@ -41,7 +41,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
-    , containers
+    , containers >=0.4.0 && <0.6
     , directory
     , exceptions
     , filepath
@@ -53,7 +53,8 @@ library
     , split
     , text
     , transformers
-    , xml-conduit
+    , xml-conduit >=1.1 && <1.9
+    , xml-html-conduit-lens
   default-language: Haskell2010
 
 executable hefti-exe
@@ -65,7 +66,7 @@ executable hefti-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , containers
+    , containers >=0.4.0 && <0.6
     , directory
     , exceptions
     , filepath
@@ -78,7 +79,8 @@ executable hefti-exe
     , split
     , text
     , transformers
-    , xml-conduit
+    , xml-conduit >=1.1 && <1.9
+    , xml-html-conduit-lens
   default-language: Haskell2010
 
 test-suite hefti-test
@@ -91,7 +93,7 @@ test-suite hefti-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , containers
+    , containers >=0.4.0 && <0.6
     , directory
     , exceptions
     , filepath
@@ -104,5 +106,6 @@ test-suite hefti-test
     , split
     , text
     , transformers
-    , xml-conduit
+    , xml-conduit >=1.1 && <1.9
+    , xml-html-conduit-lens
   default-language: Haskell2010

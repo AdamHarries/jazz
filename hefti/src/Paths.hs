@@ -1,3 +1,5 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Paths
     (
         AbsDir,
@@ -9,13 +11,16 @@ module Paths
         maybeAppendFile,
         eitherAppendFile,
         MuseScoreFilePath(..),
-        asMuseScoreFilePath
+        asMuseScoreFilePath,
+        tidyFilename
     ) where
 
 import           Data.List.Split
+import           Data.Text        as TE
 import           Path
 import           System.Directory
 import           System.FilePath
+
 
 type AbsDir = Path Abs Dir
 type AbsFile = Path Abs File
@@ -60,7 +65,7 @@ eitherAppendFile base app = case maybeAppendFile base app of
 normaliseIndirection :: FilePath -> FilePath
 normaliseIndirection fp =
   let elements = splitPath fp in
-    normAdj (head elements) (tail elements) where
+    normAdj (Prelude.head elements) (Prelude.tail elements) where
       normAdj :: FilePath -> [FilePath] -> FilePath
       normAdj fp [] = fp
       normAdj fp (x:[]) = fp System.FilePath.</> x
@@ -77,3 +82,14 @@ asMuseScoreFilePath f =
         "mscx" -> Just $ MSCX f
         "mscz" -> Just $ MSCZ f
         _      -> Nothing
+
+tidyFilename :: TE.Text -> TE.Text
+tidyFilename = TE.concatMap replace where
+  replace :: Char -> Text
+  replace ' '  = "_"
+  replace '('  = ""
+  replace ')'  = ""
+  replace ','  = ""
+  replace '\'' = ""
+  replace '\"' = ""
+  replace c    = singleton c

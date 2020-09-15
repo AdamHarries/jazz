@@ -16,8 +16,6 @@ import           Text.XML
 import           Text.XML.Cursor
 import           XMLUtils
 
-
-
 -- Read a musescore file into an XML document
 readMSFile :: BuildEnv -> MuseScoreFilePath -> IO Document
 readMSFile _ (MSCX f) = Text.XML.readFile def (toFilePath f)

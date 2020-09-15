@@ -1,3 +1,4 @@
+{-# LANGUAGE OverloadedStrings #-}
 module XMLUtils
     (
         searchDoc,
@@ -48,3 +49,18 @@ defaultNodeWithContent name content = NodeElement (
     elementAttributes = DM.fromList [],
     elementNodes = [NodeContent content]
   })
+
+-- Produces this version string
+-- <?xml version="1.0" encoding="UTF-8"?>
+versionString :: Node
+versionString = NodeElement (
+  Element {
+    elementName = Name {
+      nameLocalName = "xml",
+      nameNamespace = Nothing,
+      namePrefix = Nothing
+    },
+    elementAttributes = DM.fromList [("version", "1.0"), ("encoding", "UTF-8")],
+    elementNodes = []
+  })
+

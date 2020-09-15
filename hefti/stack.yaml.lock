@@ -3,10 +3,59 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: xml-html-conduit-lens-0.3.2.4@sha256:31886504408b5ab97ba3711e7d4bf3ca764f181f8917bfa372c622a2d6d6e355,2137
+    pantry-tree:
+      size: 935
+      sha256: 43c34947b7c2f6d6ca6d54c7deefc42a677684fd3968b0646554a43fe479934f
+  original:
+    hackage: xml-html-conduit-lens-0.3.2.4
+- completed:
+    hackage: containers-0.5.11.0@sha256:28ad7337057442f75bc689315ab4ec7bdf5e6b2c39668f306672cecd82c02798,16685
+    pantry-tree:
+      size: 4849
+      sha256: faa4e75922a28f7cfe9920c1d7ab3866b792cefcd29bf79f54cfe3b6b5f57cbf
+  original:
+    hackage: containers-0.5.11.0
+- completed:
+    hackage: xml-conduit-1.8.0.1@sha256:92bd9a77f714578f3efa61701231545f7aeb36a3228358e3fdddf3a28350e8c2,2677
+    pantry-tree:
+      size: 808
+      sha256: ff006e076216ee5e207a4051fb876987b2f9d29932026cb7fcbe38c3aa193264
+  original:
+    hackage: xml-conduit-1.8.0.1
+- completed:
+    hackage: Cabal-3.0.2.0@sha256:f45ee078a8529d1ad3993767345ac83304c7f2ff5eec02c455a1dc200ad22c67,26714
+    pantry-tree:
+      size: 40207
+      sha256: 653461a4e58b10a6ef9d6ed5e07b1f8839ed46b4673133ecbe3899a48d6b983b
+  original:
+    hackage: Cabal-3.0.2.0
+- completed:
+    hackage: binary-0.8.8.0@sha256:e9387a7ef2b34c6a23b09664c306e37cc01ae2cb4e4511a1c96ffb14008c24b0,6262
+    pantry-tree:
+      size: 1976
+      sha256: 271cd1e75af293fc25a489d860f094dc635a4ed8b56aa5b343c58f4637736ca3
+  original:
+    hackage: binary-0.8.8.0
+- completed:
+    hackage: text-1.2.4.0@sha256:8c24450feb8e3bbb7ea3e17af24ef57e85db077c4bf53e5bcc345b283d1b1d5b,10081
+    pantry-tree:
+      size: 7457
+      sha256: 3437b0a73ce2ae1a81aa8b3438d41a85981c00894cdbee0d6d6d6873046a5d5d
+  original:
+    hackage: text-1.2.4.0
+- completed:
+    hackage: parsec-3.1.14.0@sha256:63a4555d6ea2aaccd8588fc809e5d137e72b668898ab3b171ce8458b792f0f36,4356
+    pantry-tree:
+      size: 2574
+      sha256: c17cc12ba9a912521d58d8bcee07830351fe27483d9309ebdac8e32175e10706
+  original:
+    hackage: parsec-3.1.14.0
 snapshots:
 - completed:
-    size: 532380
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/9.yaml
-    sha256: 14a7cec114424e4286adde73364438927a553ed248cc50f069a30a67e3ee1e69
-  original: lts-16.9
+    size: 532383
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/10.yaml
+    sha256: 469d781ab6d2a4eceed6b31b6e4ec842dcd3cd1d11577972e86902603dce24df
+  original: lts-16.10

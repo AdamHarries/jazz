@@ -4,7 +4,6 @@ module MSFileParser
     score,
 )where
 
-import           BuildEnvironment                  as BE
 import           Control.Exception
 import           Control.Monad
 import           Control.Monad.Trans.Writer.Strict
