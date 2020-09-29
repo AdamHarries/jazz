@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 9cf14d94509a09a7158bbca98e40b6d434605784dd66b29215bd85f0e9499a7f
+-- hash: 3cbb99e9bd8e0422d728fe682dd5692fb3eab3c3c1ec25ff72b59be720272e1b
 
 name:           hefti
 version:        0.1.0.0
@@ -29,11 +29,11 @@ library
   exposed-modules:
       Args
       BuildEnvironment
-      MSFileIO
-      MSFileParser
-      MSPartGen
-      MSTypes
-      Paths
+      MuseScore.IO
+      MuseScore.Parser
+      MuseScore.Partgen
+      MuseScore.Types
+      PathUtils
       XMLUtils
   other-modules:
       Paths_hefti

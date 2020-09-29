@@ -1,6 +1,7 @@
 .*
 *.pdf
 build/*
+hefti/build
 books/*
 MuseScore/.*
 !/.gitignore
