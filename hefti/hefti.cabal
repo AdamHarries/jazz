@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3cbb99e9bd8e0422d728fe682dd5692fb3eab3c3c1ec25ff72b59be720272e1b
+-- hash: c25838bd6a99db5fb06c37f17580d9682b906ffadd2d6837e12aa23e9b5a96e4
 
 name:           hefti
 version:        0.1.0.0
@@ -46,6 +46,7 @@ library
     , exceptions
     , filepath
     , hspec
+    , lens
     , optparse-applicative
     , path
     , path-io
@@ -72,6 +73,7 @@ executable hefti-exe
     , filepath
     , hefti
     , hspec
+    , lens
     , optparse-applicative
     , path
     , path-io
@@ -99,6 +101,7 @@ test-suite hefti-test
     , filepath
     , hefti
     , hspec
+    , lens
     , optparse-applicative
     , path
     , path-io

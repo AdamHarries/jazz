@@ -5,8 +5,10 @@ module XMLUtils
         maybeSearchDoc,
         searchDocOrElse,
         getTextOrElse,
-        defaultNodeWithContent
+        defaultNodeWithContent,
+        nodeContent
     ) where
+import           Control.Monad
 
 import qualified Data.Map        as DM
 import qualified Data.Text       as TE
@@ -49,6 +51,13 @@ defaultNodeWithContent name content = NodeElement (
     elementAttributes = DM.fromList [],
     elementNodes = [NodeContent content]
   })
+
+nodeContent :: MonadPlus m => Node -> m TE.Text
+nodeContent (NodeElement e) = case (head . elementNodes $ e) of
+  (NodeContent c) -> pure c
+  _               -> mzero
+nodeContent _ = mzero
+
 
 -- Produces this version string
 -- <?xml version="1.0" encoding="UTF-8"?>

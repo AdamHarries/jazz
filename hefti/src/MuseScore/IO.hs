@@ -5,16 +5,16 @@ module MuseScore.IO
   )
 where
 
-import BuildEnvironment as BE
-import Control.Exception
-import qualified Data.Text as TE
-import MuseScore.Types
-import Path
-import PathUtils
-import System.Process
-import Text.XML
-import Text.XML.Cursor
-import XMLUtils
+import           BuildEnvironment  as BE
+import           Control.Exception
+import qualified Data.Text         as TE
+import           MuseScore.Types
+import           Path
+import           PathUtils
+import           System.Process
+import           Text.XML
+import           Text.XML.Cursor
+import           XMLUtils
 
 -- Read a musescore file into an XML document
 readMSFile :: BuildEnv -> MuseScoreFilePath -> IO Document
@@ -23,7 +23,7 @@ readMSFile be zf = do
   xmlmf <- convertToMSCX be zf
   case xmlmf of
     (MSCX f) -> Text.XML.readFile def (toFilePath f)
-    _ -> pure (throw CouldNotGetMSCX)
+    _        -> pure (throw CouldNotGetMSCX)
   where
     -- Generates an (equivalent) temporary XML file for `.mscz` musescore files,
     -- does nothing for "normal" `.mscx` files
