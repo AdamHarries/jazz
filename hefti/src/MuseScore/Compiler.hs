@@ -13,7 +13,6 @@ module MuseScore.Compiler
   )
 where
 
-
 import           Control.Exception
 import           Control.Lens                      ((&), (.~))
 import           Control.Monad
@@ -31,7 +30,25 @@ import           Text.XML
 import           Text.XML.Cursor
 import qualified Text.Xml.Lens                     as XLens
 
--- Step 1. We want to parse a single MuseScore XML document into a fresly-parsed score, which contains
+-- Overview: The way this application works is split into two distinct stages, a compilation stage,
+-- and a linking stage. For those of you familiar with C/C++ compilers, or even just compiling C/C+
+-- programs, this will seem familar. Essentially, our "compilation" stage takes a number of "source
+-- files", generates (from them) a number of pre-processed intermediate files, and finally generates
+-- (from them) a set of "object files". In this application, they are (respectively) MuseScore score
+-- files (containing multiple instruments each), MuseScore part files (containing a single
+-- instrument per file), and PDF files (representing the objects at the end of our compilation.)
+
+-- Once these PDF "object" files have been generated, the "linking" stage takes them and "links"
+-- them together into books, in the same way that a C++ linker would link object files into a shared
+-- library or executable.
+
+-- These stages are kept separate as there is an inherent "transposition" in between the two, when
+-- we go from a pipeline that handles structures that are of shape (roughly)
+-- [(ScoreName, [(Instrument, Object)])] into a pipeline that handles structures that are of shape
+-- (roughly, again) [(Instrument, [(ScoreName, Object)])]. During the compiler we care about
+-- splitting/generating *per score*, wheras afterwards we care about linking *per instrument*.
+
+-- Step 1. We want to parse a single MuseScore XML document into a freshly-parsed score, which contains
 -- the various parts as simple nodes in the XML tree.
 -- We represent the type of this arrangement mapping as a "Conductors" arrangement - instruments
 -- to nodes in the score document
@@ -142,7 +159,8 @@ partfiles env scr = do
       makeRule srcfile partfile (\_ t -> Text.XML.writeFile def (toFilePath t) doc)
 
 
--- Arrangement in terms of generated/generable PDF files
+-- Step 4. Given an arrangement of MuseScore file paths, take them and convert them to PDF files,
+-- saving them at a computed file path, and returning those paths.
 type PDFPath = AbsFile
 type PDFArrangement = DM.Map Instrument PDFPath
 pdffiles :: BuildEnv -> Score MSArrangement -> IO (Score PDFArrangement)
