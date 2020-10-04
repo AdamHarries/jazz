@@ -6,6 +6,7 @@ import           Data.Maybe
 import           Data.Text           as TE
 import           Environment
 import           MuseScore.Compiler
+import           MuseScore.Linker
 import           MuseScore.Types
 import           Options.Applicative
 import           Path
@@ -29,7 +30,8 @@ main = do
     listDir (source_d env)
       >>= (pure . snd)
 
-  mapM_ (putStrLn . show) score_paths
+  putStrLn "Compiling books from files: "
+  mapM_ (\p -> putStrLn $ "\t - " ++ (show $ filename p)) score_paths
 
   -- read the files into document structures
   pathdocs <- (mapM (readMSFile env)) score_paths
@@ -38,8 +40,6 @@ main = do
   -- We're just ignoring the files that fail for now. They shouldn't fail though...
   let scores = catMaybes $ Prelude.map score pathdocs
 
-  mapM_ (\sc -> putStrLn $ "Read title: " ++ (unpack $ name sc)) scores
-
   -- Given the scores, and documents, convert them into a player arrangement
   let playarrs = Prelude.map (\(sc, (_, d)) -> substitute d sc) $ Prelude.zip scores pathdocs
 
@@ -47,28 +47,12 @@ main = do
   msparts <- mapM (\sc -> partfiles env sc) playarrs
 
   -- Generate PDF files from the individual MuseScore XML parts
-  -- pdfparts <-
-  mapM_ (\sc -> pdffiles env sc) msparts
+  pdfparts <- mapM (\sc -> pdffiles env sc) msparts
 
-  -- mapM_ (\sc -> do
-  --   putStrLn $ "For Score: " ++ (unpack $ name sc)
-  --   mapM_ (\(k, v) -> putStrLn $ "  " ++  (show $ key $ k) ++ " -> " ++ (show v)) $ DM.toList $  parts sc
-  --   ) pdfparts
+  let books = reshape pdfparts
 
-  -- Recursively zip the two together, so that we can write them out.
+  pdffiles <- mapM (catpdfs env) books
 
-  -- -- Then convert them to a set of parts
-  -- let parts = scores >>= (genXmlParts env)
+  mapM_ (\f -> putStrLn $ "Book written to : " ++ (show $ dat f)) pdffiles
 
-  -- mapM_
-  --   ( \sc -> do
-  --       putStrLn $ "Sc: " ++ (show sc)
-  --       putStrLn $ "Path: " ++ (show $ scoreFilename (sc))
-  --   )
-  --   parts
-
-  -- Generate PDF files
-  -- Generate PDF/title pairs
-  -- Generate LaTeX
-  -- Compile
-  putStrLn $ show env
+  -- putStrLn $ show books

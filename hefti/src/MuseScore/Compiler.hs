@@ -10,6 +10,7 @@ module MuseScore.Compiler
     substitute,
     partfiles,
     pdffiles,
+    PDFArrangement(..)
   )
 where
 

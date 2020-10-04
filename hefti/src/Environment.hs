@@ -30,6 +30,7 @@ data BuildException
   | CannotFindMuseScore
   | CouldNotGetMSCX
   | CannotWriteMSCZ
+  | IllegalPDFFile TE.Text
   | IllegalMSCXFilePath TE.Text
   deriving (Show, Typeable)
 

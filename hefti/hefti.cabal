@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 55291718a0aca37f729596496224af1080cf5042b935cfe63ec2db4004b6f469
+-- hash: b85e7cdd7e25a5710edc97d51e5044ee0a9149f0263a642919697078606707f7
 
 name:           hefti
 version:        0.1.0.0
@@ -47,6 +47,7 @@ library
     , path
     , path-io
     , process
+    , raw-strings-qq
     , split
     , text
     , transformers
@@ -74,6 +75,7 @@ executable hefti-exe
     , path
     , path-io
     , process
+    , raw-strings-qq
     , split
     , text
     , transformers
@@ -102,6 +104,7 @@ test-suite hefti-test
     , path
     , path-io
     , process
+    , raw-strings-qq
     , split
     , text
     , transformers
