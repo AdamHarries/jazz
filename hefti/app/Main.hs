@@ -1,19 +1,24 @@
 module Main where
 
-import           Args
-import           BuildEnvironment    as BE
+
+import           Data.Map            as DM
 import           Data.Maybe
-import           MuseScore.IO
-import           MuseScore.Parser
-import           MuseScore.Partgen
+import           Data.Text           as TE
+import           Environment
+import           MuseScore.Compiler
 import           MuseScore.Types
 import           Options.Applicative
 import           Path
 import           Path.IO
-import           PathUtils
+import           Text.XML
+
+getTestFile :: IO Document
+getTestFile = Text.XML.readFile def "../src/A_Smooth_One.mscx"
+
 
 main :: IO ()
 main = do
+  -- Get the working directory
   current_directory <- getCurrentDir
 
   -- Set up the environment
@@ -21,15 +26,36 @@ main = do
 
   -- List the directory, and extract musescore files.
   score_paths <-
-    listDir (BE.source_d env)
+    listDir (source_d env)
       >>= (pure . snd)
-      >>= ( pure . catMaybes . map asMuseScoreFilePath
-          )
+
+  mapM_ (putStrLn . show) score_paths
+
   -- read the files into document structures
-  documents <- (mapM (readMSFile env)) score_paths
+  pathdocs <- (mapM (readMSFile env)) score_paths
 
   -- Convert the musescore files into internal score files
-  let scores = map score documents
+  -- We're just ignoring the files that fail for now. They shouldn't fail though...
+  let scores = catMaybes $ Prelude.map score pathdocs
+
+  mapM_ (\sc -> putStrLn $ "Read title: " ++ (unpack $ name sc)) scores
+
+  -- Given the scores, and documents, convert them into a player arrangement
+  let playarrs = Prelude.map (\(sc, (_, d)) -> substitute d sc) $ Prelude.zip scores pathdocs
+
+  -- Generate MuseScore XML files for each part, and write them to disk
+  msparts <- mapM (\sc -> partfiles env sc) playarrs
+
+  -- Generate PDF files from the individual MuseScore XML parts
+  -- pdfparts <-
+  mapM_ (\sc -> pdffiles env sc) msparts
+
+  -- mapM_ (\sc -> do
+  --   putStrLn $ "For Score: " ++ (unpack $ name sc)
+  --   mapM_ (\(k, v) -> putStrLn $ "  " ++  (show $ key $ k) ++ " -> " ++ (show v)) $ DM.toList $  parts sc
+  --   ) pdfparts
+
+  -- Recursively zip the two together, so that we can write them out.
 
   -- -- Then convert them to a set of parts
   -- let parts = scores >>= (genXmlParts env)

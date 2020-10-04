@@ -1,57 +1,18 @@
-{-# LANGUAGE GADTs             #-}
-{-# LANGUAGE OverloadedStrings #-}
 
-module MuseScore.Types
-  ( ProgramInfo (..),
+-- {-# LANGUAGE GADTs             #-}
+{-# LANGUAGE OverloadedStrings #-}
+-- {-# LANGUAGE QuasiQuotes       #-}
+module MuseScore.Types (
     Instrument (..),
     parseInst,
     Key (..),
     key,
     Score (..),
-    parts,
-    Part (..),
-    Arrangement (..),
-    DerivedScore (..),
-  )
-where
 
-import           Data.Text as TE
-import           Text.XML
+) where
 
--- This is our core data structure for representing a parsed score
-data Score = Score
-  { scname  :: TE.Text,
-    scparts :: Arrangement,
-    scinfo  :: ProgramInfo,
-    scdoc   :: Document
-  }
-  deriving (Show)
-
--- Derived scores are *generated* scores that contain a single part, and thus a single instrument
-data DerivedScore = DerivedScore
-  { dsname :: TE.Text,
-    dsinst :: Instrument,
-    dsdoc  :: Document
-  } deriving (Show)
-
--- An arrangement, as a set of parts
-data Arrangement =
-  ConcertHead { piano :: Part } |
-  Classic { piano :: Part, sax :: Part, trumpet :: Part}
-  deriving (Show)
-
-parts :: Arrangement -> [Part]
-parts (ConcertHead piano)         = [piano]
-parts (Classic piano sax trumpet) = [piano, sax, trumpet]
-
--- A part extracted from a score.
-data Part = Part
-  { instrument :: Instrument,
-    partnode   :: Node
-  }
-
-instance Show Part where
-  show p = show (instrument p)
+import           Data.Text   as TE
+import           Environment
 
 -- The various kinds of instrument we might find
 data Instrument
@@ -94,13 +55,25 @@ key Piano    = C
 key Clarinet = Bb
 key _        = C
 
--- ProgramInfo, metadata from a musescore file
-data ProgramInfo = ProgramInfo
-  { programVersion      :: TE.Text,
-    programVersionNode  :: Node,
-    programRevision     :: TE.Text,
-    programRevisionNode :: Node
+-- This is our key data structure for representing a score, or parts in a score, or filenames to that
+-- score, etc, etc. It behaves a bit like a generic AST, representing various parts of the compilation process.
+data Score a = Score
+  { name  :: TE.Text, -- the name of the score that this belongs to
+    spath :: AbsFile, -- the original source file that this was derived from
+    parts :: a -- the parts in this score
   }
+  deriving (Show)
 
-instance Show ProgramInfo where
-  show p = "{ProgramVersion: " ++ (show . programVersion $ p) ++ ", ProgramRevision: " ++ (show . programRevision $ p) ++ "}"
+instance Functor Score where
+  -- fmap :: (a -> b) -> (Score a) -> (Score b)
+  fmap f sc = Score {
+    name = name sc,
+    spath = spath sc,
+    parts = f $ parts sc
+  }
+  -- (<$) :: a -> f b -> f a
+  (<$) p sc = Score {
+    name = name sc,
+    spath = spath sc,
+    parts = p
+  }
