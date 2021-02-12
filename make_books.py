@@ -272,7 +272,9 @@ def main(source_d, book_d, build_d, release_name, mscore):
     msfiles = glob.glob(source_d + "/*.msc[zx]")
 
     # Generate PDFs, and get a list of charts from a glob.
-    charts = [generate_pdfs(f, tmpd, pdfd, book_d, mscore, logf) for f in msfiles]
+    charts = [
+        generate_pdfs(f, tmpd, pdfd, book_d, mscore, logf) for f in msfiles
+    ]
     charts = sorted(charts, key=itemgetter('title'))
 
     # Generate list of title/PDF pairs for LaTeX
@@ -318,12 +320,11 @@ if __name__ == "__main__":
 
     # Define the name of the 'musescore' program that we'll be calling at the command line.
     import platform
-    mscore=""
+    mscore = ""
     if platform.system() == "Linux":
         mscore = "musescore-portable"
     elif platform.system() == "Darwin":
         mscore = "/Applications/MuseScore 3.app/Contents/MacOS/mscore"
-
 
     parser = argparse.ArgumentParser(
         description=
@@ -356,8 +357,7 @@ if __name__ == "__main__":
         '--musescore_name',
         dest='mscore_name',
         default=mscore,
-        help='A manually specified name for the musescore executable'
-    )
+        help='A manually specified name for the musescore executable')
 
     args = parser.parse_args()
 
@@ -367,4 +367,5 @@ if __name__ == "__main__":
     print("Release name: " + args.release_name)
     print("Musescore name: " + args.mscore_name)
 
-    main(args.source_d, args.book_d, args.build_d, args.release_name, args.mscore_name)
+    main(args.source_d, args.book_d, args.build_d, args.release_name,
+         args.mscore_name)
