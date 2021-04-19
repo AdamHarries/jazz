@@ -5,3 +5,4 @@ hefti/build
 books/*
 MuseScore/.*
 !/.gitignore
+*.mp3
